@@ -1,0 +1,1173 @@
+Command: /home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/totoleb/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/totoleb/Documents/esp32/esp32_cam/build/esp32_cam.elf /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/bootloader.elf -m '/home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/totoleb/esp/esp-idf/tools/idf.py'
+[0;32mI (114) esp_image: segment 1: paddr=00034d4c vaddr=3fc9c900 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f60
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1588
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f2c
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Aug 14 2025 20:25:49[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24d24h (150820) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=00034d4c vaddr=3fc9c900 size=076a4h ( 30372) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0003c3f8 vaddr=40374000 size=03c20h ( 15392) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a8a3ch (690748) map[0m
+[0;32mI (247) esp_image: segment 4: paddr=000e8a64 vaddr=40377c20 size=14c5ch ( 85084) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=000fd6c8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (277) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (288) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (288) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (288) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (290) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (294) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (299) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (303) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (308) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (313) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (317) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (322) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (327) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (331) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (335) esp_psram: Speed: 80MHz[0m
+[0;32mI (338) cpu_start: Multicore app[0m
+[0;32mI (773) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (781) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (782) cpu_start: Pro cpu start user code[0m
+[0;32mI (782) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (784) app_init: Application information:[0m
+[0;32mI (788) app_init: Project name:     esp32_cam[0m
+[0;32mI (792) app_init: App version:      1[0m
+[0;32mI (795) app_init: Compile time:     Aug 14 2025 20:25:40[0m
+[0;32mI (800) app_init: ELF file SHA256:  55b03b2e6...[0m
+[0;32mI (804) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (810) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (814) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (818) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (822) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FCA8D40 len 000409D0 (258 KiB): RAM[0m
+[0;32mI (833) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (849) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (856) spi_flash: detected chip: gd[0m
+[0;32mI (858) spi_flash: flash io: dio[0m
+[0;33mW (861) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (874) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (880) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (887) main_task: Started on CPU0[0m
+[0;32mI (897) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (897) main_task: Calling app_main()[0m
+[0;32mI (897) ESP32_CAM: 🚀 Starting ESP32 CAM application...[0m
+[0;32mI (927) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (927) cam_hal: cam init ok[0m
+[0;32mI (927) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (927) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (937) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (937) camera: Detected OV2640 camera[0m
+[0;32mI (937) camera: Detected camera at address=0x30[0m
+[0;32mI (1007) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1007) cam_hal: buffer_size: 61440, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 60, total_cnt: 61[0m
+[0;32mI (1007) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1017) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0E0EB0[0m
+[0;32mI (1017) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1027) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C0F02E0[0m
+[0;32mI (1027) cam_hal: cam config ok[0m
+[0;32mI (1037) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1097) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing (PSRAM)
+[0;32mI (1147) CAMERA: Caméra initialisée avec succès.[0m
+[0;32mI (1147) ESP32_CAM: 📷 Camera initialized successfully[0m
+[0;32mI (1147) pp: pp rom version: e7ae62f[0m
+[0;32mI (1147) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1157) wifi:wifi driver task: 3fceeaac, prio:23, stack:6656, core=0[0m
+[0;32mI (1167) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (1167) wifi:wifi certification version: v7.0[0m
+[0;32mI (1167) wifi:config NVS flash: enabled[0m
+[0;32mI (1167) wifi:config nano formatting: disabled[0m
+[0;32mI (1177) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1177) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1187) wifi:Init management short buffer num: 32[0m
+[0;32mI (1187) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1187) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1197) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1197) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1207) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1207) wifi_init: rx ba win: 6[0m
+[0;32mI (1207) wifi_init: accept mbox: 6[0m
+[0;32mI (1217) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1217) wifi_init: udp mbox: 6[0m
+[0;32mI (1217) wifi_init: tcp mbox: 6[0m
+[0;32mI (1227) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1227) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1227) wifi_init: tcp mss: 1440[0m
+[0;32mI (1227) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1237) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1237) WifiManager: Starting WiFi station...[0m
+[0;32mI (1247) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1287) wifi:mode : sta (cc:ba:97:16:28:a0)[0m
+[0;32mI (1287) wifi:enable tsf[0m
+[0;32mI (1287) ESP_NOW_COMMS: 🚀 Initializing ESP-NOW...[0m
+[0;32mI (1287) WifiManager: Wi-Fi station started[0m
+[0;32mI (1287) ESP_NOW_COMMS: 📍 My MAC: cc:ba:97:16:28:a0[0m
+[0;32mI (1297) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1297) ESP_NOW_COMMS: ✅ Broadcast peer configured.[0m
+[0;32mI (1307) ESP_NOW_COMMS: 🎯 ESP-NOW initialized with broadcast configured[0m
+[0;32mI (1307) ESP32_CAM: 🤝 Starting ESP-NOW peer discovery...[0m
+[0;32mI (1317) ESP_NOW_COMMS: 🔍 Starting peer discovery...[0m
+[0;32mI (1317) ESP_NOW_COMMS: 🔄 Peer MAC loaded from NVS: cc:ba:97:0e:81:e4[0m
+[0;32mI (1327) ESP_NOW_COMMS: ➕ Peer loaded from NVS and added for communication: cc:ba:97:0e:81:e4[0m
+[0;32mI (1337) ESP_NOW_COMMS: 🎉 Peer found in NVS. Discovery complete.[0m
+[0;32mI (1337) ESP32_CAM: 🎯 Device role determined: SLAVE 🤖[0m
+[0;32mI (1347) ESP32_CAM: 🔑 WiFi credentials found in NVS. Connecting to 'thomas'[0m
+[0;32mI (1357) ESP32_CAM: 🔍 Monitoring WiFi status (initial: Disconnected)[0m
+[0;33mW (1357) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (1367) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1367) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1377) wifi:flush txq[0m
+[0;32mI (1377) wifi:stop sw txq[0m
+[0;32mI (1377) wifi:lmac stop hw txq[0m
+[0;32mI (1387) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1587) wifi:mode : sta (cc:ba:97:16:28:a0)[0m
+[0;32mI (1587) wifi:enable tsf[0m
+[0;32mI (1587) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (1587) WifiManager: Wi-Fi station started[0m
+[0;32mI (1587) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (1597) ESP32_CAM: ✅ Reconnected to: [0m
+[1;31mE (1597) wifi:sta is connecting, cannot set config[0m
+[0;32mI (1607) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1607) wifi:state: init -> auth (0xb0)[0m
+[1;31mE (1617) WifiManager: Failed to set config: ESP_ERR_WIFI_STATE[0m
+[0;33mW (1617) ESP32_CAM: ⚠️ Initial connection failed - WiFi monitor task will keep retrying.[0m
+[0;32mI (1627) ESP32_CAM: 🎉 Setup complete - system is running.[0m
+[0;32mI (1627) main_task: Returned from app_main()[0m
+[0;32mI (2617) wifi:state: auth -> init (0x200)[0m
+[0;32mI (2627) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (2627) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (5037) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;32mI (5047) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5047) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5077) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5097) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5117) wifi:connected with thomas, aid = 7, channel 11, BW20, bssid = 92:a5:3b:33:1f:f2[0m
+[0;32mI (5117) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (5117) wifi:pm start, type: 1[0m
+
+[0;32mI (5117) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5127) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5187) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (5187) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (6187) esp_netif_handlers: sta ip: 10.99.7.251, mask: 255.255.255.0, gw: 10.99.7.151[0m
+[0;32mI (6187) WifiManager: Got IP address: 10.99.7.251[0m
+[0;32mI (6357) ESP32_CAM: 📶 Wi-Fi reconnected! Setting up UDP and camera task...[0m
+[0;33mW (6357) ESP32_CAM: Failed to set send buffer: Protocol not available[0m
+[0;33mW (6357) ESP32_CAM: Failed to set recv buffer: Protocol not available[0m
+[0;32mI (6357) ESP32_CAM: ✅ UDP socket optimized for 10.99.7.197:12345 (15 FPS streaming)[0m
+[0;32mI (6367) NTP: Initialisation NTP[0m
+[0;32mI (6367) ESP32_CAM: 📷 Camera task created[0m
+[0;32mI (6367) ESP32_CAM: 🎬 Starting optimized 15 FPS streaming[0m
+[1;31mE (6507) CAMERA: Erreur sendto() pour le chunk 3 de la frame 0[0m
+[1;31mE (6517) CAMERA: Erreur sendto() pour le chunk 4 de la frame 0[0m
+[1;31mE (6527) CAMERA: Erreur sendto() pour le chunk 5 de la frame 0[0m
+[1;31mE (6537) CAMERA: Erreur sendto() pour le chunk 6 de la frame 0[0m
+[1;31mE (6547) CAMERA: Erreur sendto() pour le chunk 7 de la frame 0[0m
+[1;31mE (6557) CAMERA: Erreur sendto() pour le chunk 8 de la frame 0[0m
+[1;31mE (6567) CAMERA: Erreur sendto() pour le chunk 9 de la frame 0[0m
+[1;31mE (6577) CAMERA: Erreur sendto() pour le chunk 10 de la frame 0[0m
+[1;31mE (6587) CAMERA: Erreur sendto() pour le chunk 11 de la frame 0[0m
+[1;31mE (6597) CAMERA: Erreur sendto() pour le chunk 12 de la frame 0[0m
+[1;31mE (6607) CAMERA: Erreur sendto() pour le chunk 13 de la frame 0[0m
+[0;32mI (6627) wifi:<ba-add>idx:0 (ifx:0, 92:a5:3b:33:1f:f2), tid:0, ssn:3, winSize:64[0m
+[0;32mI (6897) NTP: NTP synchronisé[0m
+[1;31mE (10837) CAMERA: Erreur sendto() pour le chunk 4 de la frame 22[0m
+[1;31mE (10847) CAMERA: Erreur sendto() pour le chunk 5 de la frame 22[0m
+[1;31mE (10857) CAMERA: Erreur sendto() pour le chunk 6 de la frame 22[0m
+[1;31mE (10867) CAMERA: Erreur sendto() pour le chunk 7 de la frame 22[0m
+[1;31mE (10877) CAMERA: Erreur sendto() pour le chunk 8 de la frame 22[0m
+[1;31mE (10887) CAMERA: Erreur sendto() pour le chunk 9 de la frame 22[0m
+[1;31mE (10897) CAMERA: Erreur sendto() pour le chunk 10 de la frame 22[0m
+[1;31mE (10907) CAMERA: Erreur sendto() pour le chunk 11 de la frame 22[0m
+[1;31mE (14337) CAMERA: Erreur sendto() pour le chunk 14 de la frame 36[0m
+[1;31mE (14347) CAMERA: Erreur sendto() pour le chunk 15 de la frame 36[0m
+[1;31mE (14357) CAMERA: Erreur sendto() pour le chunk 16 de la frame 36[0m
+[1;31mE (14367) CAMERA: Erreur sendto() pour le chunk 17 de la frame 36[0m
+[1;31mE (14387) CAMERA: Erreur sendto() pour le chunk 19 de la frame 36[0m
+[1;31mE (14437) CAMERA: Erreur sendto() pour le chunk 0 de la frame 37[0m
+[1;31mE (14447) CAMERA: Erreur sendto() pour le chunk 1 de la frame 37[0m
+[1;31mE (14457) CAMERA: Erreur sendto() pour le chunk 2 de la frame 37[0m
+[1;31mE (19237) CAMERA: Erreur sendto() pour le chunk 8 de la frame 58[0m
+[1;31mE (19247) CAMERA: Erreur sendto() pour le chunk 9 de la frame 58[0m
+[1;31mE (19257) CAMERA: Erreur sendto() pour le chunk 10 de la frame 58[0m
+[1;31mE (19327) CAMERA: Erreur sendto() pour le chunk 1 de la frame 59[0m
+[1;31mE (19337) CAMERA: Erreur sendto() pour le chunk 2 de la frame 59[0m
+[1;31mE (19347) CAMERA: Erreur sendto() pour le chunk 3 de la frame 59[0m
+[1;31mE (19357) CAMERA: Erreur sendto() pour le chunk 4 de la frame 59[0m
+[1;31mE (19367) CAMERA: Erreur sendto() pour le chunk 5 de la frame 59[0m
+[1;31mE (19377) CAMERA: Erreur sendto() pour le chunk 6 de la frame 59[0m
+[1;31mE (19387) CAMERA: Erreur sendto() pour le chunk 7 de la frame 59[0m
+[1;31mE (19397) CAMERA: Erreur sendto() pour le chunk 8 de la frame 59[0m
+[1;31mE (19407) CAMERA: Erreur sendto() pour le chunk 9 de la frame 59[0m
+[1;31mE (19417) CAMERA: Erreur sendto() pour le chunk 10 de la frame 59[0m
+[1;31mE (19477) CAMERA: Erreur sendto() pour le chunk 0 de la frame 60[0m
+[1;31mE (19487) CAMERA: Erreur sendto() pour le chunk 1 de la frame 60[0m
+[1;31mE (19497) CAMERA: Erreur sendto() pour le chunk 2 de la frame 60[0m
+[1;31mE (19507) CAMERA: Erreur sendto() pour le chunk 3 de la frame 60[0m
+[1;31mE (19517) CAMERA: Erreur sendto() pour le chunk 4 de la frame 60[0m
+[1;31mE (19527) CAMERA: Erreur sendto() pour le chunk 5 de la frame 60[0m
+[1;31mE (19537) CAMERA: Erreur sendto() pour le chunk 6 de la frame 60[0m
+[1;31mE (19547) CAMERA: Erreur sendto() pour le chunk 7 de la frame 60[0m
+[1;31mE (19557) CAMERA: Erreur sendto() pour le chunk 8 de la frame 60[0m
+[1;31mE (19567) CAMERA: Erreur sendto() pour le chunk 9 de la frame 60[0m
+[1;31mE (19577) CAMERA: Erreur sendto() pour le chunk 10 de la frame 60[0m
+[1;31mE (19637) CAMERA: Erreur sendto() pour le chunk 0 de la frame 61[0m
+[1;31mE (19647) CAMERA: Erreur sendto() pour le chunk 1 de la frame 61[0m
+[1;31mE (19657) CAMERA: Erreur sendto() pour le chunk 2 de la frame 61[0m
+[1;31mE (19667) CAMERA: Erreur sendto() pour le chunk 3 de la frame 61[0m
+[1;31mE (19677) CAMERA: Erreur sendto() pour le chunk 4 de la frame 61[0m
+[1;31mE (19687) CAMERA: Erreur sendto() pour le chunk 5 de la frame 61[0m
+[1;31mE (19697) CAMERA: Erreur sendto() pour le chunk 6 de la frame 61[0m
+[1;31mE (19707) CAMERA: Erreur sendto() pour le chunk 7 de la frame 61[0m
+[1;31mE (19717) CAMERA: Erreur sendto() pour le chunk 8 de la frame 61[0m
+[1;31mE (19727) CAMERA: Erreur sendto() pour le chunk 9 de la frame 61[0m
+[1;31mE (19737) CAMERA: Erreur sendto() pour le chunk 10 de la frame 61[0m
+[1;31mE (19797) CAMERA: Erreur sendto() pour le chunk 0 de la frame 62[0m
+[1;31mE (19807) CAMERA: Erreur sendto() pour le chunk 1 de la frame 62[0m
+[1;31mE (19817) CAMERA: Erreur sendto() pour le chunk 2 de la frame 62[0m
+[1;31mE (19827) CAMERA: Erreur sendto() pour le chunk 3 de la frame 62[0m
+[1;31mE (19847) CAMERA: Erreur sendto() pour le chunk 5 de la frame 62[0m
+[1;31mE (19857) CAMERA: Erreur sendto() pour le chunk 6 de la frame 62[0m
+[1;31mE (19867) CAMERA: Erreur sendto() pour le chunk 7 de la frame 62[0m
+[1;31mE (19877) CAMERA: Erreur sendto() pour le chunk 8 de la frame 62[0m
+[1;31mE (19887) CAMERA: Erreur sendto() pour le chunk 9 de la frame 62[0m
+[1;31mE (19897) CAMERA: Erreur sendto() pour le chunk 10 de la frame 62[0m
+[1;31mE (21077) CAMERA: Erreur sendto() pour le chunk 0 de la frame 70[0m
+[1;31mE (21087) CAMERA: Erreur sendto() pour le chunk 1 de la frame 70[0m
+[1;31mE (22607) CAMERA: Erreur sendto() pour le chunk 9 de la frame 79[0m
+[1;31mE (22617) CAMERA: Erreur sendto() pour le chunk 10 de la frame 79[0m
+[1;31mE (22677) CAMERA: Erreur sendto() pour le chunk 0 de la frame 80[0m
+[1;31mE (22687) CAMERA: Erreur sendto() pour le chunk 1 de la frame 80[0m
+[1;31mE (22697) CAMERA: Erreur sendto() pour le chunk 2 de la frame 80[0m
+[1;31mE (22707) CAMERA: Erreur sendto() pour le chunk 3 de la frame 80[0m
+[1;31mE (22717) CAMERA: Erreur sendto() pour le chunk 4 de la frame 80[0m
+[1;31mE (22727) CAMERA: Erreur sendto() pour le chunk 5 de la frame 80[0m
+[1;31mE (22737) CAMERA: Erreur sendto() pour le chunk 6 de la frame 80[0m
+[1;31mE (22747) CAMERA: Erreur sendto() pour le chunk 7 de la frame 80[0m
+[1;31mE (22757) CAMERA: Erreur sendto() pour le chunk 8 de la frame 80[0m
+[1;31mE (22767) CAMERA: Erreur sendto() pour le chunk 9 de la frame 80[0m
+[1;31mE (22777) CAMERA: Erreur sendto() pour le chunk 10 de la frame 80[0m
+[1;31mE (22877) CAMERA: Erreur sendto() pour le chunk 0 de la frame 81[0m
+[1;31mE (22887) CAMERA: Erreur sendto() pour le chunk 1 de la frame 81[0m
+[1;31mE (22897) CAMERA: Erreur sendto() pour le chunk 2 de la frame 81[0m
+[1;31mE (22907) CAMERA: Erreur sendto() pour le chunk 3 de la frame 81[0m
+[1;31mE (22917) CAMERA: Erreur sendto() pour le chunk 4 de la frame 81[0m
+[1;31mE (22927) CAMERA: Erreur sendto() pour le chunk 5 de la frame 81[0m
+[1;31mE (22937) CAMERA: Erreur sendto() pour le chunk 6 de la frame 81[0m
+[1;31mE (22947) CAMERA: Erreur sendto() pour le chunk 7 de la frame 81[0m
+[1;31mE (22957) CAMERA: Erreur sendto() pour le chunk 8 de la frame 81[0m
+[1;31mE (22967) CAMERA: Erreur sendto() pour le chunk 9 de la frame 81[0m
+[1;31mE (22977) CAMERA: Erreur sendto() pour le chunk 10 de la frame 81[0m
+[1;31mE (23077) CAMERA: Erreur sendto() pour le chunk 0 de la frame 82[0m
+[1;31mE (23087) CAMERA: Erreur sendto() pour le chunk 1 de la frame 82[0m
+[1;31mE (23097) CAMERA: Erreur sendto() pour le chunk 2 de la frame 82[0m
+[1;31mE (23107) CAMERA: Erreur sendto() pour le chunk 3 de la frame 82[0m
+[1;31mE (23117) CAMERA: Erreur sendto() pour le chunk 4 de la frame 82[0m
+[1;31mE (23127) CAMERA: Erreur sendto() pour le chunk 5 de la frame 82[0m
+[1;31mE (23137) CAMERA: Erreur sendto() pour le chunk 6 de la frame 82[0m
+[1;31mE (23147) CAMERA: Erreur sendto() pour le chunk 7 de la frame 82[0m
+[1;31mE (23157) CAMERA: Erreur sendto() pour le chunk 8 de la frame 82[0m
+[1;31mE (23167) CAMERA: Erreur sendto() pour le chunk 9 de la frame 82[0m
+[1;31mE (23177) CAMERA: Erreur sendto() pour le chunk 10 de la frame 82[0m
+[1;31mE (23277) CAMERA: Erreur sendto() pour le chunk 0 de la frame 83[0m
+[1;31mE (23287) CAMERA: Erreur sendto() pour le chunk 1 de la frame 83[0m
+[1;31mE (23297) CAMERA: Erreur sendto() pour le chunk 2 de la frame 83[0m
+[1;31mE (23307) CAMERA: Erreur sendto() pour le chunk 3 de la frame 83[0m
+[1;31mE (23317) CAMERA: Erreur sendto() pour le chunk 4 de la frame 83[0m
+[1;31mE (23327) CAMERA: Erreur sendto() pour le chunk 5 de la frame 83[0m
+[1;31mE (23337) CAMERA: Erreur sendto() pour le chunk 6 de la frame 83[0m
+[1;31mE (23347) CAMERA: Erreur sendto() pour le chunk 7 de la frame 83[0m
+[1;31mE (23357) CAMERA: Erreur sendto() pour le chunk 8 de la frame 83[0m
+[1;31mE (23367) CAMERA: Erreur sendto() pour le chunk 9 de la frame 83[0m
+[1;31mE (23377) CAMERA: Erreur sendto() pour le chunk 10 de la frame 83[0m
+[1;31mE (23477) CAMERA: Erreur sendto() pour le chunk 0 de la frame 84[0m
+[1;31mE (23487) CAMERA: Erreur sendto() pour le chunk 1 de la frame 84[0m
+[1;31mE (23497) CAMERA: Erreur sendto() pour le chunk 2 de la frame 84[0m
+[1;31mE (23507) CAMERA: Erreur sendto() pour le chunk 3 de la frame 84[0m
+[1;31mE (23517) CAMERA: Erreur sendto() pour le chunk 4 de la frame 84[0m
+[1;31mE (23527) CAMERA: Erreur sendto() pour le chunk 5 de la frame 84[0m
+[1;31mE (23537) CAMERA: Erreur sendto() pour le chunk 6 de la frame 84[0m
+[1;31mE (23547) CAMERA: Erreur sendto() pour le chunk 7 de la frame 84[0m
+[1;31mE (23557) CAMERA: Erreur sendto() pour le chunk 8 de la frame 84[0m
+[1;31mE (23567) CAMERA: Erreur sendto() pour le chunk 9 de la frame 84[0m
+[1;31mE (23577) CAMERA: Erreur sendto() pour le chunk 10 de la frame 84[0m
+[1;31mE (23677) CAMERA: Erreur sendto() pour le chunk 0 de la frame 85[0m
+[1;31mE (23687) CAMERA: Erreur sendto() pour le chunk 1 de la frame 85[0m
+[1;31mE (23697) CAMERA: Erreur sendto() pour le chunk 2 de la frame 85[0m
+[1;31mE (23717) CAMERA: Erreur sendto() pour le chunk 4 de la frame 85[0m
+[1;31mE (23727) CAMERA: Erreur sendto() pour le chunk 5 de la frame 85[0m
+[1;31mE (23737) CAMERA: Erreur sendto() pour le chunk 6 de la frame 85[0m
+[1;31mE (23747) CAMERA: Erreur sendto() pour le chunk 7 de la frame 85[0m
+[1;31mE (23757) CAMERA: Erreur sendto() pour le chunk 8 de la frame 85[0m
+[1;31mE (23767) CAMERA: Erreur sendto() pour le chunk 9 de la frame 85[0m
+[1;31mE (23777) CAMERA: Erreur sendto() pour le chunk 10 de la frame 85[0m
+[1;31mE (23877) CAMERA: Erreur sendto() pour le chunk 0 de la frame 86[0m
+[1;31mE (23887) CAMERA: Erreur sendto() pour le chunk 1 de la frame 86[0m
+[1;31mE (23897) CAMERA: Erreur sendto() pour le chunk 2 de la frame 86[0m
+[1;31mE (23907) CAMERA: Erreur sendto() pour le chunk 3 de la frame 86[0m
+[1;31mE (23917) CAMERA: Erreur sendto() pour le chunk 4 de la frame 86[0m
+[1;31mE (23927) CAMERA: Erreur sendto() pour le chunk 5 de la frame 86[0m
+[1;31mE (23937) CAMERA: Erreur sendto() pour le chunk 6 de la frame 86[0m
+[1;31mE (23947) CAMERA: Erreur sendto() pour le chunk 7 de la frame 86[0m
+[1;31mE (23957) CAMERA: Erreur sendto() pour le chunk 8 de la frame 86[0m
+[1;31mE (23967) CAMERA: Erreur sendto() pour le chunk 9 de la frame 86[0m
+[1;31mE (23977) CAMERA: Erreur sendto() pour le chunk 10 de la frame 86[0m
+[1;31mE (24077) CAMERA: Erreur sendto() pour le chunk 0 de la frame 87[0m
+[1;31mE (24087) CAMERA: Erreur sendto() pour le chunk 1 de la frame 87[0m
+[0;32mI (773) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (781) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (782) cpu_start: Pro cpu start user code[0m
+[0;32mI (782) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (784) app_init: Application information:[0m
+[0;32mI (788) app_init: Project name:     esp32_cam[0m
+[0;32mI (792) app_init: App version:      1[0m
+[0;32mI (795) app_init: Compile time:     Aug 14 2025 20:25:40[0m
+[0;32mI (800) app_init: ELF file SHA256:  55b03b2e6...[0m
+[0;32mI (804) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (810) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (814) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (818) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (822) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FCA8D40 len 000409D0 (258 KiB): RAM[0m
+[0;32mI (833) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (849) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (856) spi_flash: detected chip: gd[0m
+[0;32mI (858) spi_flash: flash io: dio[0m
+[0;33mW (861) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (874) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (880) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (887) main_task: Started on CPU0[0m
+[0;32mI (897) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (897) main_task: Calling app_main()[0m
+[0;32mI (897) ESP32_CAM: 🚀 Starting ESP32 CAM application...[0m
+[0;32mI (927) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (927) cam_hal: cam init ok[0m
+[0;32mI (927) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (927) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (937) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (937) camera: Detected OV2640 camera[0m
+[0;32mI (937) camera: Detected camera at address=0x30[0m
+[0;32mI (1007) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1007) cam_hal: buffer_size: 61440, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 60, total_cnt: 61[0m
+[0;32mI (1007) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1017) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0E0EB0[0m
+[0;32mI (1017) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1027) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C0F02E0[0m
+[0;32mI (1027) cam_hal: cam config ok[0m
+[0;32mI (1037) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1097) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing (PSRAM)
+[0;32mI (1147) CAMERA: Caméra initialisée avec succès.[0m
+[0;32mI (1147) ESP32_CAM: 📷 Camera initialized successfully[0m
+[0;32mI (1147) pp: pp rom version: e7ae62f[0m
+[0;32mI (1147) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1157) wifi:wifi driver task: 3fceeaac, prio:23, stack:6656, core=0[0m
+[0;32mI (1167) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (1167) wifi:wifi certification version: v7.0[0m
+[0;32mI (1167) wifi:config NVS flash: enabled[0m
+[0;32mI (1167) wifi:config nano formatting: disabled[0m
+[0;32mI (1177) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1177) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1187) wifi:Init management short buffer num: 32[0m
+[0;32mI (1187) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1187) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1197) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1197) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1207) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1207) wifi_init: rx ba win: 6[0m
+[0;32mI (1207) wifi_init: accept mbox: 6[0m
+[0;32mI (1217) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1217) wifi_init: udp mbox: 6[0m
+[0;32mI (1217) wifi_init: tcp mbox: 6[0m
+[0;32mI (1227) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1227) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1227) wifi_init: tcp mss: 1440[0m
+[0;32mI (1227) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1237) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1237) WifiManager: Starting WiFi station...[0m
+[0;32mI (1247) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1287) wifi:mode : sta (cc:ba:97:16:28:a0)[0m
+[0;32mI (1287) wifi:enable tsf[0m
+[0;32mI (1287) ESP_NOW_COMMS: 🚀 Initializing ESP-NOW...[0m
+[0;32mI (1287) WifiManager: Wi-Fi station started[0m
+[0;32mI (1287) ESP_NOW_COMMS: 📍 My MAC: cc:ba:97:16:28:a0[0m
+[0;32mI (1297) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1297) ESP_NOW_COMMS: ✅ Broadcast peer configured.[0m
+[0;32mI (1307) ESP_NOW_COMMS: 🎯 ESP-NOW initialized with broadcast configured[0m
+[0;32mI (1307) ESP32_CAM: 🤝 Starting ESP-NOW peer discovery...[0m
+[0;32mI (1317) ESP_NOW_COMMS: 🔍 Starting peer discovery...[0m
+[0;32mI (1317) ESP_NOW_COMMS: 🔄 Peer MAC loaded from NVS: cc:ba:97:0e:81:e4[0m
+[0;32mI (1327) ESP_NOW_COMMS: ➕ Peer loaded from NVS and added for communication: cc:ba:97:0e:81:e4[0m
+[0;32mI (1337) ESP_NOW_COMMS: 🎉 Peer found in NVS. Discovery complete.[0m
+[0;32mI (1337) ESP32_CAM: 🎯 Device role determined: SLAVE 🤖[0m
+[0;32mI (1347) ESP32_CAM: 🔑 WiFi credentials found in NVS. Connecting to 'thomas'[0m
+[0;32mI (1357) ESP32_CAM: 🔍 Monitoring WiFi status (initial: Disconnected)[0m
+[0;33mW (1357) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (1367) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1367) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1377) wifi:flush txq[0m
+[0;32mI (1377) wifi:stop sw txq[0m
+[0;32mI (1377) wifi:lmac stop hw txq[0m
+[0;32mI (1387) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1587) wifi:mode : sta (cc:ba:97:16:28:a0)[0m
+[0;32mI (1587) wifi:enable tsf[0m
+[0;32mI (1587) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (1587) WifiManager: Wi-Fi station started[0m
+[0;32mI (1587) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (1597) ESP32_CAM: ✅ Reconnected to: [0m
+[1;31mE (1597) wifi:sta is connecting, cannot set config[0m
+[0;32mI (1607) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1607) wifi:state: init -> auth (0xb0)[0m
+[1;31mE (1617) WifiManager: Failed to set config: ESP_ERR_WIFI_STATE[0m
+[0;33mW (1617) ESP32_CAM: ⚠️ Initial connection failed - WiFi monitor task will keep retrying.[0m
+[0;32mI (1627) ESP32_CAM: 🎉 Setup complete - system is running.[0m
+[0;32mI (1627) main_task: Returned from app_main()[0m
+[0;32mI (1947) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2057) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2297) wifi:connected with thomas, aid = 8, channel 11, BW20, bssid = 92:a5:3b:33:1f:f2[0m
+[0;32mI (2297) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (2307) wifi:pm start, type: 1[0m
+
+[0;32mI (2307) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2317) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2317) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2327) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3397) esp_netif_handlers: sta ip: 10.99.7.251, mask: 255.255.255.0, gw: 10.99.7.151[0m
+[0;32mI (3397) WifiManager: Got IP address: 10.99.7.251[0m
+[0;32mI (6357) ESP32_CAM: 📶 Wi-Fi reconnected! Setting up UDP and camera task...[0m
+[0;33mW (6357) ESP32_CAM: Failed to set send buffer: Protocol not available[0m
+[0;33mW (6357) ESP32_CAM: Failed to set recv buffer: Protocol not available[0m
+[0;32mI (6357) ESP32_CAM: ✅ UDP socket optimized for 10.99.7.197:12345 (15 FPS streaming)[0m
+[0;32mI (6367) NTP: Initialisation NTP[0m
+[0;32mI (6367) ESP32_CAM: 📷 Camera task created[0m
+[0;32mI (6367) ESP32_CAM: 🎬 Starting optimized 15 FPS streaming[0m
+[1;31mE (6507) CAMERA: Erreur sendto() pour le chunk 3 de la frame 0[0m
+[1;31mE (6517) CAMERA: Erreur sendto() pour le chunk 4 de la frame 0[0m
+[1;31mE (6527) CAMERA: Erreur sendto() pour le chunk 5 de la frame 0[0m
+[1;31mE (6537) CAMERA: Erreur sendto() pour le chunk 6 de la frame 0[0m
+[1;31mE (6547) CAMERA: Erreur sendto() pour le chunk 7 de la frame 0[0m
+[1;31mE (6557) CAMERA: Erreur sendto() pour le chunk 8 de la frame 0[0m
+[1;31mE (6567) CAMERA: Erreur sendto() pour le chunk 9 de la frame 0[0m
+[1;31mE (6577) CAMERA: Erreur sendto() pour le chunk 10 de la frame 0[0m
+[1;31mE (6587) CAMERA: Erreur sendto() pour le chunk 11 de la frame 0[0m
+[1;31mE (6597) CAMERA: Erreur sendto() pour le chunk 12 de la frame 0[0m
+[1;31mE (6607) CAMERA: Erreur sendto() pour le chunk 13 de la frame 0[0m
+[1;31mE (7037) CAMERA: Erreur sendto() pour le chunk 7 de la frame 2[0m
+[1;31mE (7047) CAMERA: Erreur sendto() pour le chunk 8 de la frame 2[0m
+[1;31mE (7057) CAMERA: Erreur sendto() pour le chunk 9 de la frame 2[0m
+[1;31mE (7067) CAMERA: Erreur sendto() pour le chunk 10 de la frame 2[0m
+[1;31mE (7077) CAMERA: Erreur sendto() pour le chunk 11 de la frame 2[0m
+[1;31mE (7087) CAMERA: Erreur sendto() pour le chunk 12 de la frame 2[0m
+[1;31mE (7097) CAMERA: Erreur sendto() pour le chunk 13 de la frame 2[0m
+[1;31mE (7107) CAMERA: Erreur sendto() pour le chunk 14 de la frame 2[0m
+[1;31mE (7117) CAMERA: Erreur sendto() pour le chunk 15 de la frame 2[0m
+[1;31mE (7127) CAMERA: Erreur sendto() pour le chunk 16 de la frame 2[0m
+[1;31mE (7137) CAMERA: Erreur sendto() pour le chunk 17 de la frame 2[0m
+[1;31mE (7147) CAMERA: Erreur sendto() pour le chunk 18 de la frame 2[0m
+[1;31mE (7157) CAMERA: Erreur sendto() pour le chunk 19 de la frame 2[0m
+[1;31mE (7167) CAMERA: Erreur sendto() pour le chunk 20 de la frame 2[0m
+[1;31mE (7177) CAMERA: Erreur sendto() pour le chunk 21 de la frame 2[0m
+[1;31mE (7187) CAMERA: Erreur sendto() pour le chunk 22 de la frame 2[0m
+[1;31mE (7277) CAMERA: Erreur sendto() pour le chunk 0 de la frame 3[0m
+[1;31mE (7287) CAMERA: Erreur sendto() pour le chunk 1 de la frame 3[0m
+[1;31mE (7297) CAMERA: Erreur sendto() pour le chunk 2 de la frame 3[0m
+[1;31mE (7307) CAMERA: Erreur sendto() pour le chunk 3 de la frame 3[0m
+[1;31mE (7317) CAMERA: Erreur sendto() pour le chunk 4 de la frame 3[0m
+[1;31mE (7327) CAMERA: Erreur sendto() pour le chunk 5 de la frame 3[0m
+[1;31mE (7337) CAMERA: Erreur sendto() pour le chunk 6 de la frame 3[0m
+[1;31mE (7347) CAMERA: Erreur sendto() pour le chunk 7 de la frame 3[0m
+[1;31mE (7357) CAMERA: Erreur sendto() pour le chunk 8 de la frame 3[0m
+[1;31mE (7367) CAMERA: Erreur sendto() pour le chunk 9 de la frame 3[0m
+[1;31mE (7377) CAMERA: Erreur sendto() pour le chunk 10 de la frame 3[0m
+[1;31mE (7387) CAMERA: Erreur sendto() pour le chunk 11 de la frame 3[0m
+[1;31mE (7397) CAMERA: Erreur sendto() pour le chunk 12 de la frame 3[0m
+[1;31mE (7407) CAMERA: Erreur sendto() pour le chunk 13 de la frame 3[0m
+[1;31mE (7417) CAMERA: Erreur sendto() pour le chunk 14 de la frame 3[0m
+[1;31mE (7427) CAMERA: Erreur sendto() pour le chunk 15 de la frame 3[0m
+[1;31mE (7437) CAMERA: Erreur sendto() pour le chunk 16 de la frame 3[0m
+[1;31mE (7447) CAMERA: Erreur sendto() pour le chunk 17 de la frame 3[0m
+[1;31mE (7457) CAMERA: Erreur sendto() pour le chunk 18 de la frame 3[0m
+[1;31mE (7467) CAMERA: Erreur sendto() pour le chunk 19 de la frame 3[0m
+[1;31mE (7477) CAMERA: Erreur sendto() pour le chunk 20 de la frame 3[0m
+[1;31mE (7487) CAMERA: Erreur sendto() pour le chunk 21 de la frame 3[0m
+[1;31mE (7497) CAMERA: Erreur sendto() pour le chunk 22 de la frame 3[0m
+[1;31mE (7567) CAMERA: Erreur sendto() pour le chunk 0 de la frame 4[0m
+[1;31mE (7577) CAMERA: Erreur sendto() pour le chunk 1 de la frame 4[0m
+[1;31mE (7587) CAMERA: Erreur sendto() pour le chunk 2 de la frame 4[0m
+[1;31mE (7597) CAMERA: Erreur sendto() pour le chunk 3 de la frame 4[0m
+[1;31mE (7607) CAMERA: Erreur sendto() pour le chunk 4 de la frame 4[0m
+[1;31mE (7617) CAMERA: Erreur sendto() pour le chunk 5 de la frame 4[0m
+[1;31mE (7627) CAMERA: Erreur sendto() pour le chunk 6 de la frame 4[0m
+[1;31mE (7637) CAMERA: Erreur sendto() pour le chunk 7 de la frame 4[0m
+[1;31mE (7647) CAMERA: Erreur sendto() pour le chunk 8 de la frame 4[0m
+[1;31mE (7657) CAMERA: Erreur sendto() pour le chunk 9 de la frame 4[0m
+[1;31mE (7667) CAMERA: Erreur sendto() pour le chunk 10 de la frame 4[0m
+[1;31mE (7687) CAMERA: Erreur sendto() pour le chunk 12 de la frame 4[0m
+[1;31mE (7697) CAMERA: Erreur sendto() pour le chunk 13 de la frame 4[0m
+[1;31mE (7707) CAMERA: Erreur sendto() pour le chunk 14 de la frame 4[0m
+[1;31mE (7717) CAMERA: Erreur sendto() pour le chunk 15 de la frame 4[0m
+[1;31mE (7727) CAMERA: Erreur sendto() pour le chunk 16 de la frame 4[0m
+[1;31mE (7737) CAMERA: Erreur sendto() pour le chunk 17 de la frame 4[0m
+[1;31mE (7747) CAMERA: Erreur sendto() pour le chunk 18 de la frame 4[0m
+[1;31mE (7757) CAMERA: Erreur sendto() pour le chunk 19 de la frame 4[0m
+[1;31mE (7767) CAMERA: Erreur sendto() pour le chunk 20 de la frame 4[0m
+[1;31mE (7777) CAMERA: Erreur sendto() pour le chunk 21 de la frame 4[0m
+[1;31mE (7787) CAMERA: Erreur sendto() pour le chunk 22 de la frame 4[0m
+[1;31mE (7847) CAMERA: Erreur sendto() pour le chunk 0 de la frame 5[0m
+[1;31mE (7857) CAMERA: Erreur sendto() pour le chunk 1 de la frame 5[0m
+[1;31mE (7867) CAMERA: Erreur sendto() pour le chunk 2 de la frame 5[0m
+[1;31mE (7877) CAMERA: Erreur sendto() pour le chunk 3 de la frame 5[0m
+[1;31mE (7887) CAMERA: Erreur sendto() pour le chunk 4 de la frame 5[0m
+[1;31mE (7897) CAMERA: Erreur sendto() pour le chunk 5 de la frame 5[0m
+[1;31mE (7907) CAMERA: Erreur sendto() pour le chunk 6 de la frame 5[0m
+[1;31mE (7917) CAMERA: Erreur sendto() pour le chunk 7 de la frame 5[0m
+[1;31mE (7927) CAMERA: Erreur sendto() pour le chunk 8 de la frame 5[0m
+[1;31mE (7937) CAMERA: Erreur sendto() pour le chunk 9 de la frame 5[0m
+[1;31mE (7947) CAMERA: Erreur sendto() pour le chunk 10 de la frame 5[0m
+[1;31mE (7957) CAMERA: Erreur sendto() pour le chunk 11 de la frame 5[0m
+[1;31mE (7967) CAMERA: Erreur sendto() pour le chunk 12 de la frame 5[0m
+[1;31mE (7977) CAMERA: Erreur sendto() pour le chunk 13 de la frame 5[0m
+[1;31mE (7987) CAMERA: Erreur sendto() pour le chunk 14 de la frame 5[0m
+[1;31mE (7997) CAMERA: Erreur sendto() pour le chunk 15 de la frame 5[0m
+[1;31mE (8007) CAMERA: Erreur sendto() pour le chunk 16 de la frame 5[0m
+[1;31mE (8017) CAMERA: Erreur sendto() pour le chunk 17 de la frame 5[0m
+[1;31mE (8027) CAMERA: Erreur sendto() pour le chunk 18 de la frame 5[0m
+[1;31mE (8037) CAMERA: Erreur sendto() pour le chunk 19 de la frame 5[0m
+[1;31mE (8047) CAMERA: Erreur sendto() pour le chunk 20 de la frame 5[0m
+[1;31mE (8057) CAMERA: Erreur sendto() pour le chunk 21 de la frame 5[0m
+[1;31mE (8067) CAMERA: Erreur sendto() pour le chunk 22 de la frame 5[0m
+[1;31mE (8127) CAMERA: Erreur sendto() pour le chunk 0 de la frame 6[0m
+[1;31mE (8137) CAMERA: Erreur sendto() pour le chunk 1 de la frame 6[0m
+[1;31mE (8147) CAMERA: Erreur sendto() pour le chunk 2 de la frame 6[0m
+[1;31mE (8157) CAMERA: Erreur sendto() pour le chunk 3 de la frame 6[0m
+[1;31mE (8167) CAMERA: Erreur sendto() pour le chunk 4 de la frame 6[0m
+[1;31mE (8177) CAMERA: Erreur sendto() pour le chunk 5 de la frame 6[0m
+[1;31mE (8187) CAMERA: Erreur sendto() pour le chunk 6 de la frame 6[0m
+[1;31mE (8207) CAMERA: Erreur sendto() pour le chunk 8 de la frame 6[0m
+[1;31mE (8217) CAMERA: Erreur sendto() pour le chunk 9 de la frame 6[0m
+[1;31mE (8227) CAMERA: Erreur sendto() pour le chunk 10 de la frame 6[0m
+[1;31mE (8237) CAMERA: Erreur sendto() pour le chunk 11 de la frame 6[0m
+[1;31mE (8247) CAMERA: Erreur sendto() pour le chunk 12 de la frame 6[0m
+[1;31mE (8257) CAMERA: Erreur sendto() pour le chunk 13 de la frame 6[0m
+[1;31mE (8267) CAMERA: Erreur sendto() pour le chunk 14 de la frame 6[0m
+[1;31mE (8277) CAMERA: Erreur sendto() pour le chunk 15 de la frame 6[0m
+[1;31mE (8287) CAMERA: Erreur sendto() pour le chunk 16 de la frame 6[0m
+[1;31mE (8297) CAMERA: Erreur sendto() pour le chunk 17 de la frame 6[0m
+[1;31mE (8307) CAMERA: Erreur sendto() pour le chunk 18 de la frame 6[0m
+[1;31mE (8317) CAMERA: Erreur sendto() pour le chunk 19 de la frame 6[0m
+[1;31mE (8327) CAMERA: Erreur sendto() pour le chunk 20 de la frame 6[0m
+[1;31mE (8337) CAMERA: Erreur sendto() pour le chunk 21 de la frame 6[0m
+[1;31mE (8347) CAMERA: Erreur sendto() pour le chunk 22 de la frame 6[0m
+[0;32mI (8697) wifi:<ba-add>idx:0 (ifx:0, 92:a5:3b:33:1f:f2), tid:0, ssn:4, winSize:64[0m
+[1;31mE (8717) CAMERA: Erreur sendto() pour le chunk 3 de la frame 8[0m
+[1;31mE (8727) CAMERA: Erreur sendto() pour le chunk 4 de la frame 8[0m
+[1;31mE (8737) CAMERA: Erreur sendto() pour le chunk 5 de la frame 8[0m
+[1;31mE (8747) CAMERA: Erreur sendto() pour le chunk 6 de la frame 8[0m
+[1;31mE (8757) CAMERA: Erreur sendto() pour le chunk 7 de la frame 8[0m
+[1;31mE (8767) CAMERA: Erreur sendto() pour le chunk 8 de la frame 8[0m
+[1;31mE (8777) CAMERA: Erreur sendto() pour le chunk 9 de la frame 8[0m
+[1;31mE (8787) CAMERA: Erreur sendto() pour le chunk 10 de la frame 8[0m
+[1;31mE (8797) CAMERA: Erreur sendto() pour le chunk 11 de la frame 8[0m
+[1;31mE (8807) CAMERA: Erreur sendto() pour le chunk 12 de la frame 8[0m
+[1;31mE (8817) CAMERA: Erreur sendto() pour le chunk 13 de la frame 8[0m
+[1;31mE (8827) CAMERA: Erreur sendto() pour le chunk 14 de la frame 8[0m
+[1;31mE (8837) CAMERA: Erreur sendto() pour le chunk 15 de la frame 8[0m
+[1;31mE (8847) CAMERA: Erreur sendto() pour le chunk 16 de la frame 8[0m
+[1;31mE (8857) CAMERA: Erreur sendto() pour le chunk 17 de la frame 8[0m
+[1;31mE (8867) CAMERA: Erreur sendto() pour le chunk 18 de la frame 8[0m
+[1;31mE (8877) CAMERA: Erreur sendto() pour le chunk 19 de la frame 8[0m
+[1;31mE (8887) CAMERA: Erreur sendto() pour le chunk 20 de la frame 8[0m
+[1;31mE (8897) CAMERA: Erreur sendto() pour le chunk 21 de la frame 8[0m
+[1;31mE (8907) CAMERA: Erreur sendto() pour le chunk 22 de la frame 8[0m
+[1;31mE (8967) CAMERA: Erreur sendto() pour le chunk 0 de la frame 9[0m
+[1;31mE (8977) CAMERA: Erreur sendto() pour le chunk 1 de la frame 9[0m
+[1;31mE (8987) CAMERA: Erreur sendto() pour le chunk 2 de la frame 9[0m
+[1;31mE (8997) CAMERA: Erreur sendto() pour le chunk 3 de la frame 9[0m
+[1;31mE (9007) CAMERA: Erreur sendto() pour le chunk 4 de la frame 9[0m
+[1;31mE (9017) CAMERA: Erreur sendto() pour le chunk 5 de la frame 9[0m
+[1;31mE (9137) CAMERA: Erreur sendto() pour le chunk 17 de la frame 9[0m
+[1;31mE (9147) CAMERA: Erreur sendto() pour le chunk 18 de la frame 9[0m
+[1;31mE (9157) CAMERA: Erreur sendto() pour le chunk 19 de la frame 9[0m
+[1;31mE (9167) CAMERA: Erreur sendto() pour le chunk 20 de la frame 9[0m
+[1;31mE (9177) CAMERA: Erreur sendto() pour le chunk 21 de la frame 9[0m
+[1;31mE (9187) CAMERA: Erreur sendto() pour le chunk 22 de la frame 9[0m
+[1;31mE (9247) CAMERA: Erreur sendto() pour le chunk 0 de la frame 10[0m
+[1;31mE (9257) CAMERA: Erreur sendto() pour le chunk 1 de la frame 10[0m
+[1;31mE (9267) CAMERA: Erreur sendto() pour le chunk 2 de la frame 10[0m
+[1;31mE (9277) CAMERA: Erreur sendto() pour le chunk 3 de la frame 10[0m
+[1;31mE (9287) CAMERA: Erreur sendto() pour le chunk 4 de la frame 10[0m
+[1;31mE (9297) CAMERA: Erreur sendto() pour le chunk 5 de la frame 10[0m
+[1;31mE (9307) CAMERA: Erreur sendto() pour le chunk 6 de la frame 10[0m
+[1;31mE (9317) CAMERA: Erreur sendto() pour le chunk 7 de la frame 10[0m
+[1;31mE (9327) CAMERA: Erreur sendto() pour le chunk 8 de la frame 10[0m
+[1;31mE (9337) CAMERA: Erreur sendto() pour le chunk 9 de la frame 10[0m
+[1;31mE (9347) CAMERA: Erreur sendto() pour le chunk 10 de la frame 10[0m
+[1;31mE (9357) CAMERA: Erreur sendto() pour le chunk 11 de la frame 10[0m
+[1;31mE (9367) CAMERA: Erreur sendto() pour le chunk 12 de la frame 10[0m
+[1;31mE (9377) CAMERA: Erreur sendto() pour le chunk 13 de la frame 10[0m
+[1;31mE (9387) CAMERA: Erreur sendto() pour le chunk 14 de la frame 10[0m
+[1;31mE (9397) CAMERA: Erreur sendto() pour le chunk 15 de la frame 10[0m
+[1;31mE (9407) CAMERA: Erreur sendto() pour le chunk 16 de la frame 10[0m
+[1;31mE (9417) CAMERA: Erreur sendto() pour le chunk 17 de la frame 10[0m
+[1;31mE (9427) CAMERA: Erreur sendto() pour le chunk 18 de la frame 10[0m
+[1;31mE (9437) CAMERA: Erreur sendto() pour le chunk 19 de la frame 10[0m
+[1;31mE (9447) CAMERA: Erreur sendto() pour le chunk 20 de la frame 10[0m
+[1;31mE (9457) CAMERA: Erreur sendto() pour le chunk 21 de la frame 10[0m
+[1;31mE (9467) CAMERA: Erreur sendto() pour le chunk 22 de la frame 10[0m
+[1;31mE (9527) CAMERA: Erreur sendto() pour le chunk 0 de la frame 11[0m
+[1;31mE (9537) CAMERA: Erreur sendto() pour le chunk 1 de la frame 11[0m
+[1;31mE (9547) CAMERA: Erreur sendto() pour le chunk 2 de la frame 11[0m
+[1;31mE (9557) CAMERA: Erreur sendto() pour le chunk 3 de la frame 11[0m
+[1;31mE (9567) CAMERA: Erreur sendto() pour le chunk 4 de la frame 11[0m
+[1;31mE (9577) CAMERA: Erreur sendto() pour le chunk 5 de la frame 11[0m
+[1;31mE (9587) CAMERA: Erreur sendto() pour le chunk 6 de la frame 11[0m
+[0;32mI (9657) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (9687) wifi:<ba-add>idx:0 (ifx:0, 92:a5:3b:33:1f:f2), tid:0, ssn:6, winSize:64[0m
+[0;32mI (9687) NTP: NTP synchronisé[0m
+[1;31mE (10677) CAMERA: Erreur sendto() pour le chunk 4 de la frame 15[0m
+[1;31mE (10687) CAMERA: Erreur sendto() pour le chunk 5 de la frame 15[0m
+[1;31mE (10697) CAMERA: Erreur sendto() pour le chunk 6 de la frame 15[0m
+[1;31mE (10707) CAMERA: Erreur sendto() pour le chunk 7 de la frame 15[0m
+[1;31mE (10717) CAMERA: Erreur sendto() pour le chunk 8 de la frame 15[0m
+[1;31mE (10727) CAMERA: Erreur sendto() pour le chunk 9 de la frame 15[0m
+[1;31mE (10737) CAMERA: Erreur sendto() pour le chunk 10 de la frame 15[0m
+[1;31mE (10747) CAMERA: Erreur sendto() pour le chunk 11 de la frame 15[0m
+[1;31mE (10757) CAMERA: Erreur sendto() pour le chunk 12 de la frame 15[0m
+[1;31mE (10767) CAMERA: Erreur sendto() pour le chunk 13 de la frame 15[0m
+[1;31mE (10777) CAMERA: Erreur sendto() pour le chunk 14 de la frame 15[0m
+[1;31mE (10787) CAMERA: Erreur sendto() pour le chunk 15 de la frame 15[0m
+[1;31mE (10797) CAMERA: Erreur sendto() pour le chunk 16 de la frame 15[0m
+[1;31mE (10807) CAMERA: Erreur sendto() pour le chunk 17 de la frame 15[0m
+[1;31mE (10817) CAMERA: Erreur sendto() pour le chunk 18 de la frame 15[0m
+[1;31mE (10827) CAMERA: Erreur sendto() pour le chunk 19 de la frame 15[0m
+[1;31mE (10837) CAMERA: Erreur sendto() pour le chunk 20 de la frame 15[0m
+[1;31mE (10847) CAMERA: Erreur sendto() pour le chunk 21 de la frame 15[0m
+[1;31mE (10857) CAMERA: Erreur sendto() pour le chunk 22 de la frame 15[0m
+[1;31mE (10917) CAMERA: Erreur sendto() pour le chunk 0 de la frame 16[0m
+[1;31mE (10937) CAMERA: Erreur sendto() pour le chunk 1 de la frame 16[0m
+[1;31mE (10947) CAMERA: Erreur sendto() pour le chunk 2 de la frame 16[0m
+[1;31mE (10957) CAMERA: Erreur sendto() pour le chunk 3 de la frame 16[0m
+[1;31mE (10967) CAMERA: Erreur sendto() pour le chunk 4 de la frame 16[0m
+[1;31mE (10977) CAMERA: Erreur sendto() pour le chunk 5 de la frame 16[0m
+[1;31mE (10987) CAMERA: Erreur sendto() pour le chunk 6 de la frame 16[0m
+[1;31mE (10997) CAMERA: Erreur sendto() pour le chunk 7 de la frame 16[0m
+[1;31mE (11007) CAMERA: Erreur sendto() pour le chunk 8 de la frame 16[0m
+[1;31mE (11017) CAMERA: Erreur sendto() pour le chunk 9 de la frame 16[0m
+[1;31mE (11027) CAMERA: Erreur sendto() pour le chunk 10 de la frame 16[0m
+[1;31mE (11037) CAMERA: Erreur sendto() pour le chunk 11 de la frame 16[0m
+[1;31mE (11047) CAMERA: Erreur sendto() pour le chunk 12 de la frame 16[0m
+[1;31mE (11057) CAMERA: Erreur sendto() pour le chunk 13 de la frame 16[0m
+[1;31mE (11067) CAMERA: Erreur sendto() pour le chunk 14 de la frame 16[0m
+[1;31mE (11077) CAMERA: Erreur sendto() pour le chunk 15 de la frame 16[0m
+[1;31mE (11087) CAMERA: Erreur sendto() pour le chunk 16 de la frame 16[0m
+[1;31mE (11097) CAMERA: Erreur sendto() pour le chunk 17 de la frame 16[0m
+[1;31mE (11107) CAMERA: Erreur sendto() pour le chunk 18 de la frame 16[0m
+[1;31mE (11117) CAMERA: Erreur sendto() pour le chunk 19 de la frame 16[0m
+[1;31mE (11127) CAMERA: Erreur sendto() pour le chunk 20 de la frame 16[0m
+[1;31mE (11137) CAMERA: Erreur sendto() pour le chunk 21 de la frame 16[0m
+[1;31mE (11147) CAMERA: Erreur sendto() pour le chunk 22 de la frame 16[0m
+[1;31mE (11197) CAMERA: Erreur sendto() pour le chunk 0 de la frame 17[0m
+[1;31mE (11217) CAMERA: Erreur sendto() pour le chunk 1 de la frame 17[0m
+[1;31mE (11227) CAMERA: Erreur sendto() pour le chunk 2 de la frame 17[0m
+[1;31mE (11237) CAMERA: Erreur sendto() pour le chunk 3 de la frame 17[0m
+[1;31mE (11247) CAMERA: Erreur sendto() pour le chunk 4 de la frame 17[0m
+[1;31mE (11257) CAMERA: Erreur sendto() pour le chunk 5 de la frame 17[0m
+[1;31mE (11267) CAMERA: Erreur sendto() pour le chunk 6 de la frame 17[0m
+[1;31mE (11277) CAMERA: Erreur sendto() pour le chunk 7 de la frame 17[0m
+[1;31mE (11287) CAMERA: Erreur sendto() pour le chunk 8 de la frame 17[0m
+[1;31mE (11297) CAMERA: Erreur sendto() pour le chunk 9 de la frame 17[0m
+[1;31mE (11307) CAMERA: Erreur sendto() pour le chunk 10 de la frame 17[0m
+[1;31mE (11317) CAMERA: Erreur sendto() pour le chunk 11 de la frame 17[0m
+[1;31mE (11327) CAMERA: Erreur sendto() pour le chunk 12 de la frame 17[0m
+[1;31mE (11337) CAMERA: Erreur sendto() pour le chunk 13 de la frame 17[0m
+[1;31mE (11347) CAMERA: Erreur sendto() pour le chunk 14 de la frame 17[0m
+[1;31mE (11357) CAMERA: Erreur sendto() pour le chunk 15 de la frame 17[0m
+[1;31mE (11367) CAMERA: Erreur sendto() pour le chunk 16 de la frame 17[0m
+[1;31mE (11377) CAMERA: Erreur sendto() pour le chunk 17 de la frame 17[0m
+[1;31mE (11387) CAMERA: Erreur sendto() pour le chunk 18 de la frame 17[0m
+[1;31mE (11397) CAMERA: Erreur sendto() pour le chunk 19 de la frame 17[0m
+[1;31mE (11407) CAMERA: Erreur sendto() pour le chunk 20 de la frame 17[0m
+[1;31mE (11417) CAMERA: Erreur sendto() pour le chunk 21 de la frame 17[0m
+[1;31mE (11427) CAMERA: Erreur sendto() pour le chunk 22 de la frame 17[0m
+[1;31mE (11477) CAMERA: Erreur sendto() pour le chunk 0 de la frame 18[0m
+[1;31mE (11497) CAMERA: Erreur sendto() pour le chunk 1 de la frame 18[0m
+[1;31mE (11507) CAMERA: Erreur sendto() pour le chunk 2 de la frame 18[0m
+[1;31mE (11517) CAMERA: Erreur sendto() pour le chunk 3 de la frame 18[0m
+[1;31mE (11527) CAMERA: Erreur sendto() pour le chunk 4 de la frame 18[0m
+[1;31mE (11537) CAMERA: Erreur sendto() pour le chunk 5 de la frame 18[0m
+[1;31mE (11547) CAMERA: Erreur sendto() pour le chunk 6 de la frame 18[0m
+[1;31mE (11557) CAMERA: Erreur sendto() pour le chunk 7 de la frame 18[0m
+[1;31mE (11567) CAMERA: Erreur sendto() pour le chunk 8 de la frame 18[0m
+[1;31mE (11577) CAMERA: Erreur sendto() pour le chunk 9 de la frame 18[0m
+[1;31mE (11587) CAMERA: Erreur sendto() pour le chunk 10 de la frame 18[0m
+[1;31mE (11597) CAMERA: Erreur sendto() pour le chunk 11 de la frame 18[0m
+[1;31mE (11607) CAMERA: Erreur sendto() pour le chunk 12 de la frame 18[0m
+[1;31mE (11617) CAMERA: Erreur sendto() pour le chunk 13 de la frame 18[0m
+[1;31mE (11627) CAMERA: Erreur sendto() pour le chunk 14 de la frame 18[0m
+[1;31mE (11637) CAMERA: Erreur sendto() pour le chunk 15 de la frame 18[0m
+[1;31mE (11667) CAMERA: Erreur sendto() pour le chunk 18 de la frame 18[0m
+[1;31mE (11677) CAMERA: Erreur sendto() pour le chunk 19 de la frame 18[0m
+[1;31mE (11687) CAMERA: Erreur sendto() pour le chunk 20 de la frame 18[0m
+[1;31mE (11697) CAMERA: Erreur sendto() pour le chunk 21 de la frame 18[0m
+[1;31mE (11707) CAMERA: Erreur sendto() pour le chunk 22 de la frame 18[0m
+[1;31mE (11757) CAMERA: Erreur sendto() pour le chunk 0 de la frame 19[0m
+[1;31mE (11767) CAMERA: Erreur sendto() pour le chunk 1 de la frame 19[0m
+[1;31mE (11777) CAMERA: Erreur sendto() pour le chunk 2 de la frame 19[0m
+[1;31mE (11787) CAMERA: Erreur sendto() pour le chunk 3 de la frame 19[0m
+[1;31mE (11797) CAMERA: Erreur sendto() pour le chunk 4 de la frame 19[0m
+[1;31mE (11807) CAMERA: Erreur sendto() pour le chunk 5 de la frame 19[0m
+[1;31mE (11817) CAMERA: Erreur sendto() pour le chunk 6 de la frame 19[0m
+[1;31mE (11827) CAMERA: Erreur sendto() pour le chunk 7 de la frame 19[0m
+[1;31mE (11837) CAMERA: Erreur sendto() pour le chunk 8 de la frame 19[0m
+[1;31mE (11847) CAMERA: Erreur sendto() pour le chunk 9 de la frame 19[0m
+[1;31mE (11857) CAMERA: Erreur sendto() pour le chunk 10 de la frame 19[0m
+[1;31mE (11867) CAMERA: Erreur sendto() pour le chunk 11 de la frame 19[0m
+[1;31mE (11877) CAMERA: Erreur sendto() pour le chunk 12 de la frame 19[0m
+[1;31mE (11887) CAMERA: Erreur sendto() pour le chunk 13 de la frame 19[0m
+[1;31mE (11897) CAMERA: Erreur sendto() pour le chunk 14 de la frame 19[0m
+[1;31mE (12237) CAMERA: Erreur sendto() pour le chunk 20 de la frame 20[0m
+[1;31mE (12247) CAMERA: Erreur sendto() pour le chunk 21 de la frame 20[0m
+[1;31mE (12257) CAMERA: Erreur sendto() pour le chunk 22 de la frame 20[0m
+[1;31mE (12317) CAMERA: Erreur sendto() pour le chunk 0 de la frame 21[0m
+[1;31mE (12327) CAMERA: Erreur sendto() pour le chunk 1 de la frame 21[0m
+[1;31mE (12337) CAMERA: Erreur sendto() pour le chunk 2 de la frame 21[0m
+[1;31mE (12347) CAMERA: Erreur sendto() pour le chunk 3 de la frame 21[0m
+[1;31mE (12357) CAMERA: Erreur sendto() pour le chunk 4 de la frame 21[0m
+[1;31mE (12367) CAMERA: Erreur sendto() pour le chunk 5 de la frame 21[0m
+[1;31mE (12377) CAMERA: Erreur sendto() pour le chunk 6 de la frame 21[0m
+[1;31mE (12387) CAMERA: Erreur sendto() pour le chunk 7 de la frame 21[0m
+[1;31mE (12397) CAMERA: Erreur sendto() pour le chunk 8 de la frame 21[0m
+[1;31mE (12407) CAMERA: Erreur sendto() pour le chunk 9 de la frame 21[0m
+[1;31mE (12417) CAMERA: Erreur sendto() pour le chunk 10 de la frame 21[0m
+[1;31mE (12427) CAMERA: Erreur sendto() pour le chunk 11 de la frame 21[0m
+[1;31mE (12437) CAMERA: Erreur sendto() pour le chunk 12 de la frame 21[0m
+[1;31mE (12447) CAMERA: Erreur sendto() pour le chunk 13 de la frame 21[0m
+[1;31mE (12457) CAMERA: Erreur sendto() pour le chunk 14 de la frame 21[0m
+[1;31mE (12467) CAMERA: Erreur sendto() pour le chunk 15 de la frame 21[0m
+[1;31mE (12477) CAMERA: Erreur sendto() pour le chunk 16 de la frame 21[0m
+[1;31mE (12487) CAMERA: Erreur sendto() pour le chunk 17 de la frame 21[0m
+[1;31mE (12497) CAMERA: Erreur sendto() pour le chunk 18 de la frame 21[0m
+[1;31mE (12507) CAMERA: Erreur sendto() pour le chunk 19 de la frame 21[0m
+[1;31mE (12607) CAMERA: Erreur sendto() pour le chunk 1 de la frame 22[0m
+[1;31mE (12617) CAMERA: Erreur sendto() pour le chunk 2 de la frame 22[0m
+[1;31mE (12627) CAMERA: Erreur sendto() pour le chunk 3 de la frame 22[0m
+[1;31mE (12637) CAMERA: Erreur sendto() pour le chunk 4 de la frame 22[0m
+[1;31mE (12647) CAMERA: Erreur sendto() pour le chunk 5 de la frame 22[0m
+[1;31mE (12657) CAMERA: Erreur sendto() pour le chunk 6 de la frame 22[0m
+[1;31mE (12667) CAMERA: Erreur sendto() pour le chunk 7 de la frame 22[0m
+[1;31mE (12677) CAMERA: Erreur sendto() pour le chunk 8 de la frame 22[0m
+[1;31mE (12687) CAMERA: Erreur sendto() pour le chunk 9 de la frame 22[0m
+[1;31mE (12697) CAMERA: Erreur sendto() pour le chunk 10 de la frame 22[0m
+[1;31mE (12707) CAMERA: Erreur sendto() pour le chunk 11 de la frame 22[0m
+[1;31mE (12717) CAMERA: Erreur sendto() pour le chunk 12 de la frame 22[0m
+[1;31mE (12727) CAMERA: Erreur sendto() pour le chunk 13 de la frame 22[0m
+[1;31mE (12737) CAMERA: Erreur sendto() pour le chunk 14 de la frame 22[0m
+[1;31mE (12747) CAMERA: Erreur sendto() pour le chunk 15 de la frame 22[0m
+[1;31mE (12757) CAMERA: Erreur sendto() pour le chunk 16 de la frame 22[0m
+[1;31mE (12767) CAMERA: Erreur sendto() pour le chunk 17 de la frame 22[0m
+[1;31mE (12777) CAMERA: Erreur sendto() pour le chunk 18 de la frame 22[0m
+[1;31mE (12787) CAMERA: Erreur sendto() pour le chunk 19 de la frame 22[0m
+[1;31mE (12797) CAMERA: Erreur sendto() pour le chunk 20 de la frame 22[0m
+[1;31mE (12807) CAMERA: Erreur sendto() pour le chunk 21 de la frame 22[0m
+[1;31mE (12817) CAMERA: Erreur sendto() pour le chunk 22 de la frame 22[0m
+[1;31mE (12877) CAMERA: Erreur sendto() pour le chunk 0 de la frame 23[0m
+[1;31mE (12887) CAMERA: Erreur sendto() pour le chunk 1 de la frame 23[0m
+[1;31mE (12897) CAMERA: Erreur sendto() pour le chunk 2 de la frame 23[0m
+[1;31mE (12907) CAMERA: Erreur sendto() pour le chunk 3 de la frame 23[0m
+[1;31mE (12917) CAMERA: Erreur sendto() pour le chunk 4 de la frame 23[0m
+[1;31mE (12927) CAMERA: Erreur sendto() pour le chunk 5 de la frame 23[0m
+[1;31mE (12937) CAMERA: Erreur sendto() pour le chunk 6 de la frame 23[0m
+[1;31mE (12947) CAMERA: Erreur sendto() pour le chunk 7 de la frame 23[0m
+[1;31mE (12957) CAMERA: Erreur sendto() pour le chunk 8 de la frame 23[0m
+[1;31mE (12967) CAMERA: Erreur sendto() pour le chunk 9 de la frame 23[0m
+[1;31mE (12977) CAMERA: Erreur sendto() pour le chunk 10 de la frame 23[0m
+[1;31mE (12987) CAMERA: Erreur sendto() pour le chunk 11 de la frame 23[0m
+[1;31mE (12997) CAMERA: Erreur sendto() pour le chunk 12 de la frame 23[0m
+[1;31mE (13007) CAMERA: Erreur sendto() pour le chunk 13 de la frame 23[0m
+[1;31mE (14377) CAMERA: Erreur sendto() pour le chunk 10 de la frame 28[0m
+[1;31mE (14387) CAMERA: Erreur sendto() pour le chunk 11 de la frame 28[0m
+[1;31mE (14397) CAMERA: Erreur sendto() pour le chunk 12 de la frame 28[0m
+[1;31mE (14407) CAMERA: Erreur sendto() pour le chunk 13 de la frame 28[0m
+[1;31mE (14417) CAMERA: Erreur sendto() pour le chunk 14 de la frame 28[0m
+[1;31mE (14427) CAMERA: Erreur sendto() pour le chunk 15 de la frame 28[0m
+[1;31mE (14437) CAMERA: Erreur sendto() pour le chunk 16 de la frame 28[0m
+[1;31mE (14447) CAMERA: Erreur sendto() pour le chunk 17 de la frame 28[0m
+[1;31mE (14457) CAMERA: Erreur sendto() pour le chunk 18 de la frame 28[0m
+[1;31mE (14467) CAMERA: Erreur sendto() pour le chunk 19 de la frame 28[0m
+[1;31mE (14477) CAMERA: Erreur sendto() pour le chunk 20 de la frame 28[0m
+[1;31mE (14487) CAMERA: Erreur sendto() pour le chunk 21 de la frame 28[0m
+[1;31mE (14497) CAMERA: Erreur sendto() pour le chunk 22 de la frame 28[0m
+[1;31mE (14557) CAMERA: Erreur sendto() pour le chunk 0 de la frame 29[0m
+[1;31mE (14567) CAMERA: Erreur sendto() pour le chunk 1 de la frame 29[0m
+[1;31mE (14877) CAMERA: Erreur sendto() pour le chunk 4 de la frame 30[0m
+[1;31mE (14887) CAMERA: Erreur sendto() pour le chunk 5 de la frame 30[0m
+[1;31mE (14897) CAMERA: Erreur sendto() pour le chunk 6 de la frame 30[0m
+[1;31mE (15437) CAMERA: Erreur sendto() pour le chunk 4 de la frame 33[0m
+[1;31mE (15487) CAMERA: Erreur sendto() pour le chunk 9 de la frame 33[0m
+[1;31mE (15497) CAMERA: Erreur sendto() pour le chunk 10 de la frame 33[0m
+[1;31mE (15507) CAMERA: Erreur sendto() pour le chunk 11 de la frame 33[0m
+[1;31mE (15517) CAMERA: Erreur sendto() pour le chunk 12 de la frame 33[0m
+[1;31mE (15527) CAMERA: Erreur sendto() pour le chunk 13 de la frame 33[0m
+[1;31mE (16077) CAMERA: Erreur sendto() pour le chunk 8 de la frame 36[0m
+[1;31mE (16087) CAMERA: Erreur sendto() pour le chunk 9 de la frame 36[0m
+[1;31mE (16097) CAMERA: Erreur sendto() pour le chunk 10 de la frame 36[0m
+[1;31mE (16107) CAMERA: Erreur sendto() pour le chunk 11 de la frame 36[0m
+[1;31mE (16117) CAMERA: Erreur sendto() pour le chunk 12 de la frame 36[0m
+[1;31mE (16127) CAMERA: Erreur sendto() pour le chunk 13 de la frame 36[0m
+[1;31mE (16137) CAMERA: Erreur sendto() pour le chunk 14 de la frame 36[0m
+[1;31mE (16197) CAMERA: Erreur sendto() pour le chunk 0 de la frame 37[0m
+[1;31mE (16497) CAMERA: Erreur sendto() pour le chunk 10 de la frame 38[0m
+[1;31mE (16507) CAMERA: Erreur sendto() pour le chunk 11 de la frame 38[0m
+[1;31mE (16517) CAMERA: Erreur sendto() pour le chunk 12 de la frame 38[0m
+[1;31mE (16527) CAMERA: Erreur sendto() pour le chunk 13 de la frame 38[0m
+[1;31mE (16537) CAMERA: Erreur sendto() pour le chunk 14 de la frame 38[0m
+[1;31mE (16597) CAMERA: Erreur sendto() pour le chunk 0 de la frame 39[0m
+[1;31mE (16607) CAMERA: Erreur sendto() pour le chunk 1 de la frame 39[0m
+[1;31mE (16617) CAMERA: Erreur sendto() pour le chunk 2 de la frame 39[0m
+[1;31mE (16627) CAMERA: Erreur sendto() pour le chunk 3 de la frame 39[0m
+[1;31mE (16637) CAMERA: Erreur sendto() pour le chunk 4 de la frame 39[0m
+[1;31mE (16647) CAMERA: Erreur sendto() pour le chunk 5 de la frame 39[0m
+[1;31mE (16657) CAMERA: Erreur sendto() pour le chunk 6 de la frame 39[0m
+[1;31mE (16667) CAMERA: Erreur sendto() pour le chunk 7 de la frame 39[0m
+[1;31mE (16677) CAMERA: Erreur sendto() pour le chunk 8 de la frame 39[0m
+[1;31mE (16687) CAMERA: Erreur sendto() pour le chunk 9 de la frame 39[0m
+[1;31mE (16697) CAMERA: Erreur sendto() pour le chunk 10 de la frame 39[0m
+[1;31mE (16707) CAMERA: Erreur sendto() pour le chunk 11 de la frame 39[0m
+[1;31mE (16717) CAMERA: Erreur sendto() pour le chunk 12 de la frame 39[0m
+[1;31mE (16727) CAMERA: Erreur sendto() pour le chunk 13 de la frame 39[0m
+[1;31mE (16737) CAMERA: Erreur sendto() pour le chunk 14 de la frame 39[0m
+[1;31mE (16807) CAMERA: Erreur sendto() pour le chunk 1 de la frame 40[0m
+[1;31mE (16817) CAMERA: Erreur sendto() pour le chunk 2 de la frame 40[0m
+[1;31mE (16827) CAMERA: Erreur sendto() pour le chunk 3 de la frame 40[0m
+[1;31mE (16837) CAMERA: Erreur sendto() pour le chunk 4 de la frame 40[0m
+[1;31mE (16847) CAMERA: Erreur sendto() pour le chunk 5 de la frame 40[0m
+[1;31mE (16857) CAMERA: Erreur sendto() pour le chunk 6 de la frame 40[0m
+[1;31mE (16867) CAMERA: Erreur sendto() pour le chunk 7 de la frame 40[0m
+[1;31mE (16877) CAMERA: Erreur sendto() pour le chunk 8 de la frame 40[0m
+[1;31mE (16887) CAMERA: Erreur sendto() pour le chunk 9 de la frame 40[0m
+[1;31mE (17767) CAMERA: Erreur sendto() pour le chunk 9 de la frame 44[0m
+[1;31mE (17777) CAMERA: Erreur sendto() pour le chunk 10 de la frame 44[0m
+[1;31mE (17787) CAMERA: Erreur sendto() pour le chunk 11 de la frame 44[0m
+[1;31mE (17797) CAMERA: Erreur sendto() pour le chunk 12 de la frame 44[0m
+[1;31mE (17807) CAMERA: Erreur sendto() pour le chunk 13 de la frame 44[0m
+[1;31mE (17817) CAMERA: Erreur sendto() pour le chunk 14 de la frame 44[0m
+[1;31mE (17827) CAMERA: Erreur sendto() pour le chunk 15 de la frame 44[0m
+[1;31mE (17877) CAMERA: Erreur sendto() pour le chunk 0 de la frame 45[0m
+[1;31mE (17887) CAMERA: Erreur sendto() pour le chunk 1 de la frame 45[0m
+[1;31mE (17897) CAMERA: Erreur sendto() pour le chunk 2 de la frame 45[0m
+[1;31mE (17907) CAMERA: Erreur sendto() pour le chunk 3 de la frame 45[0m
+[1;31mE (17917) CAMERA: Erreur sendto() pour le chunk 4 de la frame 45[0m
+[1;31mE (17927) CAMERA: Erreur sendto() pour le chunk 5 de la frame 45[0m
+[1;31mE (17937) CAMERA: Erreur sendto() pour le chunk 6 de la frame 45[0m
+[1;31mE (17947) CAMERA: Erreur sendto() pour le chunk 7 de la frame 45[0m
+[1;31mE (17957) CAMERA: Erreur sendto() pour le chunk 8 de la frame 45[0m
+[1;31mE (17967) CAMERA: Erreur sendto() pour le chunk 9 de la frame 45[0m
+[1;31mE (17977) CAMERA: Erreur sendto() pour le chunk 10 de la frame 45[0m
+[1;31mE (17987) CAMERA: Erreur sendto() pour le chunk 11 de la frame 45[0m
+[1;31mE (18927) CAMERA: Erreur sendto() pour le chunk 5 de la frame 50[0m
+[1;31mE (18937) CAMERA: Erreur sendto() pour le chunk 6 de la frame 50[0m
+[1;31mE (18947) CAMERA: Erreur sendto() pour le chunk 7 de la frame 50[0m
+[1;31mE (18957) CAMERA: Erreur sendto() pour le chunk 8 de la frame 50[0m
+[1;31mE (18967) CAMERA: Erreur sendto() pour le chunk 9 de la frame 50[0m
+[1;31mE (18977) CAMERA: Erreur sendto() pour le chunk 10 de la frame 50[0m
+[1;31mE (18987) CAMERA: Erreur sendto() pour le chunk 11 de la frame 50[0m
+[1;31mE (18997) CAMERA: Erreur sendto() pour le chunk 12 de la frame 50[0m
+[1;31mE (19007) CAMERA: Erreur sendto() pour le chunk 13 de la frame 50[0m
+[1;31mE (19017) CAMERA: Erreur sendto() pour le chunk 14 de la frame 50[0m
+[1;31mE (19027) CAMERA: Erreur sendto() pour le chunk 15 de la frame 50[0m
+[1;31mE (19077) CAMERA: Erreur sendto() pour le chunk 0 de la frame 51[0m
+[1;31mE (19087) CAMERA: Erreur sendto() pour le chunk 1 de la frame 51[0m
+[1;31mE (19097) CAMERA: Erreur sendto() pour le chunk 2 de la frame 51[0m
+[1;31mE (19107) CAMERA: Erreur sendto() pour le chunk 3 de la frame 51[0m
+[1;31mE (19117) CAMERA: Erreur sendto() pour le chunk 4 de la frame 51[0m
+[1;31mE (19127) CAMERA: Erreur sendto() pour le chunk 5 de la frame 51[0m
+[1;31mE (19137) CAMERA: Erreur sendto() pour le chunk 6 de la frame 51[0m
+[1;31mE (19147) CAMERA: Erreur sendto() pour le chunk 7 de la frame 51[0m
+[1;31mE (19157) CAMERA: Erreur sendto() pour le chunk 8 de la frame 51[0m
+[1;31mE (19167) CAMERA: Erreur sendto() pour le chunk 9 de la frame 51[0m
+[1;31mE (19177) CAMERA: Erreur sendto() pour le chunk 10 de la frame 51[0m
+[1;31mE (19187) CAMERA: Erreur sendto() pour le chunk 11 de la frame 51[0m
+[1;31mE (19197) CAMERA: Erreur sendto() pour le chunk 12 de la frame 51[0m
+[1;31mE (19207) CAMERA: Erreur sendto() pour le chunk 13 de la frame 51[0m
+[1;31mE (19217) CAMERA: Erreur sendto() pour le chunk 14 de la frame 51[0m
+[1;31mE (19227) CAMERA: Erreur sendto() pour le chunk 15 de la frame 51[0m
+[1;31mE (19237) CAMERA: Erreur sendto() pour le chunk 16 de la frame 51[0m
+[1;31mE (19317) CAMERA: Erreur sendto() pour le chunk 0 de la frame 52[0m
+[1;31mE (19327) CAMERA: Erreur sendto() pour le chunk 1 de la frame 52[0m
+[1;31mE (19337) CAMERA: Erreur sendto() pour le chunk 2 de la frame 52[0m
+[1;31mE (19347) CAMERA: Erreur sendto() pour le chunk 3 de la frame 52[0m
+[1;31mE (19357) CAMERA: Erreur sendto() pour le chunk 4 de la frame 52[0m
+[1;31mE (19367) CAMERA: Erreur sendto() pour le chunk 5 de la frame 52[0m
+[1;31mE (19377) CAMERA: Erreur sendto() pour le chunk 6 de la frame 52[0m
+[1;31mE (19387) CAMERA: Erreur sendto() pour le chunk 7 de la frame 52[0m
+[1;31mE (19397) CAMERA: Erreur sendto() pour le chunk 8 de la frame 52[0m
+[1;31mE (19407) CAMERA: Erreur sendto() pour le chunk 9 de la frame 52[0m
+[1;31mE (19417) CAMERA: Erreur sendto() pour le chunk 10 de la frame 52[0m
+[1;31mE (19427) CAMERA: Erreur sendto() pour le chunk 11 de la frame 52[0m
+[1;31mE (19437) CAMERA: Erreur sendto() pour le chunk 12 de la frame 52[0m
+[1;31mE (19447) CAMERA: Erreur sendto() pour le chunk 13 de la frame 52[0m
+[1;31mE (19457) CAMERA: Erreur sendto() pour le chunk 14 de la frame 52[0m
+[1;31mE (19467) CAMERA: Erreur sendto() pour le chunk 15 de la frame 52[0m
+[1;31mE (19477) CAMERA: Erreur sendto() pour le chunk 16 de la frame 52[0m
+[1;31mE (19557) CAMERA: Erreur sendto() pour le chunk 0 de la frame 53[0m
+[1;31mE (19897) CAMERA: Erreur sendto() pour le chunk 14 de la frame 54[0m
+[1;31mE (19907) CAMERA: Erreur sendto() pour le chunk 15 de la frame 54[0m
+[1;31mE (19917) CAMERA: Erreur sendto() pour le chunk 16 de la frame 54[0m
+[1;31mE (19927) CAMERA: Erreur sendto() pour le chunk 17 de la frame 54[0m
+[1;31mE (24127) CAMERA: Erreur sendto() pour le chunk 13 de la frame 73[0m
+[1;31mE (24197) CAMERA: Erreur sendto() pour le chunk 0 de la frame 74[0m
+[1;31mE (24207) CAMERA: Erreur sendto() pour le chunk 1 de la frame 74[0m
+[1;31mE (24217) CAMERA: Erreur sendto() pour le chunk 2 de la frame 74[0m
+[1;31mE (24227) CAMERA: Erreur sendto() pour le chunk 3 de la frame 74[0m
+[1;31mE (24237) CAMERA: Erreur sendto() pour le chunk 4 de la frame 74[0m
+[1;31mE (24247) CAMERA: Erreur sendto() pour le chunk 5 de la frame 74[0m
+[1;31mE (24257) CAMERA: Erreur sendto() pour le chunk 6 de la frame 74[0m
+[1;31mE (24267) CAMERA: Erreur sendto() pour le chunk 7 de la frame 74[0m
+[1;31mE (24277) CAMERA: Erreur sendto() pour le chunk 8 de la frame 74[0m
+[1;31mE (24287) CAMERA: Erreur sendto() pour le chunk 9 de la frame 74[0m
+[1;31mE (24297) CAMERA: Erreur sendto() pour le chunk 10 de la frame 74[0m
+[1;31mE (24307) CAMERA: Erreur sendto() pour le chunk 11 de la frame 74[0m
+[1;31mE (24317) CAMERA: Erreur sendto() pour le chunk 12 de la frame 74[0m
+[1;31mE (24327) CAMERA: Erreur sendto() pour le chunk 13 de la frame 74[0m
+[1;31mE (24337) CAMERA: Erreur sendto() pour le chunk 14 de la frame 74[0m
+[1;31mE (24347) CAMERA: Erreur sendto() pour le chunk 15 de la frame 74[0m
+[1;31mE (24357) CAMERA: Erreur sendto() pour le chunk 16 de la frame 74[0m
+[1;31mE (24437) CAMERA: Erreur sendto() pour le chunk 0 de la frame 75[0m
+[1;31mE (24447) CAMERA: Erreur sendto() pour le chunk 1 de la frame 75[0m
+[1;31mE (24467) CAMERA: Erreur sendto() pour le chunk 3 de la frame 75[0m
+[1;31mE (24477) CAMERA: Erreur sendto() pour le chunk 4 de la frame 75[0m
+[1;31mE (24487) CAMERA: Erreur sendto() pour le chunk 5 de la frame 75[0m
+[1;31mE (24497) CAMERA: Erreur sendto() pour le chunk 6 de la frame 75[0m
+[1;31mE (24507) CAMERA: Erreur sendto() pour le chunk 7 de la frame 75[0m
+[1;31mE (24517) CAMERA: Erreur sendto() pour le chunk 8 de la frame 75[0m
+[1;31mE (24527) CAMERA: Erreur sendto() pour le chunk 9 de la frame 75[0m
+[1;31mE (24537) CAMERA: Erreur sendto() pour le chunk 10 de la frame 75[0m
+[1;31mE (24547) CAMERA: Erreur sendto() pour le chunk 11 de la frame 75[0m
+[1;31mE (24557) CAMERA: Erreur sendto() pour le chunk 12 de la frame 75[0m
+[1;31mE (24567) CAMERA: Erreur sendto() pour le chunk 13 de la frame 75[0m
+[1;31mE (24577) CAMERA: Erreur sendto() pour le chunk 14 de la frame 75[0m
+[1;31mE (24587) CAMERA: Erreur sendto() pour le chunk 15 de la frame 75[0m
+[1;31mE (24597) CAMERA: Erreur sendto() pour le chunk 16 de la frame 75[0m
+[1;31mE (24607) CAMERA: Erreur sendto() pour le chunk 17 de la frame 75[0m
+[1;31mE (24677) CAMERA: Erreur sendto() pour le chunk 0 de la frame 76[0m
+[1;31mE (24687) CAMERA: Erreur sendto() pour le chunk 1 de la frame 76[0m
+[1;31mE (24697) CAMERA: Erreur sendto() pour le chunk 2 de la frame 76[0m
+[1;31mE (24707) CAMERA: Erreur sendto() pour le chunk 3 de la frame 76[0m
+[1;31mE (24717) CAMERA: Erreur sendto() pour le chunk 4 de la frame 76[0m
+[1;31mE (24727) CAMERA: Erreur sendto() pour le chunk 5 de la frame 76[0m
+[1;31mE (24737) CAMERA: Erreur sendto() pour le chunk 6 de la frame 76[0m
+[1;31mE (24747) CAMERA: Erreur sendto() pour le chunk 7 de la frame 76[0m
+[1;31mE (24757) CAMERA: Erreur sendto() pour le chunk 8 de la frame 76[0m
+[1;31mE (24777) CAMERA: Erreur sendto() pour le chunk 10 de la frame 76[0m
+[1;31mE (24787) CAMERA: Erreur sendto() pour le chunk 11 de la frame 76[0m
+[1;31mE (24797) CAMERA: Erreur sendto() pour le chunk 12 de la frame 76[0m
+[1;31mE (24807) CAMERA: Erreur sendto() pour le chunk 13 de la frame 76[0m
+[1;31mE (24817) CAMERA: Erreur sendto() pour le chunk 14 de la frame 76[0m
+[1;31mE (24827) CAMERA: Erreur sendto() pour le chunk 15 de la frame 76[0m
+[1;31mE (24837) CAMERA: Erreur sendto() pour le chunk 16 de la frame 76[0m
+[1;31mE (24847) CAMERA: Erreur sendto() pour le chunk 17 de la frame 76[0m
+[1;31mE (24857) CAMERA: Erreur sendto() pour le chunk 18 de la frame 76[0m
+[1;31mE (24917) CAMERA: Erreur sendto() pour le chunk 0 de la frame 77[0m
+[1;31mE (24927) CAMERA: Erreur sendto() pour le chunk 1 de la frame 77[0m
+[1;31mE (24937) CAMERA: Erreur sendto() pour le chunk 2 de la frame 77[0m
+[1;31mE (24947) CAMERA: Erreur sendto() pour le chunk 3 de la frame 77[0m
+[1;31mE (24957) CAMERA: Erreur sendto() pour le chunk 4 de la frame 77[0m
+[1;31mE (24967) CAMERA: Erreur sendto() pour le chunk 5 de la frame 77[0m
+[1;31mE (24977) CAMERA: Erreur sendto() pour le chunk 6 de la frame 77[0m
+[1;31mE (24987) CAMERA: Erreur sendto() pour le chunk 7 de la frame 77[0m
+[1;31mE (24997) CAMERA: Erreur sendto() pour le chunk 8 de la frame 77[0m
+[1;31mE (25007) CAMERA: Erreur sendto() pour le chunk 9 de la frame 77[0m
+[1;31mE (25017) CAMERA: Erreur sendto() pour le chunk 10 de la frame 77[0m
+[1;31mE (25027) CAMERA: Erreur sendto() pour le chunk 11 de la frame 77[0m
+[1;31mE (25037) CAMERA: Erreur sendto() pour le chunk 12 de la frame 77[0m
+[1;31mE (25047) CAMERA: Erreur sendto() pour le chunk 13 de la frame 77[0m
+[1;31mE (25057) CAMERA: Erreur sendto() pour le chunk 14 de la frame 77[0m
+[1;31mE (25067) CAMERA: Erreur sendto() pour le chunk 15 de la frame 77[0m
+[1;31mE (26937) CAMERA: Erreur sendto() pour le chunk 14 de la frame 85[0m
+[1;31mE (26947) CAMERA: Erreur sendto() pour le chunk 15 de la frame 85[0m
+[1;31mE (26957) CAMERA: Erreur sendto() pour le chunk 16 de la frame 85[0m
+[1;31mE (26967) CAMERA: Erreur sendto() pour le chunk 17 de la frame 85[0m
+[1;31mE (27087) CAMERA: Erreur sendto() pour le chunk 5 de la frame 86[0m
+[1;31mE (27097) CAMERA: Erreur sendto() pour le chunk 6 de la frame 86[0m
+[1;31mE (27107) CAMERA: Erreur sendto() pour le chunk 7 de la frame 86[0m
+[1;31mE (27117) CAMERA: Erreur sendto() pour le chunk 8 de la frame 86[0m
+[1;31mE (27127) CAMERA: Erreur sendto() pour le chunk 9 de la frame 86[0m
+[1;31mE (27137) CAMERA: Erreur sendto() pour le chunk 10 de la frame 86[0m
+[1;31mE (27147) CAMERA: Erreur sendto() pour le chunk 11 de la frame 86[0m
+[1;31mE (27157) CAMERA: Erreur sendto() pour le chunk 12 de la frame 86[0m
+[1;31mE (27167) CAMERA: Erreur sendto() pour le chunk 13 de la frame 86[0m
+[1;31mE (27177) CAMERA: Erreur sendto() pour le chunk 14 de la frame 86[0m
+[1;31mE (27187) CAMERA: Erreur sendto() pour le chunk 15 de la frame 86[0m
+[1;31mE (27197) CAMERA: Erreur sendto() pour le chunk 16 de la frame 86[0m
+[1;31mE (27207) CAMERA: Erreur sendto() pour le chunk 17 de la frame 86[0m
+[1;31mE (27277) CAMERA: Erreur sendto() pour le chunk 0 de la frame 87[0m
+[1;31mE (27287) CAMERA: Erreur sendto() pour le chunk 1 de la frame 87[0m
+[1;31mE (27297) CAMERA: Erreur sendto() pour le chunk 2 de la frame 87[0m
+[1;31mE (27307) CAMERA: Erreur sendto() pour le chunk 3 de la frame 87[0m
+[1;31mE (27317) CAMERA: Erreur sendto() pour le chunk 4 de la frame 87[0m
+[1;31mE (27327) CAMERA: Erreur sendto() pour le chunk 5 de la frame 87[0m
+[1;31mE (27337) CAMERA: Erreur sendto() pour le chunk 6 de la frame 87[0m
+[1;31mE (27347) CAMERA: Erreur sendto() pour le chunk 7 de la frame 87[0m
+[1;31mE (27367) CAMERA: Erreur sendto() pour le chunk 9 de la frame 87[0m
+[1;31mE (27377) CAMERA: Erreur sendto() pour le chunk 10 de la frame 87[0m
+[1;31mE (27387) CAMERA: Erreur sendto() pour le chunk 11 de la frame 87[0m
+[1;31mE (27397) CAMERA: Erreur sendto() pour le chunk 12 de la frame 87[0m
+[1;31mE (27407) CAMERA: Erreur sendto() pour le chunk 13 de la frame 87[0m
+[1;31mE (33677) CAMERA: Erreur sendto() pour le chunk 16 de la frame 111[0m
+[1;31mE (33687) CAMERA: Erreur sendto() pour le chunk 17 de la frame 111[0m
+[1;31mE (33757) CAMERA: Erreur sendto() pour le chunk 0 de la frame 112[0m
+[1;31mE (33767) CAMERA: Erreur sendto() pour le chunk 1 de la frame 112[0m
+[1;31mE (35667) CAMERA: Erreur sendto() pour le chunk 4 de la frame 121[0m
+[1;31mE (36237) CAMERA: Erreur sendto() pour le chunk 9 de la frame 124[0m
+[1;31mE (36247) CAMERA: Erreur sendto() pour le chunk 10 de la frame 124[0m
+[1;31mE (36257) CAMERA: Erreur sendto() pour le chunk 11 de la frame 124[0m
+[1;31mE (36267) CAMERA: Erreur sendto() pour le chunk 12 de la frame 124[0m
+[1;31mE (37967) CAMERA: Erreur sendto() pour le chunk 14 de la frame 132[0m
+[1;31mE (38027) CAMERA: Erreur sendto() pour le chunk 0 de la frame 133[0m
+[1;31mE (38037) CAMERA: Erreur sendto() pour le chunk 1 de la frame 133[0m
+[1;31mE (38047) CAMERA: Erreur sendto() pour le chunk 2 de la frame 133[0m
+[1;31mE (38057) CAMERA: Erreur sendto() pour le chunk 3 de la frame 133[0m
+[1;31mE (38067) CAMERA: Erreur sendto() pour le chunk 4 de la frame 133[0m
+[1;31mE (41627) CAMERA: Erreur sendto() pour le chunk 0 de la frame 151[0m
+[1;31mE (41637) CAMERA: Erreur sendto() pour le chunk 1 de la frame 151[0m
+[1;31mE (41647) CAMERA: Erreur sendto() pour le chunk 2 de la frame 151[0m
+[1;31mE (41657) CAMERA: Erreur sendto() pour le chunk 3 de la frame 151[0m
+[1;31mE (41667) CAMERA: Erreur sendto() pour le chunk 4 de la frame 151[0m
+[1;31mE (41677) CAMERA: Erreur sendto() pour le chunk 5 de la frame 151[0m
+[1;31mE (41687) CAMERA: Erreur sendto() pour le chunk 6 de la frame 151[0m
+[1;31mE (41697) CAMERA: Erreur sendto() pour le chunk 7 de la frame 151[0m
+[1;31mE (41707) CAMERA: Erreur sendto() pour le chunk 8 de la frame 151[0m
+[1;31mE (41717) CAMERA: Erreur sendto() pour le chunk 9 de la frame 151[0m
+[1;31mE (41727) CAMERA: Erreur sendto() pour le chunk 10 de la frame 151[0m
+[1;31mE (41737) CAMERA: Erreur sendto() pour le chunk 11 de la frame 151[0m
+[1;31mE (41747) CAMERA: Erreur sendto() pour le chunk 12 de la frame 151[0m
+[1;31mE (41757) CAMERA: Erreur sendto() pour le chunk 13 de la frame 151[0m
+[1;31mE (41837) CAMERA: Erreur sendto() pour le chunk 1 de la frame 152[0m
+[1;31mE (41847) CAMERA: Erreur sendto() pour le chunk 2 de la frame 152[0m
+[1;31mE (41857) CAMERA: Erreur sendto() pour le chunk 3 de la frame 152[0m
+[1;31mE (41867) CAMERA: Erreur sendto() pour le chunk 4 de la frame 152[0m
+[1;31mE (41877) CAMERA: Erreur sendto() pour le chunk 5 de la frame 152[0m
+[1;31mE (41887) CAMERA: Erreur sendto() pour le chunk 6 de la frame 152[0m
+[1;31mE (41897) CAMERA: Erreur sendto() pour le chunk 7 de la frame 152[0m
+[1;31mE (41907) CAMERA: Erreur sendto() pour le chunk 8 de la frame 152[0m
+[1;31mE (41917) CAMERA: Erreur sendto() pour le chunk 9 de la frame 152[0m
+[1;31mE (41927) CAMERA: Erreur sendto() pour le chunk 10 de la frame 152[0m
+[1;31mE (41937) CAMERA: Erreur sendto() pour le chunk 11 de la frame 152[0m
+[1;31mE (41947) CAMERA: Erreur sendto() pour le chunk 12 de la frame 152[0m
+[1;31mE (41957) CAMERA: Erreur sendto() pour le chunk 13 de la frame 152[0m
+[1;31mE (41967) CAMERA: Erreur sendto() pour le chunk 14 de la frame 152[0m
+[1;31mE (42097) CAMERA: Erreur sendto() pour le chunk 7 de la frame 153[0m
+[1;31mE (42107) CAMERA: Erreur sendto() pour le chunk 8 de la frame 153[0m
+[1;31mE (42117) CAMERA: Erreur sendto() pour le chunk 9 de la frame 153[0m
+[1;31mE (42127) CAMERA: Erreur sendto() pour le chunk 10 de la frame 153[0m
+[1;31mE (42137) CAMERA: Erreur sendto() pour le chunk 11 de la frame 153[0m
+[1;31mE (42147) CAMERA: Erreur sendto() pour le chunk 12 de la frame 153[0m
+[1;31mE (42157) CAMERA: Erreur sendto() pour le chunk 13 de la frame 153[0m
+[1;31mE (42167) CAMERA: Erreur sendto() pour le chunk 14 de la frame 153[0m
+[1;31mE (42227) CAMERA: Erreur sendto() pour le chunk 0 de la frame 154[0m
+[1;31mE (42237) CAMERA: Erreur sendto() pour le chunk 1 de la frame 154[0m
+[1;31mE (42247) CAMERA: Erreur sendto() pour le chunk 2 de la frame 154[0m
+[1;31mE (42257) CAMERA: Erreur sendto() pour le chunk 3 de la frame 154[0m
+[1;31mE (42267) CAMERA: Erreur sendto() pour le chunk 4 de la frame 154[0m
+[1;31mE (42277) CAMERA: Erreur sendto() pour le chunk 5 de la frame 154[0m
+[1;31mE (42287) CAMERA: Erreur sendto() pour le chunk 6 de la frame 154[0m
+[1;31mE (42297) CAMERA: Erreur sendto() pour le chunk 7 de la frame 154[0m
+[1;31mE (42307) CAMERA: Erreur sendto() pour le chunk 8 de la frame 154[0m
+[1;31mE (42317) CAMERA: Erreur sendto() pour le chunk 9 de la frame 154[0m
+[1;31mE (42327) CAMERA: Erreur sendto() pour le chunk 10 de la frame 154[0m
+[1;31mE (42337) CAMERA: Erreur sendto() pour le chunk 11 de la frame 154[0m
+[1;31mE (42347) CAMERA: Erreur sendto() pour le chunk 12 de la frame 154[0m
+[1;31mE (42357) CAMERA: Erreur sendto() pour le chunk 13 de la frame 154[0m
+[1;31mE (42427) CAMERA: Erreur sendto() pour le chunk 0 de la frame 155[0m
+[1;31mE (42437) CAMERA: Erreur sendto() pour le chunk 1 de la frame 155[0m
+[1;31mE (42447) CAMERA: Erreur sendto() pour le chunk 2 de la frame 155[0m
+[1;31mE (42457) CAMERA: Erreur sendto() pour le chunk 3 de la frame 155[0m
+[1;31mE (42467) CAMERA: Erreur sendto() pour le chunk 4 de la frame 155[0m
+[1;31mE (42477) CAMERA: Erreur sendto() pour le chunk 5 de la frame 155[0m
+[1;31mE (42487) CAMERA: Erreur sendto() pour le chunk 6 de la frame 155[0m
+[1;31mE (42497) CAMERA: Erreur sendto() pour le chunk 7 de la frame 155[0m
+[1;31mE (42507) CAMERA: Erreur sendto() pour le chunk 8 de la frame 155[0m
+[1;31mE (42517) CAMERA: Erreur sendto() pour le chunk 9 de la frame 155[0m
+[1;31mE (42527) CAMERA: Erreur sendto() pour le chunk 10 de la frame 155[0m
+[1;31mE (42537) CAMERA: Erreur sendto() pour le chunk 11 de la frame 155[0m
+[1;31mE (42587) CAMERA: Erreur sendto() pour le chunk 0 de la frame 156[0m
+[1;31mE (42597) CAMERA: Erreur sendto() pour le chunk 1 de la frame 156[0m
+[1;31mE (42607) CAMERA: Erreur sendto() pour le chunk 2 de la frame 156[0m
+[1;31mE (42617) CAMERA: Erreur sendto() pour le chunk 3 de la frame 156[0m
+[1;31mE (42627) CAMERA: Erreur sendto() pour le chunk 4 de la frame 156[0m
+[1;31mE (42637) CAMERA: Erreur sendto() pour le chunk 5 de la frame 156[0m
+[1;31mE (42647) CAMERA: Erreur sendto() pour le chunk 6 de la frame 156[0m
+[1;31mE (42657) CAMERA: Erreur sendto() pour le chunk 7 de la frame 156[0m
+[1;31mE (42667) CAMERA: Erreur sendto() pour le chunk 8 de la frame 156[0m
+[1;31mE (42677) CAMERA: Erreur sendto() pour le chunk 9 de la frame 156[0m
+[1;31mE (42757) CAMERA: Erreur sendto() pour le chunk 1 de la frame 157[0m
+[1;31mE (42767) CAMERA: Erreur sendto() pour le chunk 2 de la frame 157[0m
+[1;31mE (42777) CAMERA: Erreur sendto() pour le chunk 3 de la frame 157[0m
+[1;31mE (42787) CAMERA: Erreur sendto() pour le chunk 4 de la frame 157[0m
+[1;31mE (42797) CAMERA: Erreur sendto() pour le chunk 5 de la frame 157[0m
+[1;31mE (42807) CAMERA: Erreur sendto() pour le chunk 6 de la frame 157[0m
+[1;31mE (42817) CAMERA: Erreur sendto() pour le chunk 7 de la frame 157[0m
+[1;31mE (43707) CAMERA: Erreur sendto() pour le chunk 8 de la frame 161[0m
+[1;31mE (43717) CAMERA: Erreur sendto() pour le chunk 9 de la frame 161[0m
+[1;31mE (43727) CAMERA: Erreur sendto() pour le chunk 10 de la frame 161[0m
+[1;31mE (43737) CAMERA: Erreur sendto() pour le chunk 11 de la frame 161[0m
+[1;31mE (43747) CAMERA: Erreur sendto() pour le chunk 12 de la frame 161[0m
+[1;31mE (43757) CAMERA: Erreur sendto() pour le chunk 13 de la frame 161[0m
+[1;31mE (43767) CAMERA: Erreur sendto() pour le chunk 14 de la frame 161[0m
+[1;31mE (43777) CAMERA: Erreur sendto() pour le chunk 15 de la frame 161[0m
+[1;31mE (43787) CAMERA: Erreur sendto() pour le chunk 16 de la frame 161[0m
+[1;31mE (43797) CAMERA: Erreur sendto() pour le chunk 17 de la frame 161[0m
+[1;31mE (44207) CAMERA: Erreur sendto() pour le chunk 10 de la frame 163[0m
+[1;31mE (44217) CAMERA: Erreur sendto() pour le chunk 11 de la frame 163[0m
+[1;31mE (44237) CAMERA: Erreur sendto() pour le chunk 13 de la frame 163[0m
+[1;31mE (44247) CAMERA: Erreur sendto() pour le chunk 14 de la frame 163[0m
+[1;31mE (44257) CAMERA: Erreur sendto() pour le chunk 15 de la frame 163[0m
+[1;31mE (44267) CAMERA: Erreur sendto() pour le chunk 16 de la frame 163[0m
+[1;31mE (44277) CAMERA: Erreur sendto() pour le chunk 17 de la frame 163[0m
+[1;31mE (44287) CAMERA: Erreur sendto() pour le chunk 18 de la frame 163[0m
+[1;31mE (53697) CAMERA: Erreur sendto() pour le chunk 11 de la frame 202[0m
+[1;31mE (53787) CAMERA: Erreur sendto() pour le chunk 0 de la frame 203[0m
+[1;31mE (53797) CAMERA: Erreur sendto() pour le chunk 1 de la frame 203[0m
+[1;31mE (53807) CAMERA: Erreur sendto() pour le chunk 2 de la frame 203[0m
+[1;31mE (53817) CAMERA: Erreur sendto() pour le chunk 3 de la frame 203[0m
+[1;31mE (53827) CAMERA: Erreur sendto() pour le chunk 4 de la frame 203[0m
+[1;31mE (53837) CAMERA: Erreur sendto() pour le chunk 5 de la frame 203[0m
+[1;31mE (53847) CAMERA: Erreur sendto() pour le chunk 6 de la frame 203[0m
+[1;31mE (53857) CAMERA: Erreur sendto() pour le chunk 7 de la frame 203[0m
+[1;31mE (53867) CAMERA: Erreur sendto() pour le chunk 8 de la frame 203[0m
+[1;31mE (53877) CAMERA: Erreur sendto() pour le chunk 9 de la frame 203[0m
+[1;31mE (53887) CAMERA: Erreur sendto() pour le chunk 10 de la frame 203[0m
+[1;31mE (53897) CAMERA: Erreur sendto() pour le chunk 11 de la frame 203[0m
+[1;31mE (53987) CAMERA: Erreur sendto() pour le chunk 0 de la frame 204[0m
+[1;31mE (53997) CAMERA: Erreur sendto() pour le chunk 1 de la frame 204[0m
+[1;31mE (54167) CAMERA: Erreur sendto() pour le chunk 2 de la frame 205[0m
+[1;31mE (54177) CAMERA: Erreur sendto() pour le chunk 3 de la frame 205[0m
+[1;31mE (54187) CAMERA: Erreur sendto() pour le chunk 4 de la frame 205[0m

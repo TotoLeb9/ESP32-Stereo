@@ -1,0 +1,1248 @@
+Command: /home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/totoleb/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/totoleb/Documents/esp32/esp32_cam/build/esp32_cam.elf /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/bootloader.elf -m '/home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/totoleb/esp/esp-idf/tools/idf.py'
+[0;32mI (114) esp_image: segment 1: paddr=00034e1c vaddr=3fc9c900 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200cb6e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1588
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f2c
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Aug 14 2025 20:25:49[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24df4h (151028) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=00034e1c vaddr=3fc9c900 size=076a4h ( 30372) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0003c4c8 vaddr=40374000 size=03b50h ( 15184) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a8c70h (691312) map[0m
+[0;32mI (248) esp_image: segment 4: paddr=000e8c98 vaddr=40377b50 size=14d2ch ( 85292) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=000fd9cc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (278) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (288) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (288) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (288) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (290) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (295) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (299) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (303) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (308) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (313) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (317) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (323) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (327) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (331) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (335) esp_psram: Speed: 80MHz[0m
+[0;32mI (338) cpu_start: Multicore app[0m
+[0;32mI (773) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (782) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (782) cpu_start: Pro cpu start user code[0m
+[0;32mI (783) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (784) app_init: Application information:[0m
+[0;32mI (788) app_init: Project name:     esp32_cam[0m
+[0;32mI (792) app_init: App version:      1[0m
+[0;32mI (795) app_init: Compile time:     Aug 14 2025 20:25:40[0m
+[0;32mI (800) app_init: ELF file SHA256:  0e7de1c4c...[0m
+[0;32mI (805) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (810) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (814) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (818) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (822) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FCA8D40 len 000409D0 (258 KiB): RAM[0m
+[0;32mI (833) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (849) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (856) spi_flash: detected chip: gd[0m
+[0;32mI (859) spi_flash: flash io: dio[0m
+[0;33mW (862) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (874) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (880) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (887) main_task: Started on CPU0[0m
+[0;32mI (897) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (897) main_task: Calling app_main()[0m
+[0;32mI (897) ESP32_CAM: 🚀 Starting ESP32 CAM application...[0m
+[0;32mI (937) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (937) cam_hal: cam init ok[0m
+[0;32mI (937) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (937) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (947) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (947) camera: Detected OV2640 camera[0m
+[0;32mI (947) camera: Detected camera at address=0x30[0m
+[0;32mI (1017) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1017) cam_hal: buffer_size: 30720, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 30, total_cnt: 31[0m
+[0;32mI (1017) cam_hal: Allocating 31760 Byte frame buffer in PSRAM[0m
+[0;32mI (1027) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0E0EE0[0m
+[0;32mI (1037) cam_hal: Allocating 31760 Byte frame buffer in PSRAM[0m
+[0;32mI (1037) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C0E8B10[0m
+[0;32mI (1047) cam_hal: Allocating 31760 Byte frame buffer in PSRAM[0m
+[0;32mI (1047) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C0F0740[0m
+[0;32mI (1057) cam_hal: cam config ok[0m
+[0;32mI (1057) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1127) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker micam_hal: EV-EOF-OVF
+ssing (PSRAM)
+[0;32mI (1177) CAMERA: Caméra initialisée avec succès.[0m
+[0;32mI (1177) ESP32_CAM: 📷 Camera initialized successfully[0m
+[0;32mI (1177) pp: pp rom version: e7ae62f[0m
+[0;32mI (1177) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1187) wifi:wifi driver task: 3fcee8d8, prio:23, stack:6656, core=0[0m
+[0;32mI (1197) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (1207) wifi:wifi certification version: v7.0[0m
+[0;32mI (1207) wifi:config NVS flash: enabled[0m
+[0;32mI (1207) wifi:config nano formatting: disabled[0m
+[0;32mI (1207) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1217) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1217) wifi:Init management short buffer num: 32[0m
+[0;32mI (1217) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1227) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1227) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1237) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1237) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1237) wifi_init: rx ba win: 6[0m
+[0;32mI (1247) wifi_init: accept mbox: 6[0m
+[0;32mI (1247) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1247) wifi_init: udp mbox: 6[0m
+[0;32mI (1257) wifi_init: tcp mbox: 6[0m
+[0;32mI (1257) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1257) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1267) wifi_init: tcp mss: 1440[0m
+[0;32mI (1267) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1267) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1277) WifiManager: Starting WiFi station...[0m
+[0;32mI (1277) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1317) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1327) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (1337) wifi:enable tsf[0m
+[0;32mI (1337) ESP_NOW_COMMS: 🚀 Initializing ESP-NOW...[0m
+[0;32mI (1337) WifiManager: Wi-Fi station started[0m
+[0;32mI (1337) ESP_NOW_COMMS: 📍 My MAC: cc:ba:97:0e:81:e4[0m
+[0;32mI (1337) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1347) ESP_NOW_COMMS: ✅ Broadcast peer configured.[0m
+[0;32mI (1347) ESP_NOW_COMMS: 🎯 ESP-NOW initialized with broadcast configured[0m
+[0;32mI (1357) ESP32_CAM: 🤝 Starting ESP-NOW peer discovery...[0m
+[0;32mI (1357) ESP_NOW_COMMS: 🔍 Starting peer discovery...[0m
+[0;32mI (1367) ESP_NOW_COMMS: 🔄 Peer MAC loaded from NVS: cc:ba:97:16:28:a0[0m
+[0;32mI (1377) ESP_NOW_COMMS: ➕ Peer loaded from NVS and added for communication: cc:ba:97:16:28:a0[0m
+[0;32mI (1377) ESP_NOW_COMMS: 🎉 Peer found in NVS. Discovery complete.[0m
+[0;32mI (1387) ESP32_CAM: 🎯 Device role determined: MASTER 👑[0m
+[0;32mI (1397) ESP32_CAM: 🔑 WiFi credentials found in NVS. Connecting to 'thomas'[0m
+[0;32mI (1397) ESP32_CAM: 🔍 Monitoring WiFi status (initial: Disconnected)[0m
+[0;33mW (1407) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (1417) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1417) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1427) wifi:flush txq[0m
+[0;32mI (1427) wifi:stop sw txq[0m
+[0;32mI (1427) wifi:lmac stop hw txq[0m
+[0;32mI (1427) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1627) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (1627) wifi:enable tsf[0m
+[0;32mI (1627) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (1627) WifiManager: Wi-Fi station started[0m
+[0;32mI (1627) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (1637) ESP32_CAM: ✅ Reconnected to: [0m
+[1;31mE (1637) wifi:sta is connecting, cannot set config[0m
+[1;31mE (1637) WifiManager: Failed to set config: ESP_ERR_WIFI_STATE[0m
+[0;33mW (1647) ESP32_CAM: ⚠️ Initial connection failed - WiFi monitor task will keep retrying.[0m
+[0;32mI (1657) ESP32_CAM: 🎉 Setup complete - system is running.[0m
+[0;32mI (1657) main_task: Returned from app_main()[0m
+[0;33mW (4037) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (6397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (6397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (6397) wifi:flush txq[0m
+[0;32mI (6397) wifi:stop sw txq[0m
+[0;32mI (6407) wifi:lmac stop hw txq[0m
+[0;32mI (6607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (6607) wifi:enable tsf[0m
+[0;32mI (6607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (6607) WifiManager: Wi-Fi station started[0m
+[0;32mI (6607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (6617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (9017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (11397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (11397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (11397) wifi:flush txq[0m
+[0;32mI (11407) wifi:stop sw txq[0m
+[0;32mI (11407) wifi:lmac stop hw txq[0m
+[0;32mI (11607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (11607) wifi:enable tsf[0m
+[0;32mI (11607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (11607) WifiManager: Wi-Fi station started[0m
+[0;32mI (11607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (11617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (14017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (16397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (16397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (16397) wifi:flush txq[0m
+[0;32mI (16407) wifi:stop sw txq[0m
+[0;32mI (16407) wifi:lmac stop hw txq[0m
+[0;32mI (16607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (16607) wifi:enable tsf[0m
+[0;32mI (16607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (16607) WifiManager: Wi-Fi station started[0m
+[0;32mI (16607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (16617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (19017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (21397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (21397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (21397) wifi:flush txq[0m
+[0;32mI (21407) wifi:stop sw txq[0m
+[0;32mI (21407) wifi:lmac stop hw txq[0m
+[0;32mI (21607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (21607) wifi:enable tsf[0m
+[0;32mI (21607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (21607) WifiManager: Wi-Fi station started[0m
+[0;32mI (21607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (21617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (24017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (26397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (26397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (26397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (26397) wifi:flush txq[0m
+[0;32mI (26407) wifi:stop sw txq[0m
+[0;32mI (26407) wifi:lmac stop hw txq[0m
+[0;32mI (26607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (26607) wifi:enable tsf[0m
+[0;32mI (26607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (26607) WifiManager: Wi-Fi station started[0m
+[0;32mI (26607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (26617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (29017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (31397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (31397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (31397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (31397) wifi:flush txq[0m
+[0;32mI (31407) wifi:stop sw txq[0m
+[0;32mI (31407) wifi:lmac stop hw txq[0m
+[0;32mI (31607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (31607) wifi:enable tsf[0m
+[0;32mI (31607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (31607) WifiManager: Wi-Fi station started[0m
+[0;32mI (31607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (31617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (34017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (36397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (36397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (36397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (36397) wifi:flush txq[0m
+[0;32mI (36407) wifi:stop sw txq[0m
+[0;32mI (36407) wifi:lmac stop hw txq[0m
+[0;32mI (36607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (36607) wifi:enable tsf[0m
+[0;32mI (36607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (36607) WifiManager: Wi-Fi station started[0m
+[0;32mI (36607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (36617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (39017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (41397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (41397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (41397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (41397) wifi:flush txq[0m
+[0;32mI (41407) wifi:stop sw txq[0m
+[0;32mI (41407) wifi:lmac stop hw txq[0m
+[0;32mI (41607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (41607) wifi:enable tsf[0m
+[0;32mI (41607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (41607) WifiManager: Wi-Fi station started[0m
+[0;32mI (41607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (41617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (44017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (46397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (46397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (46397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (46397) wifi:flush txq[0m
+[0;32mI (46407) wifi:stop sw txq[0m
+[0;32mI (46407) wifi:lmac stop hw txq[0m
+[0;32mI (46607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (46607) wifi:enable tsf[0m
+[0;32mI (46607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (46607) WifiManager: Wi-Fi station started[0m
+[0;32mI (46607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (46617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (49017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (51397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (51397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (51397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (51397) wifi:flush txq[0m
+[0;32mI (51407) wifi:stop sw txq[0m
+[0;32mI (51407) wifi:lmac stop hw txq[0m
+[0;32mI (51607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (51607) wifi:enable tsf[0m
+[0;32mI (51607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (51607) WifiManager: Wi-Fi station started[0m
+[0;32mI (51607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (51617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (54017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (56397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (56397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (56397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (56397) wifi:flush txq[0m
+[0;32mI (56407) wifi:stop sw txq[0m
+[0;32mI (56407) wifi:lmac stop hw txq[0m
+[0;32mI (56607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (56607) wifi:enable tsf[0m
+[0;32mI (56607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (56607) WifiManager: Wi-Fi station started[0m
+[0;32mI (56607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (56617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (59017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (61397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (61397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (61397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (61397) wifi:flush txq[0m
+[0;32mI (61407) wifi:stop sw txq[0m
+[0;32mI (61407) wifi:lmac stop hw txq[0m
+[0;32mI (61607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (61607) wifi:enable tsf[0m
+[0;32mI (61607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (61607) WifiManager: Wi-Fi station started[0m
+[0;32mI (61607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (61617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;33mW (64017) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (66397) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (66397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (66397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (66397) wifi:flush txq[0m
+[0;32mI (66407) wifi:stop sw txq[0m
+[0;32mI (66407) wifi:lmac stop hw txq[0m
+[0;32mI (66607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (66607) wifi:enable tsf[0m
+[0;32mI (66607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (66607) WifiManager: Wi-Fi station started[0m
+[0;32mI (66607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (66617) ESP32_CAM: ✅ Reconnected to: [0m
+[0;32mI (66627) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (66627) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (66667) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (66687) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (66757) wifi:connected with thomas, aid = 1, channel 11, BW20, bssid = 92:a5:3b:33:1f:f2[0m
+[0;32mI (66757) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (66767) wifi:pm start, type: 1[0m
+
+[0;32mI (66767) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (66777) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (66827) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (66827) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (67917) esp_netif_handlers: sta ip: 10.99.7.144, mask: 255.255.255.0, gw: 10.99.7.151[0m
+[0;32mI (67917) WifiManager: Got IP address: 10.99.7.144[0m
+[0;32mI (71397) ESP32_CAM: 📶 Wi-Fi reconnected! Setting up UDP and camera task...[0m
+[0;32mI (71397) ESP32_CAM: 🔑 REMOTE PORT 12345.[0m
+[0;33mW (71397) ESP32_CAM: Failed to set send buffer: Protocol not available[0m
+[0;33mW (71397) ESP32_CAM: Failed to set recv buffer: Protocol not available[0m
+[0;32mI (71407) ESP32_CAM: ✅ UDP socket optimized for 10.99.7.87:12345 (15 FPS streaming)[0m
+[0;32mI (71417) NTP: Initialisation NTP[0m
+[0;32mI (71417) ESP32_CAM: 📷 Camera task created[0m
+[0;32mI (71417) ESP32_CAM: 🎬 Starting high-FPS streaming (30+ FPS target)[0m
+cam_hal: NO-EOI - JPEG end marker missing
+[1;31mE (71527) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 0: errno=12 (Not enough space)[0m
+[1;31mE (71537) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 0: errno=12 (Not enough space)[0m
+[1;31mE (71537) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 0: errno=12 (Not enough space)[0m
+[1;31mE (71547) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 0: errno=12 (Not enough space)[0m
+[0;33mW (71557) CAMERA: Frame 0: 3/7 chunks envoyés (42.9%), 4 échecs[0m
+[1;31mE (71557) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71567) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71577) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71587) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71597) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71597) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 1: errno=12 (Not enough space)[0m
+[1;31mE (71607) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 1: errno=12 (Not enough space)[0m
+[0;33mW (71617) CAMERA: Frame 1: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (71627) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 2: errno=12 (Not enough space)[0m
+[1;31mE (71627) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 2: errno=12 (Not enough space)[0m
+[1;31mE (71637) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 2: errno=12 (Not enough space)[0m
+[1;31mE (71647) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 2: errno=12 (Not enough space)[0m
+[1;31mE (71657) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 2: errno=12 (Not enough space)[0m
+[1;31mE (71667) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 2: errno=12 (Not enough space)[0m
+[0;33mW (71667) CAMERA: Frame 2: 0/6 chunks envoyés (0.0%), 6 échecs[0m
+[1;31mE (71677) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 3: errno=12 (Not enough space)[0m
+[1;31mE (71687) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 3: errno=12 (Not enough space)[0m
+[1;31mE (71697) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 3: errno=12 (Not enough space)[0m
+[1;31mE (71707) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 3: errno=12 (Not enough space)[0m
+[1;31mE (71707) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 3: errno=12 (Not enough space)[0m
+[1;31mE (71717) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 3: errno=12 (Not enough space)[0m
+[0;33mW (71727) CAMERA: Frame 3: 0/6 chunks envoyés (0.0%), 6 échecs[0m
+[1;31mE (71737) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 4: errno=12 (Not enough space)[0m
+[1;31mE (71737) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 4: errno=12 (Not enough space)[0m
+[1;31mE (71747) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 4: errno=12 (Not enough space)[0m
+[1;31mE (71757) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 4: errno=12 (Not enough space)[0m
+[1;31mE (71767) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 4: errno=12 (Not enough space)[0m
+[1;31mE (71777) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 4: errno=12 (Not enough space)[0m
+[0;33mW (71777) CAMERA: Frame 4: 0/6 chunks envoyés (0.0%), 6 échecs[0m
+[0;32mI (71787) wifi:<ba-add>idx:0 (ifx:0, 92:a5:3b:33:1f:f2), tid:0, ssn:3, winSize:64[0m
+[1;31mE (71787) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 5: errno=12 (Not enough space)[0m
+[1;31mE (71807) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 5: errno=12 (Not enough space)[0m
+[1;31mE (71807) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 5: errno=12 (Not enough space)[0m
+[1;31mE (71817) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 5: errno=12 (Not enough space)[0m
+[1;31mE (71827) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 5: errno=12 (Not enough space)[0m
+[0;32mI (71827) NTP: NTP synchronisé[0m
+[1;31mE (71837) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 5: errno=12 (Not enough space)[0m
+[1;31mE (71847) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 5: errno=12 (Not enough space)[0m
+[0;33mW (71857) CAMERA: Frame 5: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (71857) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71867) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71877) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71887) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71897) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71897) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 6: errno=12 (Not enough space)[0m
+[1;31mE (71907) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 6: errno=12 (Not enough space)[0m
+[0;33mW (71917) CAMERA: Frame 6: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (71927) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71927) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71937) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71947) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71957) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71967) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 7: errno=12 (Not enough space)[0m
+[1;31mE (71967) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 7: errno=12 (Not enough space)[0m
+[0;33mW (71977) CAMERA: Frame 7: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (71987) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (71997) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (71997) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (72007) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (72017) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (72027) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 8: errno=12 (Not enough space)[0m
+[1;31mE (72037) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 8: errno=12 (Not enough space)[0m
+[0;33mW (72047) CAMERA: Frame 8: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72047) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72057) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72067) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72077) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72077) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72087) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 9: errno=12 (Not enough space)[0m
+[1;31mE (72097) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 9: errno=12 (Not enough space)[0m
+[0;33mW (72107) CAMERA: Frame 9: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72107) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72117) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72127) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72137) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72147) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72157) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 10: errno=12 (Not enough space)[0m
+[1;31mE (72157) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 10: errno=12 (Not enough space)[0m
+[0;33mW (72167) CAMERA: Frame 10: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72177) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72187) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72187) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72197) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72207) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72217) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 11: errno=12 (Not enough space)[0m
+[1;31mE (72227) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 11: errno=12 (Not enough space)[0m
+[0;33mW (72227) CAMERA: Frame 11: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72237) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72247) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72257) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72267) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72267) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72277) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 12: errno=12 (Not enough space)[0m
+[1;31mE (72287) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 12: errno=12 (Not enough space)[0m
+[0;33mW (72297) CAMERA: Frame 12: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72297) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72307) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72317) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72327) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72337) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72347) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 13: errno=12 (Not enough space)[0m
+[1;31mE (72347) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 13: errno=12 (Not enough space)[0m
+[0;33mW (72357) CAMERA: Frame 13: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72367) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72377) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72377) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72387) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72397) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72407) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 14: errno=12 (Not enough space)[0m
+[1;31mE (72417) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 14: errno=12 (Not enough space)[0m
+[0;33mW (72427) CAMERA: Frame 14: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72427) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72437) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72447) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72457) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72457) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72467) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 15: errno=12 (Not enough space)[0m
+[1;31mE (72477) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 15: errno=12 (Not enough space)[0m
+[0;33mW (72487) CAMERA: Frame 15: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72497) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72497) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72507) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72517) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72527) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72537) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 16: errno=12 (Not enough space)[0m
+[1;31mE (72537) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 16: errno=12 (Not enough space)[0m
+[0;33mW (72547) CAMERA: Frame 16: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72557) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72567) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72577) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72577) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72587) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72597) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 17: errno=12 (Not enough space)[0m
+[1;31mE (72607) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 17: errno=12 (Not enough space)[0m
+[0;33mW (72617) CAMERA: Frame 17: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72617) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72627) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72637) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72647) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72657) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72657) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 18: errno=12 (Not enough space)[0m
+[1;31mE (72667) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 18: errno=12 (Not enough space)[0m
+[0;33mW (72677) CAMERA: Frame 18: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72687) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72687) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72697) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72707) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72717) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72727) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 19: errno=12 (Not enough space)[0m
+[1;31mE (72737) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 19: errno=12 (Not enough space)[0m
+[0;33mW (72737) CAMERA: Frame 19: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72747) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72757) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72767) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72767) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72777) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72787) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 20: errno=12 (Not enough space)[0m
+[1;31mE (72797) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 20: errno=12 (Not enough space)[0m
+[0;33mW (72807) CAMERA: Frame 20: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72807) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72817) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72827) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72837) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72847) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72847) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 21: errno=12 (Not enough space)[0m
+[1;31mE (72857) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 21: errno=12 (Not enough space)[0m
+[0;33mW (72867) CAMERA: Frame 21: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72877) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72877) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72887) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72897) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72907) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72917) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 22: errno=12 (Not enough space)[0m
+[1;31mE (72927) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 22: errno=12 (Not enough space)[0m
+[0;33mW (72927) CAMERA: Frame 22: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72937) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72947) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72957) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72957) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72967) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72977) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 23: errno=12 (Not enough space)[0m
+[1;31mE (72987) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 23: errno=12 (Not enough space)[0m
+[0;33mW (72997) CAMERA: Frame 23: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (72997) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73007) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73017) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73027) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73037) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73037) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 24: errno=12 (Not enough space)[0m
+[1;31mE (73047) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 24: errno=12 (Not enough space)[0m
+[0;33mW (73057) CAMERA: Frame 24: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73067) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73077) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73077) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73087) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73097) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73107) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 25: errno=12 (Not enough space)[0m
+[1;31mE (73117) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 25: errno=12 (Not enough space)[0m
+[0;33mW (73117) CAMERA: Frame 25: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73127) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73137) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73147) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73157) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73157) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73167) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 26: errno=12 (Not enough space)[0m
+[1;31mE (73177) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 26: errno=12 (Not enough space)[0m
+[0;33mW (73187) CAMERA: Frame 26: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73187) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73197) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73207) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73217) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73227) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73237) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 27: errno=12 (Not enough space)[0m
+[1;31mE (73237) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 27: errno=12 (Not enough space)[0m
+[0;33mW (73247) CAMERA: Frame 27: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73257) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73267) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73267) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73277) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73287) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73297) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 28: errno=12 (Not enough space)[0m
+[1;31mE (73307) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 28: errno=12 (Not enough space)[0m
+[0;33mW (73307) CAMERA: Frame 28: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73317) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73327) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73337) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73347) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73347) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73357) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 29: errno=12 (Not enough space)[0m
+[1;31mE (73367) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 29: errno=12 (Not enough space)[0m
+[0;33mW (73377) CAMERA: Frame 29: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73387) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73387) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73397) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73407) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73417) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73427) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 30: errno=12 (Not enough space)[0m
+[1;31mE (73427) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 30: errno=12 (Not enough space)[0m
+[0;33mW (73437) CAMERA: Frame 30: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73447) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73457) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73457) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73467) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73477) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73487) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 31: errno=12 (Not enough space)[0m
+[1;31mE (73497) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 31: errno=12 (Not enough space)[0m
+[0;33mW (73507) CAMERA: Frame 31: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73507) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73517) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73527) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73537) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73537) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73547) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 32: errno=12 (Not enough space)[0m
+[1;31mE (73557) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 32: errno=12 (Not enough space)[0m
+[0;33mW (73567) CAMERA: Frame 32: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73577) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73577) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73587) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73597) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73607) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73617) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 33: errno=12 (Not enough space)[0m
+[1;31mE (73617) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 33: errno=12 (Not enough space)[0m
+[0;33mW (73627) CAMERA: Frame 33: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73637) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73647) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73657) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73657) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73667) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73677) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 34: errno=12 (Not enough space)[0m
+[1;31mE (73687) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 34: errno=12 (Not enough space)[0m
+[0;33mW (73697) CAMERA: Frame 34: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73697) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73707) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73717) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73727) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73737) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73737) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 35: errno=12 (Not enough space)[0m
+[1;31mE (73747) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 35: errno=12 (Not enough space)[0m
+[0;33mW (73757) CAMERA: Frame 35: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73767) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73767) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73777) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73787) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73797) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73807) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 36: errno=12 (Not enough space)[0m
+[1;31mE (73817) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 36: errno=12 (Not enough space)[0m
+[0;33mW (73817) CAMERA: Frame 36: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73827) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73837) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73847) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73847) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73857) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73867) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 37: errno=12 (Not enough space)[0m
+[1;31mE (73877) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 37: errno=12 (Not enough space)[0m
+[0;33mW (73887) CAMERA: Frame 37: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73887) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73897) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73907) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73917) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73927) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73927) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 38: errno=12 (Not enough space)[0m
+[1;31mE (73937) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 38: errno=12 (Not enough space)[0m
+[0;33mW (73947) CAMERA: Frame 38: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (73957) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (73957) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (73967) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (73977) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (73987) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (73997) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 39: errno=12 (Not enough space)[0m
+[1;31mE (74007) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 39: errno=12 (Not enough space)[0m
+[0;33mW (74007) CAMERA: Frame 39: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74017) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74027) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74037) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74037) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74047) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74057) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 40: errno=12 (Not enough space)[0m
+[1;31mE (74067) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 40: errno=12 (Not enough space)[0m
+[0;33mW (74077) CAMERA: Frame 40: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74077) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74087) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74097) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74107) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74117) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74117) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 41: errno=12 (Not enough space)[0m
+[1;31mE (74127) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 41: errno=12 (Not enough space)[0m
+[0;33mW (74137) CAMERA: Frame 41: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74147) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74157) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74157) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74167) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74177) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74187) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 42: errno=12 (Not enough space)[0m
+[1;31mE (74197) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 42: errno=12 (Not enough space)[0m
+[0;33mW (74197) CAMERA: Frame 42: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74207) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74217) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74227) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74237) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74237) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74247) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 43: errno=12 (Not enough space)[0m
+[1;31mE (74257) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 43: errno=12 (Not enough space)[0m
+[0;33mW (74267) CAMERA: Frame 43: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74267) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74277) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74287) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74297) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74307) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74317) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 44: errno=12 (Not enough space)[0m
+[1;31mE (74317) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 44: errno=12 (Not enough space)[0m
+[0;33mW (74327) CAMERA: Frame 44: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74337) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74347) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74347) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74357) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74367) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74377) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 45: errno=12 (Not enough space)[0m
+[1;31mE (74387) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 45: errno=12 (Not enough space)[0m
+[0;33mW (74397) CAMERA: Frame 45: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74397) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74407) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74417) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74427) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74427) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74437) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 46: errno=12 (Not enough space)[0m
+[1;31mE (74447) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 46: errno=12 (Not enough space)[0m
+[0;33mW (74457) CAMERA: Frame 46: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74467) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74467) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74477) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74487) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74497) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74507) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 47: errno=12 (Not enough space)[0m
+[1;31mE (74507) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 47: errno=12 (Not enough space)[0m
+[0;33mW (74517) CAMERA: Frame 47: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74527) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74537) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74537) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74547) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74557) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74567) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 48: errno=12 (Not enough space)[0m
+[1;31mE (74577) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 48: errno=12 (Not enough space)[0m
+[0;33mW (74587) CAMERA: Frame 48: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74587) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74597) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74607) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74617) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74617) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74627) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 49: errno=12 (Not enough space)[0m
+[1;31mE (74637) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 49: errno=12 (Not enough space)[0m
+[0;33mW (74647) CAMERA: Frame 49: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74657) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74657) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74667) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74677) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74687) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74697) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 50: errno=12 (Not enough space)[0m
+[1;31mE (74697) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 50: errno=12 (Not enough space)[0m
+[0;33mW (74707) CAMERA: Frame 50: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74717) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74727) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74737) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74737) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74747) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74757) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 51: errno=12 (Not enough space)[0m
+[1;31mE (74767) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 51: errno=12 (Not enough space)[0m
+[0;33mW (74777) CAMERA: Frame 51: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74777) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74787) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74797) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74807) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74817) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74817) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 52: errno=12 (Not enough space)[0m
+[1;31mE (74827) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 52: errno=12 (Not enough space)[0m
+[0;33mW (74837) CAMERA: Frame 52: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74847) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74847) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74857) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74867) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74877) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74887) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 53: errno=12 (Not enough space)[0m
+[1;31mE (74897) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 53: errno=12 (Not enough space)[0m
+[0;33mW (74897) CAMERA: Frame 53: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74907) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74917) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74927) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74927) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74937) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74947) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 54: errno=12 (Not enough space)[0m
+[1;31mE (74957) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 54: errno=12 (Not enough space)[0m
+[0;33mW (74967) CAMERA: Frame 54: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (74967) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (74977) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (74987) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (74997) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (75007) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (75007) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 55: errno=12 (Not enough space)[0m
+[1;31mE (75017) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 55: errno=12 (Not enough space)[0m
+[0;33mW (75027) CAMERA: Frame 55: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75037) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75047) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75047) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75057) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75067) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75077) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 56: errno=12 (Not enough space)[0m
+[1;31mE (75087) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 56: errno=12 (Not enough space)[0m
+[0;33mW (75087) CAMERA: Frame 56: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75097) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75107) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75117) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75117) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75127) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75137) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 57: errno=12 (Not enough space)[0m
+[1;31mE (75147) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 57: errno=12 (Not enough space)[0m
+[0;33mW (75157) CAMERA: Frame 57: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75157) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75167) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75177) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75187) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75197) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75197) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 58: errno=12 (Not enough space)[0m
+[1;31mE (75207) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 58: errno=12 (Not enough space)[0m
+[0;33mW (75217) CAMERA: Frame 58: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75227) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75237) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75237) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75247) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75257) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75267) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 59: errno=12 (Not enough space)[0m
+[1;31mE (75277) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 59: errno=12 (Not enough space)[0m
+[0;33mW (75277) CAMERA: Frame 59: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75287) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75297) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75307) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75317) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75317) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75327) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 60: errno=12 (Not enough space)[0m
+[1;31mE (75337) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 60: errno=12 (Not enough space)[0m
+[0;33mW (75347) CAMERA: Frame 60: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75347) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75357) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75367) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75377) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75387) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75397) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 61: errno=12 (Not enough space)[0m
+[1;31mE (75397) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 61: errno=12 (Not enough space)[0m
+[0;33mW (75407) CAMERA: Frame 61: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75417) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75427) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75427) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75437) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75447) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75457) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 62: errno=12 (Not enough space)[0m
+[1;31mE (75467) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 62: errno=12 (Not enough space)[0m
+[0;33mW (75477) CAMERA: Frame 62: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75477) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75487) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75497) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75507) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75507) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75517) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 63: errno=12 (Not enough space)[0m
+[1;31mE (75527) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 63: errno=12 (Not enough space)[0m
+[0;33mW (75537) CAMERA: Frame 63: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75547) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75547) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75557) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75567) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75577) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75587) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 64: errno=12 (Not enough space)[0m
+[1;31mE (75587) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 64: errno=12 (Not enough space)[0m
+[0;33mW (75597) CAMERA: Frame 64: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75607) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75617) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75617) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75627) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75637) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75647) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 65: errno=12 (Not enough space)[0m
+[1;31mE (75657) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 65: errno=12 (Not enough space)[0m
+[0;33mW (75667) CAMERA: Frame 65: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75667) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75677) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75687) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75697) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75707) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75707) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 66: errno=12 (Not enough space)[0m
+[1;31mE (75717) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 66: errno=12 (Not enough space)[0m
+[0;33mW (75727) CAMERA: Frame 66: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75737) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75737) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75747) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75757) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75767) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75777) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 67: errno=12 (Not enough space)[0m
+[1;31mE (75777) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 67: errno=12 (Not enough space)[0m
+[0;33mW (75787) CAMERA: Frame 67: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75797) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75807) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75817) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75817) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75827) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75837) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 68: errno=12 (Not enough space)[0m
+[1;31mE (75847) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 68: errno=12 (Not enough space)[0m
+[0;33mW (75857) CAMERA: Frame 68: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75857) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75867) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75877) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75887) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75897) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75897) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 69: errno=12 (Not enough space)[0m
+[1;31mE (75907) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 69: errno=12 (Not enough space)[0m
+[0;33mW (75917) CAMERA: Frame 69: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75927) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75927) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75937) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75947) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75957) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75967) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 70: errno=12 (Not enough space)[0m
+[1;31mE (75977) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 70: errno=12 (Not enough space)[0m
+[0;33mW (75977) CAMERA: Frame 70: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (75987) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (75997) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (76007) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (76007) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (76017) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (76027) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 71: errno=12 (Not enough space)[0m
+[1;31mE (76037) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 71: errno=12 (Not enough space)[0m
+[0;33mW (76047) CAMERA: Frame 71: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76047) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76057) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76067) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76077) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76087) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76087) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 72: errno=12 (Not enough space)[0m
+[1;31mE (76097) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 72: errno=12 (Not enough space)[0m
+[0;33mW (76107) CAMERA: Frame 72: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76117) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76127) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76127) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76137) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76147) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76157) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 73: errno=12 (Not enough space)[0m
+[1;31mE (76167) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 73: errno=12 (Not enough space)[0m
+[0;33mW (76167) CAMERA: Frame 73: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76177) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 74: errno=12 (Not enough space)[0m
+[1;31mE (76187) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 74: errno=12 (Not enough space)[0m
+[1;31mE (76197) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 74: errno=12 (Not enough space)[0m
+[1;31mE (76207) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 74: errno=12 (Not enough space)[0m
+[0;33mW (76207) CAMERA: Frame 74: 3/7 chunks envoyés (42.9%), 4 échecs[0m
+[1;31mE (76217) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76227) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76237) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76237) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76247) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76257) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 75: errno=12 (Not enough space)[0m
+[1;31mE (76267) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 75: errno=12 (Not enough space)[0m
+[0;33mW (76277) CAMERA: Frame 75: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76277) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76287) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76297) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76307) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76317) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76317) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 76: errno=12 (Not enough space)[0m
+[1;31mE (76327) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 76: errno=12 (Not enough space)[0m
+[0;33mW (76337) CAMERA: Frame 76: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76347) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76347) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76357) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76367) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76377) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76387) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 77: errno=12 (Not enough space)[0m
+[1;31mE (76397) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 77: errno=12 (Not enough space)[0m
+[0;33mW (76397) CAMERA: Frame 77: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76407) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76417) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76427) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76427) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76437) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76447) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 78: errno=12 (Not enough space)[0m
+[1;31mE (76457) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 78: errno=12 (Not enough space)[0m
+[0;33mW (76467) CAMERA: Frame 78: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76467) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76477) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76487) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76497) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76507) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76507) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 79: errno=12 (Not enough space)[0m
+[1;31mE (76517) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 79: errno=12 (Not enough space)[0m
+[0;33mW (76527) CAMERA: Frame 79: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76537) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76547) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76547) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76557) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76567) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76577) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 80: errno=12 (Not enough space)[0m
+[1;31mE (76587) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 80: errno=12 (Not enough space)[0m
+[0;33mW (76587) CAMERA: Frame 80: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76597) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76607) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76617) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76627) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76627) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76637) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 81: errno=12 (Not enough space)[0m
+[1;31mE (76647) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 81: errno=12 (Not enough space)[0m
+[0;33mW (76657) CAMERA: Frame 81: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76657) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76667) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76677) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76687) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76697) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76707) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 82: errno=12 (Not enough space)[0m
+[1;31mE (76707) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 82: errno=12 (Not enough space)[0m
+[0;33mW (76717) CAMERA: Frame 82: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76727) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76737) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76737) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76747) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76757) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76767) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 83: errno=12 (Not enough space)[0m
+[1;31mE (76777) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 83: errno=12 (Not enough space)[0m
+[0;33mW (76777) CAMERA: Frame 83: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76787) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76797) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76807) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76817) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76817) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76827) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 84: errno=12 (Not enough space)[0m
+[1;31mE (76837) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 84: errno=12 (Not enough space)[0m
+[0;33mW (76847) CAMERA: Frame 84: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76847) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76857) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76867) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76877) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76887) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76897) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 85: errno=12 (Not enough space)[0m
+[1;31mE (76897) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 85: errno=12 (Not enough space)[0m
+[0;33mW (76907) CAMERA: Frame 85: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76917) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76927) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76927) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76937) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76947) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76957) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 86: errno=12 (Not enough space)[0m
+[1;31mE (76967) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 86: errno=12 (Not enough space)[0m
+[0;33mW (76977) CAMERA: Frame 86: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (76977) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (76987) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (76997) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (77007) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (77007) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (77017) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 87: errno=12 (Not enough space)[0m
+[1;31mE (77027) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 87: errno=12 (Not enough space)[0m
+[0;33mW (77037) CAMERA: Frame 87: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77047) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77047) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77057) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77067) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77077) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77087) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 88: errno=12 (Not enough space)[0m
+[1;31mE (77087) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 88: errno=12 (Not enough space)[0m
+[0;33mW (77097) CAMERA: Frame 88: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77107) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77117) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77127) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77127) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77137) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77147) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 89: errno=12 (Not enough space)[0m
+[1;31mE (77157) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 89: errno=12 (Not enough space)[0m
+[0;33mW (77167) CAMERA: Frame 89: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77167) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77177) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77187) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77197) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77207) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77207) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 90: errno=12 (Not enough space)[0m
+[1;31mE (77217) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 90: errno=12 (Not enough space)[0m
+[0;33mW (77227) CAMERA: Frame 90: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77237) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77237) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77247) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77257) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77267) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77277) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 91: errno=12 (Not enough space)[0m
+[1;31mE (77287) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 91: errno=12 (Not enough space)[0m
+[0;33mW (77287) CAMERA: Frame 91: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77297) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77307) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77317) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77317) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77327) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77337) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 92: errno=12 (Not enough space)[0m
+[1;31mE (77347) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 92: errno=12 (Not enough space)[0m
+[0;33mW (77357) CAMERA: Frame 92: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77357) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77367) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77377) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77387) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77397) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77397) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 93: errno=12 (Not enough space)[0m
+[1;31mE (77407) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 93: errno=12 (Not enough space)[0m
+[0;33mW (77417) CAMERA: Frame 93: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77427) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77427) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77437) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77447) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77457) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77467) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 94: errno=12 (Not enough space)[0m
+[1;31mE (77477) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 94: errno=12 (Not enough space)[0m
+[0;33mW (77477) CAMERA: Frame 94: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77487) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77497) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77507) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77507) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77517) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77527) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 95: errno=12 (Not enough space)[0m
+[1;31mE (77537) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 95: errno=12 (Not enough space)[0m
+[0;33mW (77547) CAMERA: Frame 95: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77547) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77557) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77567) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77577) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77587) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77587) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 96: errno=12 (Not enough space)[0m
+[1;31mE (77597) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 96: errno=12 (Not enough space)[0m
+[0;33mW (77607) CAMERA: Frame 96: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77617) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77627) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77627) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77637) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77647) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77657) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 97: errno=12 (Not enough space)[0m
+[1;31mE (77667) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 97: errno=12 (Not enough space)[0m
+[0;33mW (77667) CAMERA: Frame 97: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77677) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77687) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77697) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77707) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77707) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77717) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 98: errno=12 (Not enough space)[0m
+[1;31mE (77727) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 98: errno=12 (Not enough space)[0m
+[0;33mW (77737) CAMERA: Frame 98: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77737) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77747) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77757) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77767) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77777) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77787) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 99: errno=12 (Not enough space)[0m
+[1;31mE (77787) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 99: errno=12 (Not enough space)[0m
+[0;33mW (77797) CAMERA: Frame 99: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77807) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77817) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77817) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77827) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77837) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77847) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 100: errno=12 (Not enough space)[0m
+[1;31mE (77857) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 100: errno=12 (Not enough space)[0m
+[0;33mW (77867) CAMERA: Frame 100: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77867) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77877) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77887) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77897) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77907) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77907) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 101: errno=12 (Not enough space)[0m
+[1;31mE (77917) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 101: errno=12 (Not enough space)[0m
+[0;33mW (77927) CAMERA: Frame 101: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77937) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77937) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77947) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77957) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77967) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77977) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 102: errno=12 (Not enough space)[0m
+[1;31mE (77987) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 102: errno=12 (Not enough space)[0m
+[0;33mW (77987) CAMERA: Frame 102: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (77997) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78007) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78017) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78027) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78027) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78037) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 103: errno=12 (Not enough space)[0m
+[1;31mE (78047) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 103: errno=12 (Not enough space)[0m
+[0;33mW (78057) CAMERA: Frame 103: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78057) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78067) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78077) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78087) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78097) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78107) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 104: errno=12 (Not enough space)[0m
+[1;31mE (78107) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 104: errno=12 (Not enough space)[0m
+[0;33mW (78117) CAMERA: Frame 104: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78127) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78137) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78147) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78147) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78157) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78167) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 105: errno=12 (Not enough space)[0m
+[1;31mE (78177) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 105: errno=12 (Not enough space)[0m
+[0;33mW (78187) CAMERA: Frame 105: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78187) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78197) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78207) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78217) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78227) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78227) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 106: errno=12 (Not enough space)[0m
+[1;31mE (78237) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 106: errno=12 (Not enough space)[0m
+[0;33mW (78247) CAMERA: Frame 106: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78257) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78267) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78267) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78277) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78287) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78297) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 107: errno=12 (Not enough space)[0m
+[1;31mE (78307) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 107: errno=12 (Not enough space)[0m
+[0;33mW (78317) CAMERA: Frame 107: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78317) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78327) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78337) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78347) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78347) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78357) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 108: errno=12 (Not enough space)[0m
+[1;31mE (78367) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 108: errno=12 (Not enough space)[0m
+[0;33mW (78377) CAMERA: Frame 108: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78387) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78387) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78397) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78407) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78417) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78427) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 109: errno=12 (Not enough space)[0m
+[1;31mE (78437) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 109: errno=12 (Not enough space)[0m
+[0;33mW (78437) CAMERA: Frame 109: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78447) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78457) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78467) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78467) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78477) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78487) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 110: errno=12 (Not enough space)[0m
+[1;31mE (78497) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 110: errno=12 (Not enough space)[0m
+[0;33mW (78507) CAMERA: Frame 110: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78507) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78517) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78527) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78537) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78547) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78557) CAMERA: Erreur sendto() inconnue pour chunk 5 frame 111: errno=12 (Not enough space)[0m
+[1;31mE (78557) CAMERA: Erreur sendto() inconnue pour chunk 6 frame 111: errno=12 (Not enough space)[0m
+[0;33mW (78567) CAMERA: Frame 111: 0/7 chunks envoyés (0.0%), 7 échecs[0m
+[1;31mE (78577) CAMERA: Erreur sendto() inconnue pour chunk 0 frame 112: errno=12 (Not enough space)[0m
+[1;31mE (78587) CAMERA: Erreur sendto() inconnue pour chunk 1 frame 112: errno=12 (Not enough space)[0m
+[1;31mE (78597) CAMERA: Erreur sendto() inconnue pour chunk 2 frame 112: errno=12 (Not enough space)[0m
+[1;31mE (78597) CAMERA: Erreur sendto() inconnue pour chunk 3 frame 112: errno=12 (Not enough space)[0m
+[1;31mE (78607) CAMERA: Erreur sendto() inconnue pour chunk 4 frame 112: errno=12 (Not enough space)[0m

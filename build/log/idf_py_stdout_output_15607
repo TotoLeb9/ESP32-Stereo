@@ -1,0 +1,79 @@
+Command: ninja flash
+[1/5] cd /home/totoleb/Documents/esp32/esp32_cam/build && /home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/totoleb/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/totoleb/Documents/esp32/esp32_cam/build/partition_table/partition-table.bin /home/totoleb/Documents/esp32/esp32_cam/build/esp32_cam.bin
+esp32_cam.bin binary size 0xed760 bytes. Smallest app partition is 0x100000 bytes. 0x128a0 bytes (7%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/totoleb/Documents/esp32/esp32_cam/build/bootloader && /home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/totoleb/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 esp32_cam.bin
+esptool.py v4.10.dev2
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: cc:ba:97:16:28:a0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000fdfff...
+SHA digest in image updated
+Compressed 21040 bytes to 13444...
+Writing at 0x00000000... (100 %)
+Wrote 21040 bytes (13444 compressed) at 0x00000000 in 0.4 seconds (effective 441.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 520.5 kbit/s)...
+Hash of data verified.
+Compressed 972640 bytes to 600195...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c75e... (5 %)
+Writing at 0x00027bac... (8 %)
+Writing at 0x0002fade... (10 %)
+Writing at 0x0003b286... (13 %)
+Writing at 0x00041ad4... (16 %)
+Writing at 0x00048025... (18 %)
+Writing at 0x0004e27b... (21 %)
+Writing at 0x00054a38... (24 %)
+Writing at 0x0005c620... (27 %)
+Writing at 0x00062637... (29 %)
+Writing at 0x00067f0f... (32 %)
+Writing at 0x0006da7d... (35 %)
+Writing at 0x000736d9... (37 %)
+Writing at 0x00079339... (40 %)
+Writing at 0x0007f1b5... (43 %)
+Writing at 0x00084fe5... (45 %)
+Writing at 0x0008b059... (48 %)
+Writing at 0x000903d5... (51 %)
+Writing at 0x000954de... (54 %)
+Writing at 0x0009a629... (56 %)
+Writing at 0x000a0174... (59 %)
+Writing at 0x000a565c... (62 %)
+Writing at 0x000aad7e... (64 %)
+Writing at 0x000b075e... (67 %)
+Writing at 0x000b622c... (70 %)
+Writing at 0x000bbd11... (72 %)
+Writing at 0x000c18eb... (75 %)
+Writing at 0x000c78cf... (78 %)
+Writing at 0x000ccfee... (81 %)
+Writing at 0x000d3a37... (83 %)
+Writing at 0x000db575... (86 %)
+Writing at 0x000e14fd... (89 %)
+Writing at 0x000e7b5d... (91 %)
+Writing at 0x000edf23... (94 %)
+Writing at 0x000f4605... (97 %)
+Writing at 0x000f9833... (100 %)
+Wrote 972640 bytes (600195 compressed) at 0x00010000 in 7.1 seconds (effective 1098.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

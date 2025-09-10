@@ -1,0 +1,610 @@
+Command: /home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/totoleb/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/totoleb/Documents/esp32/esp32_cam/build/esp32_cam.elf /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/bootloader.elf -m '/home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/totoleb/esp/esp-idf/tools/idf.py'
+[0;32mI (114) esp_image: segment 1: paddr=00034cbc vaddr=3fc9c900 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200cb53
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1588
+load:0x403c8700,len:0xd20
+load:0x403cb700,len:0x2f2c
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Aug 14 2025 20:25:49[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=24c94h (150676) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=00034cbc vaddr=3fc9c900 size=076a4h ( 30372) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0003c368 vaddr=40374000 size=03cb0h ( 15536) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a8900h (690432) map[0m
+[0;32mI (247) esp_image: segment 4: paddr=000e8928 vaddr=40377cb0 size=14bcch ( 84940) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=000fd4fc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (277) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (288) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (288) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (288) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (290) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (294) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (299) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (303) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (308) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (313) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (317) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (322) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (327) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (331) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (335) esp_psram: Speed: 80MHz[0m
+[0;32mI (338) cpu_start: Multicore app[0m
+[0;32mI (773) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (781) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (782) cpu_start: Pro cpu start user code[0m
+[0;32mI (782) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (784) app_init: Application information:[0m
+[0;32mI (787) app_init: Project name:     esp32_cam[0m
+[0;32mI (792) app_init: App version:      1[0m
+[0;32mI (795) app_init: Compile time:     Aug 14 2025 20:25:40[0m
+[0;32mI (800) app_init: ELF file SHA256:  1ab28b06d...[0m
+[0;32mI (804) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (810) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (814) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (818) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (821) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (828) heap_init: At 3FCA8D40 len 000409D0 (258 KiB): RAM[0m
+[0;32mI (833) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (838) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (843) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (849) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (856) spi_flash: detected chip: gd[0m
+[0;32mI (858) spi_flash: flash io: dio[0m
+[0;33mW (861) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (874) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (880) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (887) main_task: Started on CPU0[0m
+[0;32mI (897) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (897) main_task: Calling app_main()[0m
+[0;32mI (897) ESP32_CAM: 🚀 Starting ESP32 CAM application...[0m
+[0;32mI (937) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (937) cam_hal: cam init ok[0m
+[0;32mI (937) sccb-ng: pin_sda 40 pin_scl 39[0m
+[0;32mI (937) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (947) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (947) camera: Detected OV2640 camera[0m
+[0;32mI (947) camera: Detected camera at address=0x30[0m
+[0;32mI (1017) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1017) cam_hal: buffer_size: 61440, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 60, total_cnt: 61[0m
+[0;32mI (1017) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1027) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C0E0EB0[0m
+[0;32mI (1027) cam_hal: Allocating 62480 Byte frame buffer in PSRAM[0m
+[0;32mI (1037) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C0F02E0[0m
+[0;32mI (1037) cam_hal: cam config ok[0m
+[0;32mI (1047) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1107) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing (PSRAM)
+[0;32mI (1157) CAMERA: Caméra initialisée avec succès.[0m
+[0;32mI (1157) ESP32_CAM: 📷 Camera initialized successfully[0m
+[0;32mI (1157) pp: pp rom version: e7ae62f[0m
+[0;32mI (1157) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1167) wifi:wifi driver task: 3fcee9a4, prio:23, stack:6656, core=0[0m
+[0;32mI (1177) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (1177) wifi:wifi certification version: v7.0[0m
+[0;32mI (1177) wifi:config NVS flash: enabled[0m
+[0;32mI (1187) wifi:config nano formatting: disabled[0m
+[0;32mI (1187) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1187) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1197) wifi:Init management short buffer num: 32[0m
+[0;32mI (1197) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1207) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1207) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1217) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1217) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1217) wifi_init: rx ba win: 6[0m
+[0;32mI (1227) wifi_init: accept mbox: 6[0m
+[0;32mI (1227) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1227) wifi_init: udp mbox: 6[0m
+[0;32mI (1237) wifi_init: tcp mbox: 6[0m
+[0;32mI (1237) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1237) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1237) wifi_init: tcp mss: 1440[0m
+[0;32mI (1247) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1247) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1257) WifiManager: Starting WiFi station...[0m
+[0;32mI (1257) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (1297) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1307) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (1317) wifi:enable tsf[0m
+[0;32mI (1317) ESP_NOW_COMMS: 🚀 Initializing ESP-NOW...[0m
+[0;32mI (1317) WifiManager: Wi-Fi station started[0m
+[0;32mI (1317) ESP_NOW_COMMS: 📍 My MAC: cc:ba:97:0e:81:e4[0m
+[0;32mI (1317) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1327) ESP_NOW_COMMS: ✅ Broadcast peer configured.[0m
+[0;32mI (1327) ESP_NOW_COMMS: 🎯 ESP-NOW initialized with broadcast configured[0m
+[0;32mI (1337) ESP32_CAM: 🤝 Starting ESP-NOW peer discovery...[0m
+[0;32mI (1337) ESP_NOW_COMMS: 🔍 Starting peer discovery...[0m
+[0;32mI (1347) ESP_NOW_COMMS: 🔄 Peer MAC loaded from NVS: cc:ba:97:16:28:a0[0m
+[0;32mI (1357) ESP_NOW_COMMS: ➕ Peer loaded from NVS and added for communication: cc:ba:97:16:28:a0[0m
+[0;32mI (1357) ESP_NOW_COMMS: 🎉 Peer found in NVS. Discovery complete.[0m
+[0;32mI (1367) ESP32_CAM: 🎯 Device role determined: MASTER 👑[0m
+[0;32mI (1377) ESP32_CAM: 🔑 WiFi credentials found in NVS. Connecting to 'thomas'[0m
+[0;32mI (1377) ESP32_CAM: 🔍 Monitoring WiFi status (initial: Disconnected)[0m
+[0;33mW (1387) ESP32_CAM: 🔄 Wi-Fi still down. Attempting reconnection...[0m
+[0;33mW (1397) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1397) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1407) wifi:flush txq[0m
+[0;32mI (1407) wifi:stop sw txq[0m
+[0;32mI (1407) wifi:lmac stop hw txq[0m
+[0;32mI (1407) WifiManager: Not connected, ensuring Wi-Fi is stopped before reconfig...[0m
+[0;32mI (1607) wifi:mode : sta (cc:ba:97:0e:81:e4)[0m
+[0;32mI (1607) wifi:enable tsf[0m
+[0;32mI (1607) WifiManager: Attempting to connect to SSID: thomas[0m
+[0;32mI (1607) WifiManager: Wi-Fi station started[0m
+[0;32mI (1607) WifiManager: ✅ Connected to thomas[0m
+[0;32mI (1617) ESP32_CAM: ✅ Reconnected to: [0m
+[1;31mE (1617) wifi:sta is connecting, cannot set config[0m
+[1;31mE (1617) WifiManager: Failed to set config: ESP_ERR_WIFI_STATE[0m
+[0;32mI (1627) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1637) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (1637) ESP32_CAM: ⚠️ Initial connection failed - WiFi monitor task will keep retrying.[0m
+[0;32mI (1647) ESP32_CAM: 🎉 Setup complete - system is running.[0m
+[0;32mI (1647) main_task: Returned from app_main()[0m
+[0;32mI (1677) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (1687) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1687) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;33mW (4097) WifiManager: Disconnected from Wi-Fi. Retrying...[0m
+[0;32mI (4127) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4127) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4197) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4237) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4327) wifi:connected with thomas, aid = 7, channel 11, BW20, bssid = 92:a5:3b:33:1f:f2[0m
+[0;32mI (4327) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (4337) wifi:pm start, type: 1[0m
+
+[0;32mI (4337) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4347) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4347) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4357) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5547) esp_netif_handlers: sta ip: 10.123.141.144, mask: 255.255.255.0, gw: 10.123.141.179[0m
+[0;32mI (5547) WifiManager: Got IP address: 10.123.141.144[0m
+[0;32mI (6377) ESP32_CAM: 📶 Wi-Fi reconnected! Setting up UDP and camera task...[0m
+[0;32mI (6377) ESP32_CAM: ✅ UDP socket initialized for 10.123.141.87:12345[0m
+[0;32mI (6377) NTP: Initialisation NTP[0m
+[0;32mI (6377) ESP32_CAM: 📷 Camera task created[0m
+[0;32mI (6377) ESP32_CAM: 📷 Image sending task started.[0m
+[0;32mI (6397) ESP32_CAM: ✅ Image sent at 35767 ms[0m
+[1;31mE (6417) CAMERA: Erreur sendto() pour le chunk 3 de la frame 0[0m
+[1;31mE (6417) CAMERA: Erreur sendto() pour le chunk 4 de la frame 0[0m
+[1;31mE (6417) CAMERA: Erreur sendto() pour le chunk 5 de la frame 0[0m
+[1;31mE (6427) CAMERA: Erreur sendto() pour le chunk 6 de la frame 0[0m
+[1;31mE (6427) CAMERA: Erreur sendto() pour le chunk 7 de la frame 0[0m
+[1;31mE (6437) CAMERA: Erreur sendto() pour le chunk 8 de la frame 0[0m
+[0;32mI (6437) ESP32_CAM: ✅ Image sent at 35812 ms[0m
+[1;31mE (6497) CAMERA: Erreur sendto() pour le chunk 0 de la frame 1[0m
+[1;31mE (6497) CAMERA: Erreur sendto() pour le chunk 1 de la frame 1[0m
+[1;31mE (6497) CAMERA: Erreur sendto() pour le chunk 2 de la frame 1[0m
+[1;31mE (6497) CAMERA: Erreur sendto() pour le chunk 3 de la frame 1[0m
+[1;31mE (6507) CAMERA: Erreur sendto() pour le chunk 4 de la frame 1[0m
+[1;31mE (6507) CAMERA: Erreur sendto() pour le chunk 5 de la frame 1[0m
+[1;31mE (6517) CAMERA: Erreur sendto() pour le chunk 6 de la frame 1[0m
+[1;31mE (6517) CAMERA: Erreur sendto() pour le chunk 7 de la frame 1[0m
+[1;31mE (6527) CAMERA: Erreur sendto() pour le chunk 8 de la frame 1[0m
+[0;32mI (6537) ESP32_CAM: ✅ Image sent at 35903 ms[0m
+[1;31mE (6617) CAMERA: Erreur sendto() pour le chunk 0 de la frame 2[0m
+[1;31mE (6617) CAMERA: Erreur sendto() pour le chunk 1 de la frame 2[0m
+[1;31mE (6617) CAMERA: Erreur sendto() pour le chunk 2 de la frame 2[0m
+[1;31mE (6617) CAMERA: Erreur sendto() pour le chunk 3 de la frame 2[0m
+[1;31mE (6627) CAMERA: Erreur sendto() pour le chunk 4 de la frame 2[0m
+[1;31mE (6627) CAMERA: Erreur sendto() pour le chunk 5 de la frame 2[0m
+[1;31mE (6637) CAMERA: Erreur sendto() pour le chunk 6 de la frame 2[0m
+[1;31mE (6637) CAMERA: Erreur sendto() pour le chunk 7 de la frame 2[0m
+[1;31mE (6647) CAMERA: Erreur sendto() pour le chunk 8 de la frame 2[0m
+[0;32mI (6657) ESP32_CAM: ✅ Image sent at 36023 ms[0m
+[0;32mI (6737) ESP32_CAM: ✅ Image sent at 36106 ms[0m
+[0;32mI (6817) ESP32_CAM: ✅ Image sent at 36186 ms[0m
+[0;32mI (6897) ESP32_CAM: ✅ Image sent at 36266 ms[0m
+[0;32mI (6977) ESP32_CAM: ✅ Image sent at 36346 ms[0m
+[0;32mI (7057) ESP32_CAM: ✅ Image sent at 36426 ms[0m
+[0;32mI (7137) ESP32_CAM: ✅ Image sent at 36506 ms[0m
+[0;32mI (7217) ESP32_CAM: ✅ Image sent at 36586 ms[0m
+[0;32mI (7297) ESP32_CAM: ✅ Image sent at 36665 ms[0m
+[0;32mI (7377) ESP32_CAM: ✅ Image sent at 36745 ms[0m
+[0;32mI (7457) ESP32_CAM: ✅ Image sent at 36825 ms[0m
+[0;32mI (7537) ESP32_CAM: ✅ Image sent at 36906 ms[0m
+[0;32mI (7617) ESP32_CAM: ✅ Image sent at 36985 ms[0m
+[0;32mI (7707) ESP32_CAM: ✅ Image sent at 37076 ms[0m
+[0;32mI (7717) wifi:<ba-add>idx:0 (ifx:0, 92:a5:3b:33:1f:f2), tid:0, ssn:4, winSize:64[0m
+[0;32mI (7777) ESP32_CAM: ✅ Image sent at 37145 ms[0m
+[0;32mI (7857) ESP32_CAM: ✅ Image sent at 37225 ms[0m
+[0;32mI (7877) NTP: NTP synchronisé[0m
+[0;32mI (7937) ESP32_CAM: ✅ Image sent at 1755203226738 ms[0m
+[0;32mI (8017) ESP32_CAM: ✅ Image sent at 1755203226818 ms[0m
+[0;32mI (8097) ESP32_CAM: ✅ Image sent at 1755203226898 ms[0m
+[0;32mI (8177) ESP32_CAM: ✅ Image sent at 1755203226978 ms[0m
+[0;32mI (8257) ESP32_CAM: ✅ Image sent at 1755203227057 ms[0m
+[0;32mI (8337) ESP32_CAM: ✅ Image sent at 1755203227138 ms[0m
+[0;32mI (8417) ESP32_CAM: ✅ Image sent at 1755203227217 ms[0m
+[0;32mI (8497) ESP32_CAM: ✅ Image sent at 1755203227297 ms[0m
+[0;32mI (8577) ESP32_CAM: ✅ Image sent at 1755203227377 ms[0m
+[0;32mI (8657) ESP32_CAM: ✅ Image sent at 1755203227457 ms[0m
+[0;32mI (8737) ESP32_CAM: ✅ Image sent at 1755203227537 ms[0m
+[0;32mI (8817) ESP32_CAM: ✅ Image sent at 1755203227617 ms[0m
+[0;32mI (8897) ESP32_CAM: ✅ Image sent at 1755203227697 ms[0m
+[0;32mI (8977) ESP32_CAM: ✅ Image sent at 1755203227777 ms[0m
+[0;32mI (9057) ESP32_CAM: ✅ Image sent at 1755203227857 ms[0m
+[0;32mI (9137) ESP32_CAM: ✅ Image sent at 1755203227937 ms[0m
+[0;32mI (9217) ESP32_CAM: ✅ Image sent at 1755203228017 ms[0m
+[0;32mI (9297) ESP32_CAM: ✅ Image sent at 1755203228097 ms[0m
+[0;32mI (9377) ESP32_CAM: ✅ Image sent at 1755203228177 ms[0m
+[0;32mI (9457) ESP32_CAM: ✅ Image sent at 1755203228258 ms[0m
+[0;32mI (9537) ESP32_CAM: ✅ Image sent at 1755203228337 ms[0m
+[0;32mI (9617) ESP32_CAM: ✅ Image sent at 1755203228417 ms[0m
+[0;32mI (9697) ESP32_CAM: ✅ Image sent at 1755203228497 ms[0m
+[0;32mI (9777) ESP32_CAM: ✅ Image sent at 1755203228577 ms[0m
+[0;32mI (9857) ESP32_CAM: ✅ Image sent at 1755203228657 ms[0m
+[0;32mI (9937) ESP32_CAM: ✅ Image sent at 1755203228737 ms[0m
+[0;32mI (10017) ESP32_CAM: ✅ Image sent at 1755203228817 ms[0m
+[0;32mI (10097) ESP32_CAM: ✅ Image sent at 1755203228897 ms[0m
+[0;32mI (10177) ESP32_CAM: ✅ Image sent at 1755203228977 ms[0m
+[0;32mI (10257) ESP32_CAM: ✅ Image sent at 1755203229057 ms[0m
+[0;32mI (10337) ESP32_CAM: ✅ Image sent at 1755203229137 ms[0m
+[0;32mI (10417) ESP32_CAM: ✅ Image sent at 1755203229217 ms[0m
+[0;32mI (10497) ESP32_CAM: ✅ Image sent at 1755203229297 ms[0m
+[0;32mI (10577) ESP32_CAM: ✅ Image sent at 1755203229376 ms[0m
+[0;32mI (10657) ESP32_CAM: ✅ Image sent at 1755203229457 ms[0m
+[0;32mI (10737) ESP32_CAM: ✅ Image sent at 1755203229537 ms[0m
+[0;32mI (10817) ESP32_CAM: ✅ Image sent at 1755203229617 ms[0m
+[0;32mI (10897) ESP32_CAM: ✅ Image sent at 1755203229696 ms[0m
+[0;32mI (10977) ESP32_CAM: ✅ Image sent at 1755203229776 ms[0m
+[0;32mI (11057) ESP32_CAM: ✅ Image sent at 1755203229857 ms[0m
+[0;32mI (11137) ESP32_CAM: ✅ Image sent at 1755203229936 ms[0m
+[0;32mI (11217) ESP32_CAM: ✅ Image sent at 1755203230017 ms[0m
+[0;32mI (11297) ESP32_CAM: ✅ Image sent at 1755203230096 ms[0m
+[0;32mI (11377) ESP32_CAM: ✅ Image sent at 1755203230176 ms[0m
+[0;32mI (11457) ESP32_CAM: ✅ Image sent at 1755203230257 ms[0m
+[0;32mI (11537) ESP32_CAM: ✅ Image sent at 1755203230336 ms[0m
+[0;32mI (11617) ESP32_CAM: ✅ Image sent at 1755203230416 ms[0m
+[0;32mI (11697) ESP32_CAM: ✅ Image sent at 1755203230496 ms[0m
+[0;32mI (11777) ESP32_CAM: ✅ Image sent at 1755203230576 ms[0m
+[0;32mI (11857) ESP32_CAM: ✅ Image sent at 1755203230656 ms[0m
+[0;32mI (11937) ESP32_CAM: ✅ Image sent at 1755203230736 ms[0m
+[0;32mI (12017) ESP32_CAM: ✅ Image sent at 1755203230816 ms[0m
+[0;32mI (12097) ESP32_CAM: ✅ Image sent at 1755203230896 ms[0m
+[0;32mI (12177) ESP32_CAM: ✅ Image sent at 1755203230976 ms[0m
+[0;32mI (12257) ESP32_CAM: ✅ Image sent at 1755203231056 ms[0m
+[0;32mI (12337) ESP32_CAM: ✅ Image sent at 1755203231136 ms[0m
+[0;32mI (12417) ESP32_CAM: ✅ Image sent at 1755203231216 ms[0m
+[0;32mI (12497) ESP32_CAM: ✅ Image sent at 1755203231296 ms[0m
+[0;32mI (12577) ESP32_CAM: ✅ Image sent at 1755203231376 ms[0m
+[0;32mI (12657) ESP32_CAM: ✅ Image sent at 1755203231456 ms[0m
+[0;32mI (12737) ESP32_CAM: ✅ Image sent at 1755203231536 ms[0m
+[0;32mI (12817) ESP32_CAM: ✅ Image sent at 1755203231616 ms[0m
+[0;32mI (12897) ESP32_CAM: ✅ Image sent at 1755203231696 ms[0m
+[0;32mI (12977) ESP32_CAM: ✅ Image sent at 1755203231776 ms[0m
+[0;32mI (13057) ESP32_CAM: ✅ Image sent at 1755203231856 ms[0m
+[0;32mI (13137) ESP32_CAM: ✅ Image sent at 1755203231935 ms[0m
+[0;32mI (13217) ESP32_CAM: ✅ Image sent at 1755203232016 ms[0m
+[0;32mI (13297) ESP32_CAM: ✅ Image sent at 1755203232096 ms[0m
+[0;32mI (13377) ESP32_CAM: ✅ Image sent at 1755203232176 ms[0m
+[0;32mI (13457) ESP32_CAM: ✅ Image sent at 1755203232255 ms[0m
+[0;32mI (13537) ESP32_CAM: ✅ Image sent at 1755203232335 ms[0m
+[0;32mI (13617) ESP32_CAM: ✅ Image sent at 1755203232415 ms[0m
+[0;32mI (13697) ESP32_CAM: ✅ Image sent at 1755203232495 ms[0m
+[0;32mI (13777) ESP32_CAM: ✅ Image sent at 1755203232575 ms[0m
+[0;32mI (13857) ESP32_CAM: ✅ Image sent at 1755203232655 ms[0m
+[0;32mI (13937) ESP32_CAM: ✅ Image sent at 1755203232736 ms[0m
+[0;32mI (14017) ESP32_CAM: ✅ Image sent at 1755203232815 ms[0m
+[0;32mI (14097) ESP32_CAM: ✅ Image sent at 1755203232896 ms[0m
+[0;32mI (14177) ESP32_CAM: ✅ Image sent at 1755203232975 ms[0m
+[0;32mI (14257) ESP32_CAM: ✅ Image sent at 1755203233055 ms[0m
+[0;32mI (14337) ESP32_CAM: ✅ Image sent at 1755203233135 ms[0m
+cam_hal: NO-EOI - JPEG end marker missing
+[0;32mI (14497) ESP32_CAM: ✅ Image sent at 1755203233295 ms[0m
+[0;32mI (14577) ESP32_CAM: ✅ Image sent at 1755203233375 ms[0m
+[0;32mI (14657) ESP32_CAM: ✅ Image sent at 1755203233455 ms[0m
+[0;32mI (14737) ESP32_CAM: ✅ Image sent at 1755203233535 ms[0m
+[0;32mI (14817) ESP32_CAM: ✅ Image sent at 1755203233615 ms[0m
+[0;32mI (14897) ESP32_CAM: ✅ Image sent at 1755203233695 ms[0m
+[0;32mI (14977) ESP32_CAM: ✅ Image sent at 1755203233775 ms[0m
+[0;32mI (15057) ESP32_CAM: ✅ Image sent at 1755203233855 ms[0m
+[0;32mI (15137) ESP32_CAM: ✅ Image sent at 1755203233935 ms[0m
+[0;32mI (15217) ESP32_CAM: ✅ Image sent at 1755203234015 ms[0m
+[0;32mI (15297) ESP32_CAM: ✅ Image sent at 1755203234095 ms[0m
+[0;32mI (15377) ESP32_CAM: ✅ Image sent at 1755203234175 ms[0m
+[0;32mI (15457) ESP32_CAM: ✅ Image sent at 1755203234255 ms[0m
+[0;32mI (15527) ESP32_CAM: ✅ Image sent at 1755203234335 ms[0m
+[0;32mI (15617) ESP32_CAM: ✅ Image sent at 1755203234415 ms[0m
+[0;32mI (15687) ESP32_CAM: ✅ Image sent at 1755203234494 ms[0m
+[0;32mI (15777) ESP32_CAM: ✅ Image sent at 1755203234575 ms[0m
+[0;32mI (15847) ESP32_CAM: ✅ Image sent at 1755203234654 ms[0m
+[0;32mI (15927) ESP32_CAM: ✅ Image sent at 1755203234734 ms[0m
+[0;32mI (16007) ESP32_CAM: ✅ Image sent at 1755203234814 ms[0m
+[0;32mI (16087) ESP32_CAM: ✅ Image sent at 1755203234894 ms[0m
+[0;32mI (16177) ESP32_CAM: ✅ Image sent at 1755203234975 ms[0m
+[0;32mI (16247) ESP32_CAM: ✅ Image sent at 1755203235054 ms[0m
+[0;32mI (16327) ESP32_CAM: ✅ Image sent at 1755203235134 ms[0m
+[0;32mI (16407) ESP32_CAM: ✅ Image sent at 1755203235214 ms[0m
+[0;32mI (16487) ESP32_CAM: ✅ Image sent at 1755203235294 ms[0m
+[0;32mI (16567) ESP32_CAM: ✅ Image sent at 1755203235374 ms[0m
+[0;32mI (16647) ESP32_CAM: ✅ Image sent at 1755203235454 ms[0m
+[0;32mI (16727) ESP32_CAM: ✅ Image sent at 1755203235534 ms[0m
+[0;32mI (16807) ESP32_CAM: ✅ Image sent at 1755203235614 ms[0m
+[0;32mI (16887) ESP32_CAM: ✅ Image sent at 1755203235694 ms[0m
+[0;32mI (16967) ESP32_CAM: ✅ Image sent at 1755203235774 ms[0m
+[0;32mI (17047) ESP32_CAM: ✅ Image sent at 1755203235854 ms[0m
+[0;32mI (17127) ESP32_CAM: ✅ Image sent at 1755203235934 ms[0m
+[0;32mI (17207) ESP32_CAM: ✅ Image sent at 1755203236014 ms[0m
+[0;32mI (17287) ESP32_CAM: ✅ Image sent at 1755203236094 ms[0m
+[0;32mI (17367) ESP32_CAM: ✅ Image sent at 1755203236174 ms[0m
+[0;32mI (17447) ESP32_CAM: ✅ Image sent at 1755203236254 ms[0m
+[0;32mI (17527) ESP32_CAM: ✅ Image sent at 1755203236334 ms[0m
+[0;32mI (17607) ESP32_CAM: ✅ Image sent at 1755203236414 ms[0m
+[0;32mI (17687) ESP32_CAM: ✅ Image sent at 1755203236494 ms[0m
+[0;32mI (17767) ESP32_CAM: ✅ Image sent at 1755203236574 ms[0m
+[0;32mI (17847) ESP32_CAM: ✅ Image sent at 1755203236654 ms[0m
+[0;32mI (17927) ESP32_CAM: ✅ Image sent at 1755203236734 ms[0m
+[0;32mI (18007) ESP32_CAM: ✅ Image sent at 1755203236814 ms[0m
+[0;32mI (18087) ESP32_CAM: ✅ Image sent at 1755203236894 ms[0m
+[1;31mE (18167) CAMERA: Erreur sendto() pour le chunk 6 de la frame 145[0m
+[1;31mE (18167) CAMERA: Erreur sendto() pour le chunk 7 de la frame 145[0m
+[1;31mE (18167) CAMERA: Erreur sendto() pour le chunk 8 de la frame 145[0m
+[0;32mI (18177) ESP32_CAM: ✅ Image sent at 1755203236980 ms[0m
+[1;31mE (18247) CAMERA: Erreur sendto() pour le chunk 0 de la frame 146[0m
+[1;31mE (18247) CAMERA: Erreur sendto() pour le chunk 1 de la frame 146[0m
+[1;31mE (18247) CAMERA: Erreur sendto() pour le chunk 2 de la frame 146[0m
+[1;31mE (18257) CAMERA: Erreur sendto() pour le chunk 3 de la frame 146[0m
+[1;31mE (18257) CAMERA: Erreur sendto() pour le chunk 4 de la frame 146[0m
+[1;31mE (18267) CAMERA: Erreur sendto() pour le chunk 5 de la frame 146[0m
+[1;31mE (18277) CAMERA: Erreur sendto() pour le chunk 6 de la frame 146[0m
+[1;31mE (18277) CAMERA: Erreur sendto() pour le chunk 7 de la frame 146[0m
+[1;31mE (18287) CAMERA: Erreur sendto() pour le chunk 8 de la frame 146[0m
+[0;32mI (18287) ESP32_CAM: ✅ Image sent at 1755203237093 ms[0m
+[1;31mE (18367) CAMERA: Erreur sendto() pour le chunk 0 de la frame 147[0m
+[1;31mE (18367) CAMERA: Erreur sendto() pour le chunk 1 de la frame 147[0m
+[1;31mE (18367) CAMERA: Erreur sendto() pour le chunk 2 de la frame 147[0m
+[1;31mE (18377) CAMERA: Erreur sendto() pour le chunk 3 de la frame 147[0m
+[1;31mE (18377) CAMERA: Erreur sendto() pour le chunk 4 de la frame 147[0m
+[1;31mE (18387) CAMERA: Erreur sendto() pour le chunk 5 de la frame 147[0m
+[1;31mE (18397) CAMERA: Erreur sendto() pour le chunk 6 de la frame 147[0m
+[1;31mE (18397) CAMERA: Erreur sendto() pour le chunk 7 de la frame 147[0m
+[1;31mE (18407) CAMERA: Erreur sendto() pour le chunk 8 de la frame 147[0m
+[0;32mI (18407) ESP32_CAM: ✅ Image sent at 1755203237213 ms[0m
+[1;31mE (18487) CAMERA: Erreur sendto() pour le chunk 0 de la frame 148[0m
+[1;31mE (18487) CAMERA: Erreur sendto() pour le chunk 1 de la frame 148[0m
+[1;31mE (18487) CAMERA: Erreur sendto() pour le chunk 2 de la frame 148[0m
+[1;31mE (18497) CAMERA: Erreur sendto() pour le chunk 3 de la frame 148[0m
+[1;31mE (18497) CAMERA: Erreur sendto() pour le chunk 4 de la frame 148[0m
+[1;31mE (18507) CAMERA: Erreur sendto() pour le chunk 5 de la frame 148[0m
+[1;31mE (18517) CAMERA: Erreur sendto() pour le chunk 6 de la frame 148[0m
+[1;31mE (18517) CAMERA: Erreur sendto() pour le chunk 7 de la frame 148[0m
+[1;31mE (18527) CAMERA: Erreur sendto() pour le chunk 8 de la frame 148[0m
+[0;32mI (18527) ESP32_CAM: ✅ Image sent at 1755203237333 ms[0m
+[1;31mE (18607) CAMERA: Erreur sendto() pour le chunk 0 de la frame 149[0m
+[1;31mE (18607) CAMERA: Erreur sendto() pour le chunk 1 de la frame 149[0m
+[1;31mE (18607) CAMERA: Erreur sendto() pour le chunk 2 de la frame 149[0m
+[1;31mE (18617) CAMERA: Erreur sendto() pour le chunk 3 de la frame 149[0m
+[1;31mE (18617) CAMERA: Erreur sendto() pour le chunk 4 de la frame 149[0m
+[1;31mE (18627) CAMERA: Erreur sendto() pour le chunk 5 de la frame 149[0m
+[1;31mE (18637) CAMERA: Erreur sendto() pour le chunk 6 de la frame 149[0m
+[1;31mE (18637) CAMERA: Erreur sendto() pour le chunk 7 de la frame 149[0m
+[1;31mE (18647) CAMERA: Erreur sendto() pour le chunk 8 de la frame 149[0m
+[0;32mI (18647) ESP32_CAM: ✅ Image sent at 1755203237453 ms[0m
+[1;31mE (18727) CAMERA: Erreur sendto() pour le chunk 1 de la frame 150[0m
+[1;31mE (18727) CAMERA: Erreur sendto() pour le chunk 2 de la frame 150[0m
+[1;31mE (18727) CAMERA: Erreur sendto() pour le chunk 3 de la frame 150[0m
+[1;31mE (18737) CAMERA: Erreur sendto() pour le chunk 4 de la frame 150[0m
+[1;31mE (18737) CAMERA: Erreur sendto() pour le chunk 5 de la frame 150[0m
+[1;31mE (18747) CAMERA: Erreur sendto() pour le chunk 6 de la frame 150[0m
+[1;31mE (18757) CAMERA: Erreur sendto() pour le chunk 7 de la frame 150[0m
+[1;31mE (18757) CAMERA: Erreur sendto() pour le chunk 8 de la frame 150[0m
+[0;32mI (18767) ESP32_CAM: ✅ Image sent at 1755203237567 ms[0m
+[1;31mE (18807) CAMERA: Erreur sendto() pour le chunk 0 de la frame 151[0m
+[1;31mE (18807) CAMERA: Erreur sendto() pour le chunk 1 de la frame 151[0m
+[1;31mE (18807) CAMERA: Erreur sendto() pour le chunk 2 de la frame 151[0m
+[1;31mE (18817) CAMERA: Erreur sendto() pour le chunk 3 de la frame 151[0m
+[1;31mE (18817) CAMERA: Erreur sendto() pour le chunk 4 de la frame 151[0m
+[1;31mE (18827) CAMERA: Erreur sendto() pour le chunk 5 de la frame 151[0m
+[1;31mE (18837) CAMERA: Erreur sendto() pour le chunk 6 de la frame 151[0m
+[1;31mE (18837) CAMERA: Erreur sendto() pour le chunk 7 de la frame 151[0m
+[1;31mE (18847) CAMERA: Erreur sendto() pour le chunk 8 de la frame 151[0m
+[0;32mI (18847) ESP32_CAM: ✅ Image sent at 1755203237653 ms[0m
+[0;32mI (18927) ESP32_CAM: ✅ Image sent at 1755203237733 ms[0m
+[0;32mI (19007) ESP32_CAM: ✅ Image sent at 1755203237813 ms[0m
+[0;32mI (19087) ESP32_CAM: ✅ Image sent at 1755203237893 ms[0m
+[0;32mI (19167) ESP32_CAM: ✅ Image sent at 1755203237973 ms[0m
+[0;32mI (19247) ESP32_CAM: ✅ Image sent at 1755203238053 ms[0m
+[0;32mI (19327) ESP32_CAM: ✅ Image sent at 1755203238133 ms[0m
+[0;32mI (19407) ESP32_CAM: ✅ Image sent at 1755203238213 ms[0m
+[0;32mI (19487) ESP32_CAM: ✅ Image sent at 1755203238293 ms[0m
+[0;32mI (19567) ESP32_CAM: ✅ Image sent at 1755203238373 ms[0m
+[0;32mI (19647) ESP32_CAM: ✅ Image sent at 1755203238453 ms[0m
+[0;32mI (19727) ESP32_CAM: ✅ Image sent at 1755203238533 ms[0m
+[0;32mI (19807) ESP32_CAM: ✅ Image sent at 1755203238613 ms[0m
+[0;32mI (19887) ESP32_CAM: ✅ Image sent at 1755203238693 ms[0m
+[0;32mI (19967) ESP32_CAM: ✅ Image sent at 1755203238773 ms[0m
+[0;32mI (20047) ESP32_CAM: ✅ Image sent at 1755203238853 ms[0m
+[0;32mI (20127) ESP32_CAM: ✅ Image sent at 1755203238933 ms[0m
+[0;32mI (20207) ESP32_CAM: ✅ Image sent at 1755203239013 ms[0m
+[0;32mI (20287) ESP32_CAM: ✅ Image sent at 1755203239093 ms[0m
+[0;32mI (20367) ESP32_CAM: ✅ Image sent at 1755203239173 ms[0m
+[0;32mI (20447) ESP32_CAM: ✅ Image sent at 1755203239253 ms[0m
+[0;32mI (20527) ESP32_CAM: ✅ Image sent at 1755203239333 ms[0m
+[0;32mI (20607) ESP32_CAM: ✅ Image sent at 1755203239413 ms[0m
+[0;32mI (20687) ESP32_CAM: ✅ Image sent at 1755203239493 ms[0m
+[0;32mI (20767) ESP32_CAM: ✅ Image sent at 1755203239573 ms[0m
+[0;32mI (20847) ESP32_CAM: ✅ Image sent at 1755203239653 ms[0m
+[0;32mI (20927) ESP32_CAM: ✅ Image sent at 1755203239732 ms[0m
+[0;32mI (21007) ESP32_CAM: ✅ Image sent at 1755203239812 ms[0m
+[0;32mI (21087) ESP32_CAM: ✅ Image sent at 1755203239892 ms[0m
+[0;32mI (21167) ESP32_CAM: ✅ Image sent at 1755203239972 ms[0m
+[0;32mI (21247) ESP32_CAM: ✅ Image sent at 1755203240052 ms[0m
+[0;32mI (21327) ESP32_CAM: ✅ Image sent at 1755203240132 ms[0m
+[0;32mI (21407) ESP32_CAM: ✅ Image sent at 1755203240212 ms[0m
+[0;32mI (21487) ESP32_CAM: ✅ Image sent at 1755203240292 ms[0m
+[0;32mI (21567) ESP32_CAM: ✅ Image sent at 1755203240372 ms[0m
+[0;32mI (21647) ESP32_CAM: ✅ Image sent at 1755203240452 ms[0m
+[0;32mI (21727) ESP32_CAM: ✅ Image sent at 1755203240532 ms[0m
+[0;32mI (21807) ESP32_CAM: ✅ Image sent at 1755203240612 ms[0m
+[0;32mI (21887) ESP32_CAM: ✅ Image sent at 1755203240692 ms[0m
+[0;32mI (21967) ESP32_CAM: ✅ Image sent at 1755203240772 ms[0m
+[0;32mI (22207) ESP32_CAM: ✅ Image sent at 1755203241012 ms[0m
+[0;32mI (22287) ESP32_CAM: ✅ Image sent at 1755203241092 ms[0m
+[0;32mI (22367) ESP32_CAM: ✅ Image sent at 1755203241172 ms[0m
+[0;32mI (22447) ESP32_CAM: ✅ Image sent at 1755203241252 ms[0m
+[0;32mI (22527) ESP32_CAM: ✅ Image sent at 1755203241332 ms[0m
+[0;32mI (22607) ESP32_CAM: ✅ Image sent at 1755203241412 ms[0m
+[0;32mI (22687) ESP32_CAM: ✅ Image sent at 1755203241492 ms[0m
+[0;32mI (22767) ESP32_CAM: ✅ Image sent at 1755203241572 ms[0m
+[0;32mI (22847) ESP32_CAM: ✅ Image sent at 1755203241652 ms[0m
+[0;32mI (22927) ESP32_CAM: ✅ Image sent at 1755203241732 ms[0m
+[0;32mI (23007) ESP32_CAM: ✅ Image sent at 1755203241812 ms[0m
+[0;32mI (23087) ESP32_CAM: ✅ Image sent at 1755203241892 ms[0m
+[0;32mI (23167) ESP32_CAM: ✅ Image sent at 1755203241972 ms[0m
+[0;32mI (23247) ESP32_CAM: ✅ Image sent at 1755203242052 ms[0m
+[0;32mI (23327) ESP32_CAM: ✅ Image sent at 1755203242132 ms[0m
+[0;32mI (23407) ESP32_CAM: ✅ Image sent at 1755203242212 ms[0m
+[0;32mI (23487) ESP32_CAM: ✅ Image sent at 1755203242292 ms[0m
+[0;32mI (23567) ESP32_CAM: ✅ Image sent at 1755203242372 ms[0m
+[0;32mI (23727) ESP32_CAM: ✅ Image sent at 1755203242532 ms[0m
+[0;32mI (23807) ESP32_CAM: ✅ Image sent at 1755203242612 ms[0m
+[0;32mI (23887) ESP32_CAM: ✅ Image sent at 1755203242691 ms[0m
+[0;32mI (23967) ESP32_CAM: ✅ Image sent at 1755203242772 ms[0m
+[0;32mI (24047) ESP32_CAM: ✅ Image sent at 1755203242852 ms[0m
+[0;32mI (24127) ESP32_CAM: ✅ Image sent at 1755203242931 ms[0m
+[0;32mI (24207) ESP32_CAM: ✅ Image sent at 1755203243011 ms[0m
+[0;32mI (24287) ESP32_CAM: ✅ Image sent at 1755203243091 ms[0m
+[0;32mI (24367) ESP32_CAM: ✅ Image sent at 1755203243171 ms[0m
+[0;32mI (24447) ESP32_CAM: ✅ Image sent at 1755203243251 ms[0m
+[0;32mI (24527) ESP32_CAM: ✅ Image sent at 1755203243332 ms[0m
+[0;32mI (24607) ESP32_CAM: ✅ Image sent at 1755203243411 ms[0m
+[0;32mI (24687) ESP32_CAM: ✅ Image sent at 1755203243491 ms[0m
+[0;32mI (24767) ESP32_CAM: ✅ Image sent at 1755203243571 ms[0m
+[0;32mI (24847) ESP32_CAM: ✅ Image sent at 1755203243651 ms[0m
+[0;32mI (24927) ESP32_CAM: ✅ Image sent at 1755203243731 ms[0m
+[0;32mI (25007) ESP32_CAM: ✅ Image sent at 1755203243811 ms[0m
+[0;32mI (25087) ESP32_CAM: ✅ Image sent at 1755203243891 ms[0m
+[0;32mI (25167) ESP32_CAM: ✅ Image sent at 1755203243971 ms[0m
+[0;32mI (25327) ESP32_CAM: ✅ Image sent at 1755203244131 ms[0m
+[0;32mI (25407) ESP32_CAM: ✅ Image sent at 1755203244211 ms[0m
+[0;32mI (25487) ESP32_CAM: ✅ Image sent at 1755203244291 ms[0m
+[0;32mI (25567) ESP32_CAM: ✅ Image sent at 1755203244372 ms[0m
+[0;32mI (25647) ESP32_CAM: ✅ Image sent at 1755203244451 ms[0m
+[0;32mI (25727) ESP32_CAM: ✅ Image sent at 1755203244531 ms[0m
+[0;32mI (25807) ESP32_CAM: ✅ Image sent at 1755203244611 ms[0m
+[0;32mI (25887) ESP32_CAM: ✅ Image sent at 1755203244691 ms[0m
+[0;32mI (25967) ESP32_CAM: ✅ Image sent at 1755203244771 ms[0m
+[0;32mI (26047) ESP32_CAM: ✅ Image sent at 1755203244851 ms[0m
+[0;32mI (26127) ESP32_CAM: ✅ Image sent at 1755203244931 ms[0m
+[0;32mI (26207) ESP32_CAM: ✅ Image sent at 1755203245011 ms[0m
+[0;32mI (26287) ESP32_CAM: ✅ Image sent at 1755203245091 ms[0m
+[0;32mI (26367) ESP32_CAM: ✅ Image sent at 1755203245171 ms[0m
+[0;32mI (26377) wifi:<ba-add>idx:1 (ifx:0, 92:a5:3b:33:1f:f2), tid:7, ssn:0, winSize:64[0m
+[0;32mI (26447) ESP32_CAM: ✅ Image sent at 1755203245251 ms[0m
+[0;32mI (26527) ESP32_CAM: ✅ Image sent at 1755203245331 ms[0m
+[0;32mI (26607) ESP32_CAM: ✅ Image sent at 1755203245411 ms[0m
+[0;32mI (26687) ESP32_CAM: ✅ Image sent at 1755203245491 ms[0m
+[0;32mI (26767) ESP32_CAM: ✅ Image sent at 1755203245570 ms[0m
+[0;32mI (26847) ESP32_CAM: ✅ Image sent at 1755203245651 ms[0m
+[0;32mI (26927) ESP32_CAM: ✅ Image sent at 1755203245730 ms[0m
+[0;32mI (27007) ESP32_CAM: ✅ Image sent at 1755203245811 ms[0m
+[0;32mI (27087) ESP32_CAM: ✅ Image sent at 1755203245891 ms[0m
+[0;32mI (27167) ESP32_CAM: ✅ Image sent at 1755203245971 ms[0m
+[0;32mI (27247) ESP32_CAM: ✅ Image sent at 1755203246051 ms[0m
+[0;32mI (27327) ESP32_CAM: ✅ Image sent at 1755203246131 ms[0m
+[0;32mI (27407) ESP32_CAM: ✅ Image sent at 1755203246210 ms[0m
+[0;32mI (27487) ESP32_CAM: ✅ Image sent at 1755203246291 ms[0m
+[0;32mI (27567) ESP32_CAM: ✅ Image sent at 1755203246370 ms[0m
+[0;32mI (27647) ESP32_CAM: ✅ Image sent at 1755203246450 ms[0m
+[0;32mI (27727) ESP32_CAM: ✅ Image sent at 1755203246530 ms[0m
+[0;32mI (27807) ESP32_CAM: ✅ Image sent at 1755203246610 ms[0m
+[0;32mI (27887) ESP32_CAM: ✅ Image sent at 1755203246690 ms[0m
+[0;32mI (27967) ESP32_CAM: ✅ Image sent at 1755203246770 ms[0m
+[0;32mI (28047) ESP32_CAM: ✅ Image sent at 1755203246850 ms[0m
+[0;32mI (28127) ESP32_CAM: ✅ Image sent at 1755203246930 ms[0m
+[0;32mI (28287) ESP32_CAM: ✅ Image sent at 1755203247090 ms[0m
+[0;32mI (28367) ESP32_CAM: ✅ Image sent at 1755203247170 ms[0m
+[0;32mI (28447) ESP32_CAM: ✅ Image sent at 1755203247250 ms[0m
+[0;32mI (28527) ESP32_CAM: ✅ Image sent at 1755203247330 ms[0m
+[0;32mI (28607) ESP32_CAM: ✅ Image sent at 1755203247410 ms[0m
+[0;32mI (28687) ESP32_CAM: ✅ Image sent at 1755203247490 ms[0m
+[0;32mI (28767) ESP32_CAM: ✅ Image sent at 1755203247571 ms[0m
+[0;32mI (28847) ESP32_CAM: ✅ Image sent at 1755203247650 ms[0m
+[0;32mI (28927) ESP32_CAM: ✅ Image sent at 1755203247730 ms[0m
+[0;32mI (29007) ESP32_CAM: ✅ Image sent at 1755203247810 ms[0m
+[0;32mI (29087) ESP32_CAM: ✅ Image sent at 1755203247890 ms[0m
+[0;32mI (29167) ESP32_CAM: ✅ Image sent at 1755203247970 ms[0m
+[0;32mI (29247) ESP32_CAM: ✅ Image sent at 1755203248050 ms[0m
+[0;32mI (29327) ESP32_CAM: ✅ Image sent at 1755203248130 ms[0m
+[0;32mI (29407) ESP32_CAM: ✅ Image sent at 1755203248210 ms[0m
+[0;32mI (29487) ESP32_CAM: ✅ Image sent at 1755203248290 ms[0m
+[0;32mI (29567) ESP32_CAM: ✅ Image sent at 1755203248370 ms[0m
+[0;32mI (29647) ESP32_CAM: ✅ Image sent at 1755203248450 ms[0m
+[0;32mI (29727) ESP32_CAM: ✅ Image sent at 1755203248529 ms[0m
+[0;32mI (29807) ESP32_CAM: ✅ Image sent at 1755203248610 ms[0m
+[0;32mI (29887) ESP32_CAM: ✅ Image sent at 1755203248690 ms[0m
+[0;32mI (29967) ESP32_CAM: ✅ Image sent at 1755203248770 ms[0m
+[0;32mI (30047) ESP32_CAM: ✅ Image sent at 1755203248850 ms[0m
+[0;32mI (30127) ESP32_CAM: ✅ Image sent at 1755203248930 ms[0m
+[0;32mI (30207) ESP32_CAM: ✅ Image sent at 1755203249010 ms[0m
+[0;32mI (30287) ESP32_CAM: ✅ Image sent at 1755203249090 ms[0m
+[0;32mI (30367) ESP32_CAM: ✅ Image sent at 1755203249170 ms[0m
+[0;32mI (30447) ESP32_CAM: ✅ Image sent at 1755203249249 ms[0m
+[0;32mI (30527) ESP32_CAM: ✅ Image sent at 1755203249330 ms[0m
+[0;32mI (30607) ESP32_CAM: ✅ Image sent at 1755203249409 ms[0m
+[0;32mI (30687) ESP32_CAM: ✅ Image sent at 1755203249489 ms[0m
+[0;32mI (30767) ESP32_CAM: ✅ Image sent at 1755203249570 ms[0m
+[0;32mI (30847) ESP32_CAM: ✅ Image sent at 1755203249649 ms[0m
+[0;32mI (30927) ESP32_CAM: ✅ Image sent at 1755203249730 ms[0m
+[0;32mI (31007) ESP32_CAM: ✅ Image sent at 1755203249809 ms[0m
+[0;32mI (31087) ESP32_CAM: ✅ Image sent at 1755203249889 ms[0m
+[0;32mI (31167) ESP32_CAM: ✅ Image sent at 1755203249969 ms[0m
+[0;32mI (31247) ESP32_CAM: ✅ Image sent at 1755203250049 ms[0m
+[0;32mI (31327) ESP32_CAM: ✅ Image sent at 1755203250129 ms[0m
+[0;32mI (31407) ESP32_CAM: ✅ Image sent at 1755203250209 ms[0m
+[0;32mI (31487) ESP32_CAM: ✅ Image sent at 1755203250289 ms[0m
+[0;32mI (31567) ESP32_CAM: ✅ Image sent at 1755203250369 ms[0m
+[0;32mI (31647) ESP32_CAM: ✅ Image sent at 1755203250449 ms[0m
+[0;32mI (31727) ESP32_CAM: ✅ Image sent at 1755203250529 ms[0m
+[0;32mI (31807) ESP32_CAM: ✅ Image sent at 1755203250609 ms[0m
+[0;32mI (31887) ESP32_CAM: ✅ Image sent at 1755203250689 ms[0m
+[0;32mI (31967) ESP32_CAM: ✅ Image sent at 1755203250770 ms[0m
+[0;32mI (32047) ESP32_CAM: ✅ Image sent at 1755203250849 ms[0m
+[0;32mI (32127) ESP32_CAM: ✅ Image sent at 1755203250929 ms[0m
+[0;32mI (32207) ESP32_CAM: ✅ Image sent at 1755203251009 ms[0m
+[0;32mI (32287) ESP32_CAM: ✅ Image sent at 1755203251089 ms[0m
+[0;32mI (32367) ESP32_CAM: ✅ Image sent at 1755203251169 ms[0m
+[0;32mI (32447) ESP32_CAM: ✅ Image sent at 1755203251249 ms[0m
+[0;32mI (32527) ESP32_CAM: ✅ Image sent at 1755203251329 ms[0m
+[0;32mI (32607) ESP32_CAM: ✅ Image sent at 1755203251409 ms[0m
+[0;32mI (32687) ESP32_CAM: ✅ Image sent at 1755203251489 ms[0m
+[0;32mI (32767) ESP32_CAM: ✅ Image sent at 1755203251568 ms[0m
+[0;32mI (32847) ESP32_CAM: ✅ Image sent at 1755203251648 ms[0m
+[0;32mI (32927) ESP32_CAM: ✅ Image sent at 1755203251729 ms[0m
+[0;32mI (33007) ESP32_CAM: ✅ Image sent at 1755203251808 ms[0m
+[0;32mI (33087) ESP32_CAM: ✅ Image sent at 1755203251888 ms[0m
+[0;32mI (33167) ESP32_CAM: ✅ Image sent at 1755203251968 ms[0m
+[0;32mI (33247) ESP32_CAM: ✅ Image sent at 1755203252049 ms[0m
+[0;32mI (33327) ESP32_CAM: ✅ Image sent at 1755203252128 ms[0m
+[0;32mI (33407) ESP32_CAM: ✅ Image sent at 1755203252208 ms[0m
+[0;32mI (33487) ESP32_CAM: ✅ Image sent at 1755203252288 ms[0m
+[0;32mI (33567) ESP32_CAM: ✅ Image sent at 1755203252368 ms[0m
+[0;32mI (33647) ESP32_CAM: ✅ Image sent at 1755203252448 ms[0m
+[0;32mI (33727) ESP32_CAM: ✅ Image sent at 1755203252528 ms[0m
+[0;32mI (33807) ESP32_CAM: ✅ Image sent at 1755203252608 ms[0m
+[0;32mI (33887) ESP32_CAM: ✅ Image sent at 1755203252688 ms[0m
+[0;32mI (33967) ESP32_CAM: ✅ Image sent at 1755203252768 ms[0m
+[0;32mI (34047) ESP32_CAM: ✅ Image sent at 1755203252849 ms[0m
+[0;32mI (34127) ESP32_CAM: ✅ Image sent at 1755203252928 ms[0m
+[0;32mI (34207) ESP32_CAM: ✅ Image sent at 1755203253008 ms[0m
+[0;32mI (34287) ESP32_CAM: ✅ Image sent at 1755203253088 ms[0m
+[0;32mI (34367) ESP32_CAM: ✅ Image sent at 1755203253168 ms[0m

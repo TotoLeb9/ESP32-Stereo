@@ -1,0 +1,2 @@
+source /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/gdbinit/symbols
+source /home/totoleb/Documents/esp32/esp32_cam/build/bootloader/gdbinit/connect
