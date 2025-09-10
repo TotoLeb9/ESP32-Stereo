@@ -1,4 +1,0 @@
-Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/totoleb/Documents/esp32/esp32_cam
--- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig '/home/totoleb/Documents/esp32/esp32_cam/sdkconfig'
--- Found Git: /usr/bin/git (found version "2.43.0") 
--- Configuring incomplete, errors occurred!

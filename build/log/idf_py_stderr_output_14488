@@ -1,2 +1,0 @@
-Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/totoleb/.espressif/python_env/idf6.0_py3.12_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/totoleb/Documents/esp32/esp32_cam
-warning: user value 68 on the int symbol LWIP_DHCP_OPTIONS_LEN (defined at /home/totoleb/esp/esp-idf/components/lwip/Kconfig:372) ignored due to being outside the active range ([69, 255]) -- falling back on defaults
